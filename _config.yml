@@ -1,6 +1,6 @@
 title: Dundee Culver's - Member Portal
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dundeemp.github.io/"
+baseurl: ""
 
 collections:
   user:
