@@ -22,12 +22,6 @@ jobs:
         run: |
           curl -s -o _data/achievements.json "https://script.google.com/macros/s/AKfycbwEahba-ujQbv3_LsGf4aFKd79JpGq5fNgu7csd03LwbY37KIjvPN9ZWLqJjIYPTzAqrA/exec"
 
-      # 3. Validate JSON
-      - name: Validate JSON
-        run: |
-          jq empty _data/achievements.json
-        continue-on-error: false  # stops workflow if JSON is invalid
-
       # 4. Commit only if file changed
       - name: Commit and push changes
         run: |
