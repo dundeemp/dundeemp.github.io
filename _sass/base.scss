@@ -1,5 +1,5 @@
-@use "reset";
-@use "breakpoints";
+@import "reset";
+@import "breakpoints";
 
 $title-font:  "League Gothic", "Segoe UI", Helvetica, Arial, sans-serif;
 $text-font:   "Roboto Flex", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -99,7 +99,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 32px 24px;
-    @include breakpoints.respond(sm) {
+    @include respond(sm) {
       max-width: 500px;
       padding: 64px 48px;
     }
@@ -180,7 +180,7 @@ body {
     padding: 8px 12px;
     background-color: $gray-100;
     position: relative;
-    @include breakpoints.respond(lg) {
+    @include respond(lg) {
         width: 60%;
         padding: 16px 32px;
     }
@@ -193,7 +193,7 @@ body {
       .pfp {
         width: 80px;
         height: 80px;
-        @include breakpoints.respond(lg) {
+        @include respond(lg) {
           width: 128px;
           height: 128px;
         }
@@ -210,7 +210,7 @@ body {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        @include breakpoints.respond(lg) {
+        @include respond(lg) {
           width: calc(100% - 128px - 8px);
         }
         h3 {
@@ -222,7 +222,7 @@ body {
           color: $white;
           width: 100%;
           height: fit-content;
-          @include breakpoints.respond(lg) {
+          @include respond(lg) {
             font-size: 2.5rem;
             margin-top: -12px;
           }
@@ -233,7 +233,7 @@ body {
           color: $primary-200;
           width: 100%;
           height: fit-content;
-          @include breakpoints.respond(lg) {
+          @include respond(lg) {
             font-size: 1rem;
           }
         }
@@ -241,7 +241,7 @@ body {
           color: $white;
           font-size: 0.8rem;
           opacity: 0.75;
-          @include breakpoints.respond(lg) {
+          @include respond(lg) {
             font-size: 1rem;
           }
         }
@@ -254,7 +254,7 @@ body {
       border-radius: 8px;
       padding: 8px;
       display: flex;
-      @include breakpoints.respond(lg) {
+      @include respond(lg) {
         padding: 8px 16px;
         margin-top: 16px;
       }
@@ -268,7 +268,7 @@ body {
         align-items: center;
         margin-right: 24px;
         color: $primary-400;
-        @include breakpoints.respond(lg) {
+        @include respond(lg) {
           font-size: 1.25rem;
         }
       }
@@ -286,7 +286,7 @@ body {
           background: $gray-100;
           transition: 0.15s ease;
           outline: 2px solid rgba($primary-500, 0.1);
-          @include breakpoints.respond(lg) {
+          @include respond(lg) {
             padding: 4px 16px;
           }          
         }
@@ -321,7 +321,7 @@ body {
         overflow-x: hidden;
         gap: 16px;
         overflow-y: auto;
-        @include breakpoints.respond(lg) {
+        @include respond(lg) {
           justify-content: start;
           gap: 8px;
         }
@@ -333,7 +333,7 @@ body {
         color: $primary-600;
         width: 100%;
         margin-top: -16px;
-        @include breakpoints.respond(lg) {
+        @include respond(lg) {
           font-size: 2rem;
           letter-spacing: 0rem;
         }
@@ -464,7 +464,7 @@ body {
       width: 100%;
       text-align: center;
     }
-    @include breakpoints.respond(lg) {
+    @include respond(lg) {
       width: 40%;
       position: relative;
       right: unset;
@@ -480,7 +480,7 @@ body {
       border-radius: 8px;
       display: flex;
       flex-wrap: wrap;
-      @include breakpoints.respond(lg) {margin-top: 0}
+      @include respond(lg) {margin-top: 0}
       thead {
         width: inherit;
         display: inherit;
@@ -497,7 +497,7 @@ body {
             font-family: $title-font;
             font-size: 1.2rem;
             letter-spacing: 0.1rem;
-            @include breakpoints.respond(lg) {font-size: 1.75rem}
+            @include respond(lg) {font-size: 1.75rem}
           }
           .name {width: 70%; padding-left: 28px}
           .score {width: 30%; justify-content: center}
@@ -598,7 +598,7 @@ body {
   z-index: 10;
 }
 #sidebar-backdrop {
-  @include breakpoints.respond(lg) {
+  @include respond(lg) {
     display: none;
   }
 }
@@ -615,7 +615,7 @@ body {
   color: $white;
   font-size: 1.5rem;
   box-shadow: 5px 5px 15px 0 rgba($primary-900, 0.2);
-  @include breakpoints.respond(lg) {
+  @include respond(lg) {
     display: none;
   }
 }
@@ -627,7 +627,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  @include breakpoints.respond(lg) {
+  @include respond(lg) {
     display: none;
   }
 }
