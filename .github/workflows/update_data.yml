@@ -1,34 +1,33 @@
 name: Update Jekyll Data
 
-# Run every 12 hours
+# Run every 12 hours and allow manual trigger
 on:
   schedule:
-    - cron: '0 */12 * * *'   # every 12 hours
-  workflow_dispatch:         # manual trigger
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout repo with credentials
+      # 1. Checkout repo with proper token
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: true  # allows git push with GITHUB_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true  # allows git push
 
-      # 2. Fetch JSON from Google Sheets
+      # 2. Fetch JSON from Google Sheets (follows redirects)
       - name: Fetch JSON from Google Sheets
         run: |
-          curl -s -o _data/achievements.json "https://script.google.com/macros/s/AKfycbwEahba-ujQbv3_LsGf4aFKd79JpGq5fNgu7csd03LwbY37KIjvPN9ZWLqJjIYPTzAqrA/exec"
+          curl -sL -H "Accept: application/json" -o _data/achievements.json "https://script.google.com/macros/s/AKfycbwEahba-ujQbv3_LsGf4aFKd79JpGq5fNgu7csd03LwbY37KIjvPN9ZWLqJjIYPTzAqrA/exec"
 
-      # 4. Commit only if file changed
+      # 3. Commit only if file changed
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/achievements.json
           git diff --cached --quiet || git commit -m "Update _data from Google Sheets $(date +'%Y-%m-%d %H:%M:%S') [skip ci]"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
