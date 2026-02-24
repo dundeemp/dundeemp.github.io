@@ -1,0 +1,12 @@
+title: Dundee Culver's - Member Portal
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
+collections:
+  user:
+    output: true
+    permalink: /user/:name/
+
+sass:
+  sass_dir: _sass
+  style: compressed

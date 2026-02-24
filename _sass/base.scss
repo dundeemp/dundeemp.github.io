@@ -1,0 +1,710 @@
+@use "reset";
+@use "breakpoints";
+
+$title-font:  "League Gothic", "Segoe UI", Helvetica, Arial, sans-serif;
+$text-font:   "Roboto Flex", "Segoe UI", Helvetica, Arial, sans-serif;
+$marker-font: "Protest Riot", "Segoe UI", Helvetica, Arial, sans-serif;
+$mono-font:   "Ubuntu Sans Mono", monospace;
+
+$primary-100: #e6f6fc;
+$primary-200: #9fdcf4;
+$primary-300: #43bceb;
+$primary-400: #2492d0;
+$primary-500: #005696;
+$primary-600: #004a86;
+$primary-700: #003366;
+$primary-800: #00264d;
+$primary-900: #001a33;
+
+$white:       #f9f9fb;
+$gray-100:    #f3f4f8;
+$gray-200:    #e3e4ea;
+$gray-300:    #c9cbd2;
+$gray-400:    #aeb0b9;
+$gray-500:    #777986;
+$gray-600:    #5b5d6b;
+$gray-700:    #404252;
+$gray-800:    #282a3a;
+$gray-900:    #101223;
+$black:       #0a0b1a;
+
+body {
+  background-color: $white;
+  font-family: $text-font;
+}
+
+.header {
+  width: 100%;
+  margin-top: 86px;
+  overflow: hidden;
+  background-color: $primary-500;
+  text-align: center;
+  padding: 24px 16px;
+  h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: $title-font;
+    font-weight: bold;
+    color: $white;
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-family: $title-font;
+    letter-spacing: 0.1rem;
+    color: $gray-100;
+    margin-top: -24px;
+  }
+}
+.not-found-page {
+  width: 100%;
+  height: fit-content;
+  max-width: 400px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: $primary-500;
+  h1 {
+    font-family: $marker-font;
+    text-align: center;
+    font-size: 3rem;
+  }
+  a {
+    margin: 24px auto 0 auto;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: $primary-500;
+    color: $white;
+    display: block;
+    text-decoration: none;
+    font-family: $title-font;
+    font-size: 2rem;
+  }
+}
+.rop {
+  height: calc(100vh - 266px);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  .signin {
+    background-color: $gray-200;
+    border-radius: 12px;
+    max-width: unset;
+    width: calc(100% - 16px);
+    height: fit-content;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px 24px;
+    @include breakpoints.respond(sm) {
+      max-width: 500px;
+      padding: 64px 48px;
+    }
+    h3 {
+      color: $primary-900;
+      margin: 0;
+      height: fit-content;
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+    .signin-box {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      .input-text-box {
+        width: 240px;
+        height: 52px;
+        position: relative;
+        margin: 0;
+        .separator {
+          position: absolute;
+          top: 4px;
+          width: 2px;
+          border-radius: 4px;
+          background-color: $primary-400;
+          opacity: 0.2;
+          height: 44px;
+          &.sep1 {left: 25%}
+          &.sep2 {left: 50%}
+          &.sep3 {left: 75%}
+        }
+        input {
+          width: inherit;
+          height: inherit;
+          font-size: 48px;
+          padding-left: 16px;
+          letter-spacing: 32px;
+          font-weight: bold;
+          font-family: $mono-font;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: clip;
+          color: $primary-900;
+          border: 2px solid rgba($primary-400, 0.5);
+          border-radius: 4px;
+        }
+      }
+      .submit-button {
+        width: 50px;
+        height: 50px;
+        background-color: $primary-500;
+        border-radius: 4px;
+        margin-left: 8px;
+        margin-top: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: $white;
+        transition: 0.2s ease-in-out;
+        overflow: hidden;
+        &:hover {
+          background-color: $primary-400;
+        }
+      }
+    }
+  }
+}
+
+.sections {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  .main-section {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: $gray-100;
+    position: relative;
+    @include breakpoints.respond(lg) {
+        width: 60%;
+        padding: 16px 32px;
+    }
+    .section-header {
+      background-color: $primary-500;
+      display: flex;
+      height: fit-content;
+      align-items: center;
+      border-radius: 8px;
+      .pfp {
+        width: 80px;
+        height: 80px;
+        @include breakpoints.respond(lg) {
+          width: 128px;
+          height: 128px;
+        }
+        img {
+          transform: scale(0.8);
+          border-radius: 200px;
+          overflow: hidden;
+        }
+      }
+      .userinfo {
+        margin-left: 8px;
+        width: calc(100% - 80px - 8px);
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @include breakpoints.respond(lg) {
+          width: calc(100% - 128px - 8px);
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin-top: -8px;
+          font-family: $title-font;
+          letter-spacing: 0.05rem;
+          text-transform: uppercase;
+          color: $white;
+          width: 100%;
+          height: fit-content;
+          @include breakpoints.respond(lg) {
+            font-size: 2.5rem;
+            margin-top: -12px;
+          }
+        }
+        h4 {
+          font-size: 0.8rem;
+          margin-left: 8px;
+          color: $primary-200;
+          width: 100%;
+          height: fit-content;
+          @include breakpoints.respond(lg) {
+            font-size: 1rem;
+          }
+        }
+        .time {
+          color: $white;
+          font-size: 0.8rem;
+          opacity: 0.75;
+          @include breakpoints.respond(lg) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .filter-box {
+      margin-top: 8px;
+      width: 100%;
+      background-color: $gray-200;
+      border-radius: 8px;
+      padding: 8px;
+      display: flex;
+      @include breakpoints.respond(lg) {
+        padding: 8px 16px;
+        margin-top: 16px;
+      }
+      input {display: none}
+      .filter-title {
+        font-size: 1rem;
+        font-family: $title-font;
+        letter-spacing: 0.1rem;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-right: 24px;
+        color: $primary-400;
+        @include breakpoints.respond(lg) {
+          font-size: 1.25rem;
+        }
+      }
+      .filter {
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-700;
+        font-weight: 500;
+        cursor: pointer;
+        span {
+          padding: 2px 8px;
+          border-radius: 100px;
+          background: $gray-100;
+          transition: 0.15s ease;
+          outline: 2px solid rgba($primary-500, 0.1);
+          @include breakpoints.respond(lg) {
+            padding: 4px 16px;
+          }          
+        }
+        input:checked + span {
+          background: $primary-400;
+          color: $white;
+          font-weight: 600;
+          outline: 2px solid $primary-300
+        }
+      }
+    }
+    .achievements {
+      width: 100%;
+      height: calc(100vh - 232px);
+      position: relative;
+      padding: 16px;
+      background-color: $gray-200;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 8px;
+      .ach-wrapper {
+        align-content: start;
+        padding: 4px;
+        width: 100%;
+        height: 100%;
+        position: sticky;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        gap: 16px;
+        overflow-y: auto;
+        @include breakpoints.respond(lg) {
+          justify-content: start;
+          gap: 8px;
+        }
+      }
+      .ach-title {
+        font-family: $title-font;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        color: $primary-600;
+        width: 100%;
+        margin-top: -16px;
+        @include breakpoints.respond(lg) {
+          font-size: 2rem;
+          letter-spacing: 0rem;
+        }
+      }
+      .achievement {
+        width: 136px;
+        height: 154px;
+        border-radius: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: $white;
+        position: relative;
+        .star {
+          position: absolute;
+          font-size: 1.25rem;
+          &.tier-1 {left: 18%;top: 11%}
+          &.tier-2 {left: 50%;top: 5%;transform: translateX(-50%)}
+          &.tier-3 {right: 18%;top: 11%}
+        }
+        &.locked {
+          opacity: 0.8;
+          filter: saturate(0) brightness(0.8);
+          .star {
+            color: $primary-300;
+          }
+        }
+        &.unlocked {
+          opacity: 1;
+          filter: saturate(1) brightness(1);
+          outline: 1px solid $primary-400;
+          &.tier-i {
+            .star.tier-1 {color: $primary-400}
+            .star.tier-2 {color: $gray-600}
+            .star.tier-3 {color: $gray-600}
+          }
+          &.tier-ii {
+            .star.tier-1 {color: $primary-400}
+            .star.tier-2 {color: $primary-400}
+            .star.tier-3 {color: $gray-600}
+          }
+          &.tier-iii {
+            .star.tier-1 {color: $primary-400}
+            .star.tier-2 {color: $primary-400}
+            .star.tier-3 {color: $primary-400}
+          }
+        }
+        &[data-type="feat"] {
+          &.locked {
+            .star.tier-0 {
+              color: $primary-300;
+            }
+          }
+          &.unlocked {
+            box-shadow: inset 0px 0px 10px 0px rgba($primary-500, 0.6);
+            outline: 3px solid $primary-400;
+            background-color: $primary-200;
+            p {font-weight: bold}
+            .star.tier-0 {
+              color: $primary-400;
+            }
+          }
+        }
+        &[data-type="stack"] {
+          .star {
+            display: flex;
+            .xtimes {padding-top: 2px; font-weight: 600}
+          }
+          &.locked {
+            .star.tier-0 {
+              color: $primary-300;
+            }
+          }
+          &.unlocked {
+            box-shadow: inset 0px 0px 10px 0px rgba($primary-500, 0.6);
+            outline: 1px solid $primary-400;
+            p {font-weight: bold}
+            .star.tier-0 {
+              color: $primary-400;
+            }
+          }
+        }
+        img {
+          margin-top: 12px;
+          width: 112px;
+          height: 112px;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1rem;
+          padding: 0 4px;
+          width: 100%;
+          margin-top: -10px;
+          text-align: center;
+          color: $primary-600;
+        }
+        &.tier-iii {
+          box-shadow: inset 0px 0px 10px 0px rgba($primary-500, 0.6);
+          outline: 3px solid $primary-400;
+          background-color: $primary-200;
+          p {font-weight: bold;}
+        }
+      }
+    }
+  }
+  .side-section {
+    align-content: start;
+    position: fixed;
+    transition: 0.2s ease-in-out;
+    right: 100%;
+    top: 0;
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    padding: 8px;
+    background-color: $white;
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &.onView {
+      right: 15%;
+    }
+    h1 {
+      color: $primary-300;
+      width: 100%;
+      text-align: center;
+    }
+    @include breakpoints.respond(lg) {
+      width: 40%;
+      position: relative;
+      right: unset;
+      top: unset;
+      padding: 16px 32px;
+      z-index: 1;
+    }
+		.leaderboard {
+			outline: 2px solid $primary-500;
+      width: 100%;
+      max-width: 450px;
+      margin-top: 48px;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      @include breakpoints.respond(lg) {margin-top: 0}
+      thead {
+        width: inherit;
+        display: inherit;
+        tr {
+          display: inherit;
+          width: inherit;
+          .name, .score {
+            display: inherit;
+            border: none;
+            padding: 8px;
+            background-color: $primary-500;
+            color: $white;
+            text-transform: uppercase;
+            font-family: $title-font;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            @include breakpoints.respond(lg) {font-size: 1.75rem}
+          }
+          .name {width: 70%; padding-left: 28px}
+          .score {width: 30%; justify-content: center}
+        }
+      }
+      tbody {
+        width: inherit;
+        display: inherit;
+        flex-wrap: wrap;
+        tr {
+          width: inherit;
+          display: inherit;
+          flex-wrap: wrap;
+          &:nth-child(even) {background-color: darken($gray-100, 3%)}
+          .name-entry {
+            width: 70%;
+            display: inherit;
+            font-size: 1.1rem;
+            text-align: left;
+            color: $primary-600;
+            font-weight: 500;
+            padding-top: 14px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            .username {
+              width: inherit;
+              display: inherit;
+              position: relative;
+              .title-entry {
+                width: 100%;
+                display: block;
+                position: absolute;
+                left: 8px;
+                top: -10px;
+                font-size: 0.7rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: $primary-400;
+              }
+            }
+          }
+          .score-entry {
+            width: 30%;
+            display: inherit;
+            color: $primary-700;
+            padding-right: 28px;
+            text-align: right;
+            justify-content: end;
+            align-items: center;
+            font-family: $marker-font;
+            &.first, &.second, &.third {
+              position: relative;
+              &::before {
+                content: "\F5E6";
+                position: absolute;
+                right: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: "bootstrap-icons";
+                filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.1));
+              }
+            }
+            &.first::before {
+              color: #fae54a;
+              background: radial-gradient(circle,#fbba2c 0%, #fae54a 100%);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            &.second::before {
+              color: #d3d5dd;
+              background: radial-gradient(circle,#a0aab1 0%, #d3d5dd 100%);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            &.third::before {
+              color: #eaa57c;
+              background: radial-gradient(circle,#c57747 0%, #eaa57c 100%);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+		}
+  }
+}
+#modal-backdrop, #sidebar-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+#sidebar-backdrop {
+  @include breakpoints.respond(lg) {
+    display: none;
+  }
+}
+.hidden {display: none !important}
+.vis {display: block !important}
+#sidebarButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background-color: $primary-500;
+  color: $white;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 15px 0 rgba($primary-900, 0.2);
+  @include breakpoints.respond(lg) {
+    display: none;
+  }
+}
+.closeBtn2 {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  @include breakpoints.respond(lg) {
+    display: none;
+  }
+}
+      .modal {
+        width: 100%;
+        max-width: 500px;
+        background-color: $white;
+        position: fixed;
+        left: 50%;
+        top: 25vh;
+        transform: translateX(-50%);
+        z-index: 15;
+        border-radius: 8px;
+        padding: 12px 24px;
+        display: none;
+        .modal-close {
+          position: absolute;
+          top: 11px;
+          right: 11px;
+          font-size: 1.5rem;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+        }
+        h2 {
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 1.6rem;
+          color: $primary-500;
+        }
+        p.description {
+          font-size: 1.1rem;
+          color: $primary-600;
+          opacity: 0.6;
+          margin-left: 8px;
+        }
+        .awards {
+          display: flex;
+          flex-wrap: wrap;
+          .title-awards {
+            color: $primary-500;
+            width: 100%;
+            font-family: $title-font;
+            font-size: 1.5rem;
+          }
+          .title {
+            position: relative;
+            width: 100%;
+            margin-left: 24px;
+            color: $primary-500;
+            opacity: 0.8;
+            &::before {
+              color: $primary-400;
+              content: "\F5AF";
+              left: -18px;
+              top: -1px;
+              position: absolute;
+              font-family: "bootstrap-icons";
+            }
+          }
+          .item {
+            position: relative;
+            width: 100%;
+            margin-left: 24px;
+            color: $primary-500;
+            opacity: 0.8;
+            &::before {
+              color: $primary-400;
+              content: "\F3EB";
+              left: -18px;
+              top: -2px;
+              position: absolute;
+              font-family: "bootstrap-icons";
+            }
+          }
+        }
+      }
+.bold {
+  font-weight: bold;
+}

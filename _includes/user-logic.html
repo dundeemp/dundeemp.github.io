@@ -1,0 +1,215 @@
+{% assign user = site.data.achievements.users | where: "id", page.user_id | first %}
+<div id="sidebar-backdrop" onclick="slideOff()"></div>
+<div id="modal-backdrop"></div>
+<div class="sections">
+  <div class="main-section">
+    <div class="section-header">
+      <div class="pfp">
+        <img src="{{ user.pfp | default: 'https://imgur.com/1a4WZaq.png' }}" alt="">
+      </div>
+      <div class="userinfo">
+        <h4>{{ user.title }}</h4>
+        <h3>{{ user.name }}</h3>
+        {% assign hire_ts = user.hiredate | date: "%s" %}
+        {% assign now_ts  = "now" | date: "%s" %}
+        {% assign seconds_diff = now_ts | minus: hire_ts %}
+        {% assign days_total = seconds_diff | divided_by: 86400 %}
+        {% assign years = days_total | divided_by: 365 %}
+        {% assign days_after_years = days_total | modulo: 365 %}
+        {% assign months = days_after_years | divided_by: 30 %}
+        {% assign days = days_after_years | modulo: 30 %}
+        <p class="time">
+          Part of the team for
+          {% if years > 0 %}{{ years }} year{% if years > 1 %}s{% endif %}{% endif %}
+          {% if months > 0 %}{% if years > 0 %}, {% endif %}{{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
+          {% if days > 0 %}{% if years > 0 or months > 0 %} and {% endif %}{{ days }} day{% if days > 1 %}s{% endif %}{% endif %}.
+        </p>
+      </div>
+    </div>
+
+    <div class="filter-box">
+      <h2 class="filter-title"><i class="bi bi-funnel-fill"></i> Filters:</h2>
+      <label class="filter">
+        <input type="radio" name="type" value="all" checked>
+        <span>All</span>
+      </label>
+      <label class="filter">
+        <input type="radio" name="type" value="training">
+        <span>Training</span>
+      </label>
+      <label class="filter">
+        <input type="radio" name="type" value="feat">
+        <span>Feat</span>
+      </label>
+      <label class="filter">
+        <input type="radio" name="type" value="stack">
+        <span>Stackable</span>
+      </label>
+    </div>
+
+    <div class="achievements">
+      <div class="ach-wrapper">
+        <h2 class="ach-title">Achievements:</h2>
+        {% assign rendered_bases = "" | split: "," %}
+
+        {% for achievement in site.data.achievements.achievements %}
+
+          {% if achievement.type == "feat" %}
+            {% assign unlocked = user[achievement.id] %}
+            <div class="achievement {% if unlocked %}unlocked{% else %}locked{% endif %}" data-type="{{ achievement.type }}" data-id="{{ achievement.id }}">
+              <img src="/assets/img/badges/{{ achievement.id }}.webp" alt="{{ achievement.name }}">
+              <div class="star tier-0"><i class="bi bi-star-fill"></i></div>
+              <p>{{ achievement.name }}</p>
+            </div>
+          {% elsif achievement.type == "stack" %}
+            {% assign achievement_value = user[achievement.id] | default: 0 %}
+            {% if achievement_value < 1 %}
+              {% assign unlocked_class = "locked" %}
+            {% else %}
+              {% assign unlocked_class = "unlocked" %}
+            {% endif %}
+            <div class="achievement {{ unlocked_class }}" data-type="{{ achievement.type }}" data-id="{{ achievement.id }}">
+              <img src="/assets/img/badges/{{ achievement.id }}.webp" alt="{{ achievement.name }}">
+              <div class="star tier-0"><span class="xtimes">x {{ user[achievement.id] }}</span>&nbsp;<i class="bi bi-star-fill"></i></div>
+              <p>{{ achievement.name }}</p>
+            </div>
+          {% else %}
+            {% assign base = achievement.id | remove: "_i" | remove: "_ii" | remove: "_iii" %}
+            {% if rendered_bases contains base %}
+              {% continue %}
+            {% endif %}
+
+            {% assign tier1_id = base | append: "_i" %}
+            {% assign tier2_id = base | append: "_ii" %}
+            {% assign tier3_id = base | append: "_iii" %}
+
+            {% assign show_achievement = tier1_id %}
+            {% assign unlocked = false %}
+
+            {% if user[tier3_id] %}
+              {% assign show_achievement = tier3_id %}
+              {% assign unlocked = true %}
+            {% elsif user[tier2_id] %}
+              {% assign show_achievement = tier2_id %}
+              {% assign unlocked = true %}
+            {% elsif user[tier1_id] %}
+              {% assign unlocked = true %}
+            {% endif %}
+
+            {% for a in site.data.achievements.achievements %}
+              {% if a.id == show_achievement %}
+                {% assign tier_suffix = a.id | split: "_" | last %}
+                <div class="achievement {% if unlocked %}unlocked{% else %}locked{% endif %} tier-{{ tier_suffix }}" data-type="{{ a.type }}" data-id="{{ a.id }}">
+                  <div class="star tier-1"><i class="bi bi-star-fill"></i></div>
+                  <div class="star tier-2"><i class="bi bi-star-fill"></i></div>
+                  <div class="star tier-3"><i class="bi bi-star-fill"></i></div>
+                  <img src="/assets/img/badges/{{ base }}.webp" alt="{{ a.name }}">
+                  <p>{{ a.name }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+
+            {% assign rendered_bases = rendered_bases | push: base %}
+          {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="side-section" id="sidebar">
+    <div class="closeBtn2"><i class="bi bi-x-lg"></i></div>
+    {% assign sorted_users = site.data.achievements.users | sort: "points" | reverse %}
+    <h1>SCOREBOARD</h1>
+    <table class="leaderboard">
+      <thead>
+        <tr>
+          <th class="name">Name</th>
+          <th class="score">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in sorted_users %}
+        <tr>
+          <td class="name-entry {% if user.name == page.name %}bold{% endif %}">{{ forloop.index }}.&nbsp;<span class="username">{{ user.name }}<span class="title-entry">{{ user.title }}</span></span></td>
+          <td class="score-entry {% if forloop.index <= 1 %} first{% endif %} {% if forloop.index == 2 %} second{% endif %} {% if forloop.index == 3 %} third{% endif %}">{{ user.points }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{%- comment -%} Modal generation using data-id for consistency {%- endcomment -%}
+{% for achievement in site.data.achievements.achievements %}
+<div class="modal modal-{{ achievement.id }}">
+  <h2>{{ achievement.name }}</h2>
+  <p class="description">{{ achievement.unlock_conditions }}</p>
+  <div class="awards {% unless achievement.title or achievement.reward_items %}hidden{% endunless %}">
+    <p class="title-awards">Rewards:</p>
+    <p class="title {% unless achievement.title %}hidden{% endunless %}">{{ achievement.title }}</p>
+    <p class="item {% unless achievement.reward_items %}hidden{% endunless %}">{{ achievement.reward_items }}</p>
+  </div>
+</div>
+{% endfor %}
+
+<button type="button" id="sidebarButton" onclick="slideOff()"><i class="bi bi-trophy-fill"></i></button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const backdrop = document.getElementById('modal-backdrop');
+  const achievements = document.querySelectorAll('.achievement');
+  const modals = document.querySelectorAll('.modal');
+
+  function showModal(modal) {
+    modal.style.display = 'block';
+    backdrop.style.display = 'block';
+  }
+
+  function hideModals() {
+    modals.forEach(m => m.style.display = 'none');
+    backdrop.style.display = 'none';
+  }
+
+  // Open modal on click
+  achievements.forEach(ach => {
+    ach.addEventListener('click', function() {
+      const achId = ach.getAttribute('data-id');
+      const modal = document.querySelector('.modal-' + achId);
+      if (modal) showModal(modal);
+    });
+  });
+
+  backdrop.addEventListener('click', hideModals);
+
+  // Close buttons for modals
+  modals.forEach(modal => {
+    const closeBtn = document.createElement('button');
+    closeBtn.classList.add("modal-close");
+    modal.appendChild(closeBtn);
+    const closeIcon = document.createElement('i');
+    closeIcon.className = "bi bi-x";
+    closeBtn.appendChild(closeIcon);
+    closeBtn.addEventListener('click', hideModals);
+  });
+
+  // Filtering achievements
+  const filterRadios = document.querySelectorAll('.filter-box input[name="type"]');
+  filterRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+      const selectedType = this.value;
+      achievements.forEach(ach => {
+        const achType = ach.getAttribute('data-type');
+        ach.style.display = (selectedType === 'all' || achType === selectedType) ? 'flex' : 'none';
+      });
+    });
+  });
+});
+
+function slideOff() {
+  const sidebar = document.getElementById("sidebar");
+  const backdrop = document.getElementById("sidebar-backdrop");
+  sidebar.classList.toggle("onView");
+  backdrop.classList.toggle("vis");
+}
+</script>
