@@ -133,7 +133,11 @@
       <tbody>
         {% for user in sorted_users %}
         <tr>
-          <td class="name-entry {% if user.name == page.name %}bold{% endif %}">{{ forloop.index }}.&nbsp;<span class="username">{{ user.name }}<span class="title-entry">{{ user.title }}</span></span></td>
+          {% if user.title %}
+            <td class="name-entry {% if page.slug == user.id %}bold{% endif %}">{{ forloop.index }}.&nbsp;<span class="username">{{ user.name }}<span class="title-entry">{{ user.title }}</span></span></td>
+          {% else %}
+            <td class="name-entry {% if page.slug == user.id %}bold{% endif %} no-title">{{ forloop.index }}.&nbsp;<span class="username">{{ user.name }}</span></td>
+          {% endif %}
           <td class="score-entry {% if forloop.index <= 1 %} first{% endif %} {% if forloop.index == 2 %} second{% endif %} {% if forloop.index == 3 %} third{% endif %}">{{ user.points }}</td>
         </tr>
         {% endfor %}

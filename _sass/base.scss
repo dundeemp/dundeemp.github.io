@@ -518,7 +518,7 @@ body {
             font-size: 1.1rem;
             text-align: left;
             color: $primary-600;
-            font-weight: 500;
+            font-weight: 400;
             padding-top: 14px;
             padding-bottom: 4px;
             padding-left: 8px;
@@ -537,6 +537,9 @@ body {
                 text-transform: uppercase;
                 color: $primary-400;
               }
+            }
+            &.no-title {
+              padding-top: 4px;
             }
           }
           .score-entry {
@@ -706,5 +709,5 @@ body {
         }
       }
 .bold {
-  font-weight: bold;
+  font-weight: 550 !important;
 }
