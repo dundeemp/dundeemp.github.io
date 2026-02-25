@@ -254,6 +254,7 @@ body {
       border-radius: 8px;
       padding: 8px;
       display: flex;
+      user-select: none;
       @include respond(lg) {
         padding: 8px 16px;
         margin-top: 16px;

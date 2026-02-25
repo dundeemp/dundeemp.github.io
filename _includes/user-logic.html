@@ -19,10 +19,14 @@
         {% assign months = days_after_years | divided_by: 30 %}
         {% assign days = days_after_years | modulo: 30 %}
         <p class="time">
-          Part of the team for
-          {% if years > 0 %}{{ years }} year{% if years > 1 %}s{% endif %}{% endif %}
-          {% if months > 0 %}{% if years > 0 %}, {% endif %}{{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
-          {% if days > 0 %}{% if years > 0 or months > 0 %} and {% endif %}{{ days }} day{% if days > 1 %}s{% endif %}{% endif %}.
+          {% if user.hiredate %}
+            Part of the team for
+            {% if years > 0 %}{{ years }} year{% if years > 1 %}s{% endif %}{% endif %}
+            {% if months > 0 %}{% if years > 0 %}, {% endif %}{{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
+            {% if days > 0 %}{% if years > 0 or months > 0 %} and {% endif %}{{ days }} day{% if days > 1 %}s{% endif %}{% endif %}.
+          {% else %}
+            &nbsp;
+          {% endif %}
         </p>
       </div>
     </div>
