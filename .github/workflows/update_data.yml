@@ -11,23 +11,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout repo with proper token
+      # 1. Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true  # allows git push
 
-      # 2. Fetch JSON from Google Sheets (follows redirects)
+      # 2. Fetch JSON from Google Sheets
       - name: Fetch JSON from Google Sheets
         run: |
           curl -sL -H "Accept: application/json" -o _data/achievements.json "https://script.google.com/macros/s/AKfycbwEahba-ujQbv3_LsGf4aFKd79JpGq5fNgu7csd03LwbY37KIjvPN9ZWLqJjIYPTzAqrA/exec"
 
-      # 3. Commit only if file changed
+      # 3. Generate _user HTML files
+      - name: Generate user files
+        run: |
+          mkdir -p _user
+          cat _data/achievements.json | jq -c '.users[]' | while read user; do
+            USER_ID=$(echo "$user" | jq -r '.id')
+            FILE_PATH="_user/${USER_ID}.html"
+            echo "---" > "$FILE_PATH"
+            echo "layout: user" >> "$FILE_PATH"
+            echo "---" >> "$FILE_PATH"
+          done
+
+      # 4. Commit only if files changed
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add _data/achievements.json
-          git diff --cached --quiet || git commit -m "Update _data from Google Sheets $(date +'%Y-%m-%d %H:%M:%S') [skip ci]"
+          git add _data/achievements.json _user/*.html
+          git diff --cached --quiet || git commit -m "Update _data and user files $(date +'%Y-%m-%d %H:%M:%S') [skip ci]"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
