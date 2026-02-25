@@ -1,4 +1,4 @@
-{% assign user = site.data.achievements.users | where: "id", page.user_id | first %}
+{% assign user = site.data.achievements.users | where: "id", page.slug | first %}
 <div id="sidebar-backdrop" onclick="slideOff()"></div>
 <div id="modal-backdrop"></div>
 <div class="sections">
@@ -119,11 +119,8 @@
 
   <div class="side-section" id="sidebar">
     <div class="closeBtn2"><i class="bi bi-x-lg"></i></div>
-    {% assign sorted_users = site.data.achievements.users | default: nil %}
-    {% if users%}
-      {% assign sorted_users = users | sort: "points" | reverse %}
-    {% else %}
-      {% assign sorted_users = "" | split: "," %}
+    {% if site.data.achievements.users %}
+      {% assign sorted_users = site.data.achievements.users | sort: "points" | reverse %}
     {% endif %}
     <h1>SCOREBOARD</h1>
     <table class="leaderboard">
