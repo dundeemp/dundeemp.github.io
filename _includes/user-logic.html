@@ -138,7 +138,7 @@
   </div>
 
   <div class="side-section" id="sidebar">
-    <div class="closeBtn2"><i class="bi bi-x-lg"></i></div>
+    <div class="closeBtn2" onClick="slideOff()"><i class="bi bi-x-lg"></i></div>
     {% if site.data.achievements.users %}
       {% assign sorted_users = site.data.achievements.users | sort: "points" | reverse %}
     {% endif %}
