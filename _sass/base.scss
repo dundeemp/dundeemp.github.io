@@ -32,7 +32,30 @@ body {
   background-color: $white;
   font-family: $text-font;
 }
-
+.return {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 8px;
+  justify-content: center;
+  .link {
+    background-color: $primary-500;
+    font-size: 1.5rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: $white;
+    font-family: $title-font;
+    letter-spacing: 0.15rem;
+    transition: 0.2s ease-in-out;
+    &:hover, &:active {
+      background-color: $primary-400;
+    }
+  }
+}
 .header {
   width: 100%;
   margin-top: 86px;
@@ -54,6 +77,14 @@ body {
     letter-spacing: 0.1rem;
     color: $gray-100;
     margin-top: -24px;
+  }
+  h3 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-family: $text-font;
+    letter-spacing: 0.1rem;
+    color: $gray-100;
+    font-weight: 400;
   }
 }
 .not-found-page {
@@ -88,6 +119,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .signin {
     background-color: $gray-200;
     border-radius: 12px;
@@ -98,10 +130,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 32px 24px;
+    padding: 32px 24px 16px 24px;
     @include respond(sm) {
       max-width: 500px;
-      padding: 64px 48px;
+      padding: 64px 48px 32px 48px;
+    }
+    .shoplink {
+      justify-content: center;
+      text-align: center;
+      margin-top: 32px;
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      text-decoration: none;
+      color: $primary-500;
     }
     h3 {
       color: $primary-900;
@@ -172,7 +214,8 @@ body {
 
 .sections {
   width: 100%;
-  min-height: 100vh;
+  margin-top: 72px;
+  min-height: calc(100vh - 72px);
   display: flex;
   position: relative;
   .main-section {
@@ -512,7 +555,40 @@ body {
           width: inherit;
           display: inherit;
           flex-wrap: wrap;
+          position: relative;
           &:nth-child(even) {background-color: darken($gray-100, 3%)}
+          .img {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            aspect-ratio: 1 / 1;
+            border-radius: 2000px;
+            overflow: hidden;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 32px;
+            img {
+              width: 100%;
+              height: 100%;
+              transform: scale(1.05);
+            }
+          }
+          .img.title {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            aspect-ratio: 1 / 1;
+            border-radius: 2000px;
+            overflow: hidden;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 32px;
+            img {
+              width: 100%;
+              height: 100%;
+              transform: scale(1.05);
+            }
+          }
           .name-entry {
             width: 70%;
             display: inherit;
@@ -522,16 +598,30 @@ body {
             font-weight: 400;
             padding-top: 14px;
             padding-bottom: 4px;
-            padding-left: 8px;
+            .index {
+              width: 26px;
+              text-align: right;
+              padding: 0;
+              margin: 0;
+            }
+            .index.title {
+              width: 26px;
+              text-align: right;
+              padding: 0;
+              margin: 0;
+              transform: translateY(-4px);
+            }
             .username {
               width: inherit;
               display: inherit;
               position: relative;
+              padding-left: 32px;
+              text-wrap: nowrap;
               .title-entry {
                 width: 100%;
                 display: block;
                 position: absolute;
-                left: 8px;
+                left: 40px;
                 top: -10px;
                 font-size: 0.7rem;
                 font-weight: 400;
@@ -711,4 +801,236 @@ body {
       }
 .bold {
   font-weight: 550 !important;
+}
+
+.shop {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  .desc {
+    opacity: 0.7;
+    width: 100%;
+    text-align: center;
+  }
+}
+  .shop-main {
+    width: calc(100% - 8px);
+    height: 100%;
+    @include respond(lg) {
+      width: 70%;
+    }
+    .shop-search {
+      width: 100%;
+      height: 44px;
+      margin: 16px auto;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      input {
+        background-color: $gray-200;
+        border-radius: 4px;
+        width: calc(100% - 88px);
+        height: 44px;
+        border: 1px solid $gray-400;
+        padding: 0px 8px;
+        @include respond(lg) {
+          width: 440px;
+        }
+      }
+      #sortName, #sortPrice {
+        background-color: $primary-400;
+        width: 44px;
+        height: 44px;
+        border-radius: 4px;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        color: $white;
+        transition: 0.2s ease-in-out;
+        &:hover, &:active {
+          background-color: $primary-500;
+        }
+      }
+    }
+    .shop-content {
+      background-color: $gray-200;
+      border-radius: 4px;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: start;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px;
+      @include respond(lg) {
+        padding: 24px 16px;
+      }
+      .product {
+        width: 45%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        background-color: $white;
+        outline: 1px solid $primary-400;
+        border-radius: 6px;
+        display: flex;
+        align-items: start;
+        align-content: start;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        small {
+          font-size: 0.6rem;
+          position: absolute;
+          right: 2px;
+          top: 0;
+          color: $primary-500;
+          opacity: 0.4;
+          z-index: 5;
+        }
+        @include respond(sm) {
+          width: 30%;
+        }
+        @include respond(lg) {
+          aspect-ratio: unset;
+          width: 200px;
+          height: 200px;
+        }
+        &::after {
+          content: "";
+          width: 100%;
+          height: 32px;
+          background-color: lighten($primary-500, 7%);
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          box-shadow: 0px 0px 4px 0px rgba($black, 0.1);
+        }
+        .image {
+          margin-top: 8px;
+          max-width: 75%;
+          height: 40%;
+          z-index: 2;
+          @include respond(lg) {
+            max-width: 75%;
+            height: 58%;
+          }
+          img {height: 100%}
+        }
+        h2 {
+          margin-top: 4px;
+          padding: 0 8px;
+          line-height: 1.1rem;
+          height: fit-content;
+          font-size: 1.1rem;
+          display: -webkit-box;
+          line-clamp: 2;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-align: center;
+          width: 100%;
+          color: $primary-800;
+          z-index: 2;
+        }
+        .price {
+          z-index: 2;
+          position: absolute;
+          bottom: -7px;
+          left: 50%;
+          transform: translate(-50%);
+          font-size: 1.25rem;
+          font-family: $marker-font;
+          color: $gray-100;
+          display: flex;
+          align-items: center;
+          p {
+            margin-right: 4px;
+          }
+          svg {
+            margin-top: 14px;
+            fill: $primary-200;
+            opacity: 0.8;
+            transform: rotate(12deg);
+          }
+        }
+      }
+    }
+  }
+.questions {
+  width: calc(100% - 8px);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  @include respond(sm) {
+    width: 80%;
+  }
+  @include respond(sm) {
+    width: 65%;
+  }
+  @include respond(lg) {
+    width: 50%;
+  }
+  .dialog {
+    width: 100%;
+    background-color: $primary-500;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 16px;
+    position: relative;
+    &.open {
+      .question::after {transform: rotate(-180deg)}
+      .answer {padding: 8px 8px 16px 24px}
+    }
+    .question {
+      position: relative;
+      color: $gray-100;
+      padding: 4px 32px 4px 8px;
+      font-size: 1rem;
+      @include respond(lg) {
+        font-size: 1.5rem;
+      }
+      cursor: pointer;
+      &::after {
+        content: "\F229";
+        font-family: "bootstrap-icons";
+        position: absolute;
+        top: 10%;
+        right: 12px;
+        transition: transform 0.5s ease;
+      }
+    }
+    .answer {
+      padding: 0 8px 0 24px;
+      background-color: $gray-200;
+      border-radius: 0px 0px 4px 4px;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.35s ease;
+      box-sizing: border-box;
+      .pl {margin-left: 8px}
+      p {color: $primary-800; opacity: 0.75}
+      img {outline: 1px solid $primary-200}
+      a {color: $primary-500}
+    }
+  }
+}
+
+.debug {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 800px;
+  height: 800px;
+  background-color: white;
+  color: black;
+  z-index: 100000;
 }

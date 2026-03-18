@@ -1,0 +1,111 @@
+---
+layout: default
+---
+<div class="header">
+    <h1>How To Use The Portal</h1>
+</div>
+<div class="questions">
+    <div class="dialog">
+        <h2 class="question">How do I access my profile?</h2>
+        <div class="answer">
+            <p>Go to the <a href="/">Homepage</a> and enter your employee ID number (last 4 digits of your phone number).</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">I can't access the Portal!</h2>
+        <div class="answer">
+            <p>Let Pablo know and we'll figure out why.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">How do I add or change my profile picture?</h2>
+        <div class="answer">
+            <p>You can simply set a profile picture on the Slack App, then let Pablo know.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">What are the points in the scoreboard?</h2>
+        <div class="answer">
+            <p>Points are a way to showcase Team Members. Points are awarded when an achievement is completed.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">What are the different types of achievements?</h2>
+        <div class="answer">
+            <p>There are 3 types of achievements:</p>
+            <p class="pl"><b>Training</b>: this type have tiers that can be expanded as you progress. Each tier can only be completed once.</p>
+            <p class="pl"><b>Feat</b>: this type can only be completed once, they serve as special milestones.</p>
+            <p class="pl"><b>Stackable</b>: this type can be achieved multiple times. Each time it is completed, it will reflect the number of times it has.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">How do I see what I can get from completing an achievement?</h2>
+        <div class="answer">
+            <p>Simply click on the achievement for a dialog box to pop up.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">How do I unlock achievements?</h2>
+        <div class="answer">
+            <p>Complete the requirements for the achievement, then let a Trainer know.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">What is a title?</h2>
+        <div class="answer">
+            <p>A title is a cosmetic name you can display over your name in the Team Member scoreboard.</p>
+            <p>This is an example of how it would look:</p>
+            <img class="pl" src="/assets/img/howto/titles.webp" alt="">
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">How do I select a title?</h2>
+        <div class="answer">
+            <p>Once you unlock a title, let a Trainer or Manager know that you'd like to use it. You may request a title change once a month.</p>
+            <p>Your selected title will display next to your name on the scoreboard.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">What do the different training tiers mean?</h2>
+        <div class="answer">
+            <p>These are the different tiers for training based achievements:</p>
+            <p class="pl"><i class="bi bi-star-fill"></i> usually means you started working the station, you can handle the basics.</p>
+            <p class="pl"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> usually means you can be left alone in the station with minimal coaching.</p>
+            <p class="pl"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> usually means you can be left alone in the station and perform your duties during peak times.</p>
+            <p>For the last tier, a Trainer has to go through a checklist with you during a shift, and it must be pre-approved by the person in charge.</p>
+        </div>
+    </div>
+    <div class="dialog">
+        <h2 class="question">How do I use my Blue Bucks?</h2>
+        <div class="answer">
+            <p>Visit the <a href="/shop.html">shop</a> and find the item you want, then let a Trainer know.</p>
+            <p>Rewards will most likely be ordered monthly.</p>
+        </div>
+    </div>
+</div>
+<script>
+document.querySelectorAll(".dialog .question").forEach(q => {
+    q.addEventListener("click", () => {
+        const dialog = q.parentElement;
+        const answer = dialog.querySelector(".answer");
+        const isOpening = !dialog.classList.contains("open");
+
+        document.querySelectorAll(".dialog").forEach(d => {
+            if (d !== dialog) {
+                d.classList.remove("open");
+                d.querySelector(".answer").style.maxHeight = null;
+            }
+        });
+
+        dialog.classList.toggle("open");
+
+        if (isOpening) {
+            requestAnimationFrame(() => {
+                answer.style.maxHeight = (answer.scrollHeight + 16) + "px";
+            });
+        } else {
+            answer.style.maxHeight = null;
+        }
+    });
+});
+</script>

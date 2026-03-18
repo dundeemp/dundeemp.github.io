@@ -1,33 +1,49 @@
-{% assign user = site.data.achievements.users | where: "id", page.slug | first %}
+{% assign user = site.data.achievements.users | where_exp: "u", "u.id == page.slug" | first %}
 <div id="sidebar-backdrop" onclick="slideOff()"></div>
 <div id="modal-backdrop"></div>
 <div class="sections">
   <div class="main-section">
     <div class="section-header">
       <div class="pfp">
-        <img src="{{ user.pfp | default: 'https://imgur.com/1a4WZaq.png' }}" alt="">
+        {% if user.pfp %}
+          <img src="{{ user.pfp}}" alt="">
+          {% else %}
+          <img src="https://imgur.com/1a4WZaq.png" alt="">
+        {% endif %}
       </div>
       <div class="userinfo">
-        <h4>{{ user.title }}</h4>
-        <h3>{{ user.name }}</h3>
-        {% assign hire_ts = user.hiredate | date: "%s" %}
-        {% assign now_ts  = "now" | date: "%s" %}
-        {% assign seconds_diff = now_ts | minus: hire_ts %}
-        {% assign days_total = seconds_diff | divided_by: 86400 %}
-        {% assign years = days_total | divided_by: 365 %}
-        {% assign days_after_years = days_total | modulo: 365 %}
-        {% assign months = days_after_years | divided_by: 30 %}
-        {% assign days = days_after_years | modulo: 30 %}
-        <p class="time">
-          {% if user.hiredate %}
-            Part of the team for
-            {% if years > 0 %}{{ years }} year{% if years > 1 %}s{% endif %}{% endif %}
-            {% if months > 0 %}{% if years > 0 %}, {% endif %}{{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
-            {% if days > 0 %}{% if years > 0 or months > 0 %} and {% endif %}{{ days }} day{% if days > 1 %}s{% endif %}{% endif %}.
+        {% if user.title %}
+          <h4>{{ user.title }}</h4>
           {% else %}
-            &nbsp;
-          {% endif %}
-        </p>
+          <h4>&nbsp;</h4>
+        {% endif %}
+        {% if user.name %}
+          <h3>{{ user.name }}</h3>
+          {% else %}
+          <h3>USER NOT FOUND</h3>
+        {% endif %}
+        {% if user.hiredate %}
+          {% assign hire_ts = user.hiredate | date: "%s" %}
+          {% assign now_ts  = "now" | date: "%s" %}
+          {% assign seconds_diff = now_ts | minus: hire_ts %}
+          {% assign days_total = seconds_diff | divided_by: 86400 %}
+          {% assign years = days_total | divided_by: 365 %}
+          {% assign days_after_years = days_total | modulo: 365 %}
+          {% assign months = days_after_years | divided_by: 30 %}
+          {% assign days = days_after_years | modulo: 30 %}
+          <p class="time">
+            {% if user.hiredate %}
+              Part of the team for
+              {% if years > 0 %}{{ years }} year{% if years > 1 %}s{% endif %}{% endif %}
+              {% if months > 0 %}{% if years > 0 %}, {% endif %}{{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
+              {% if days > 0 %}{% if years > 0 or months > 0 %} and {% endif %}{{ days }} day{% if days > 1 %}s{% endif %}{% endif %}.
+            {% else %}
+              &nbsp;
+            {% endif %}
+          </p>
+          {% else %}
+          <p class="time">&nbsp;</p>
+        {% endif %}
       </div>
     </div>
 
@@ -135,14 +151,16 @@
         </tr>
       </thead>
       <tbody>
-        {% for user in sorted_users %}
+        {% for userScore in sorted_users %}
         <tr>
-          {% if user.title %}
-            <td class="name-entry {% if page.slug == user.id %}bold{% endif %}">{{ forloop.index }}.&nbsp;<span class="username">{{ user.name }}<span class="title-entry">{{ user.title }}</span></span></td>
+          {% if userScore.title %}
+            <td class="img title"><img src="{{ userScore.pfp | default: 'https://imgur.com/1a4WZaq.png' }}" alt=""></td>
+            <td class="name-entry {% if page.slug == userScore.id %}bold{% endif %}"><p class="index title">{{ forloop.index }}</p>&nbsp;&nbsp;<span class="username">{{ userScore.name }}<span class="title-entry">{{ userScore.title }}</span></span></td>
           {% else %}
-            <td class="name-entry {% if page.slug == user.id %}bold{% endif %} no-title">{{ forloop.index }}.&nbsp;<span class="username">{{ user.name }}</span></td>
+            <td class="img"><img src="{{ userScore.pfp | default: 'https://imgur.com/1a4WZaq.png' }}" alt=""></td>
+            <td class="name-entry {% if page.slug == userScore.id %}bold{% endif %} no-title"><p class="index">{{ forloop.index }}</p>&nbsp;&nbsp;<span class="username">{{ userScore.name }}</span></td>
           {% endif %}
-          <td class="score-entry {% if forloop.index <= 1 %} first{% endif %} {% if forloop.index == 2 %} second{% endif %} {% if forloop.index == 3 %} third{% endif %}">{{ user.points }}</td>
+          <td class="score-entry {% if forloop.index <= 1 %} first{% endif %} {% if forloop.index == 2 %} second{% endif %} {% if forloop.index == 3 %} third{% endif %}">{{ userScore.points }}</td>
         </tr>
         {% endfor %}
       </tbody>

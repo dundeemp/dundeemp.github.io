@@ -1,0 +1,466 @@
+[
+  {
+    "sku": "074",
+    "name": "Culver's Blue Scrunchie",
+    "price": 6,
+    "usd": 5.75,
+    "picture": "/assets/img/products/2_45738_61672_Culvers2026NylonScrunchie.png",
+    "tag": "Apparel Hair"
+  },
+  {
+    "sku": "473",
+    "name": "Culver's Large Dog Bandana",
+    "price": 7,
+    "usd": 6.75,
+    "picture": "/assets/img/products/2_45449_61169_Culvers2026DogBandana.png",
+    "tag": "Pets"
+  },
+  {
+    "sku": "463",
+    "name": "Culver's Small Cat Collar",
+    "price": 7,
+    "usd": 6.75,
+    "picture": "/assets/img/products/2_46466_62739_CatCollar.png",
+    "tag": "Pets"
+  },
+  {
+    "sku": "423",
+    "name": "Culver's TYFP Therm-O-Tote Bag",
+    "price": 7,
+    "usd": 7,
+    "picture": "/assets/img/products/2_46313_62557_TYFPTote.png",
+    "tag": "Bags"
+  },
+  {
+    "sku": "531",
+    "name": "Culver's AeroLOFT® Anywhere Belt Bag in Pink",
+    "price": 9,
+    "usd": 8.6,
+    "picture": "/assets/img/products/2_46401_62645_CulversAeroLOFTAnywhereBeltBag.png",
+    "tag": "Bags"
+  },
+  {
+    "sku": "522A",
+    "name": "Culver's Blue Dual Toned Straw 40 oz. Tumbler",
+    "price": 9,
+    "usd": 8.95,
+    "picture": "/assets/img/products/2_45737_61671_Culvers40ozPolarStrawTumbler.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "511",
+    "name": "Culver's Woden Ceramic Mug",
+    "price": 13,
+    "usd": 12.5,
+    "picture": "/assets/img/products/2_45724_61658_CulversWodenMugSide1copy.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "335",
+    "name": "Culver's Crinkle-Cut Fry Scarf",
+    "price": 13,
+    "usd": 13,
+    "picture": "/assets/img/products/2_46053_62232_335.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "517",
+    "name": "Culver's Darien Deep Etched Blue Mug",
+    "price": 14,
+    "usd": 14,
+    "picture": "/assets/img/products/2_46054_62233_CulversDarienMug.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "410",
+    "name": "Culver's Custard Chew Toy",
+    "price": 17,
+    "usd": 16.5,
+    "picture": "/assets/img/products/2_45451_61171_CulversPlushToyCustard1.png",
+    "tag": "Pets"
+  },
+  {
+    "sku": "411",
+    "name": "Culver's Blue Spoon Chew Toy",
+    "price": 17,
+    "usd": 16.5,
+    "picture": "/assets/img/products/2_45452_61172_Culvers2026BlueSpoonChewToy.png",
+    "tag": "Pets"
+  },
+  {
+    "sku": "569",
+    "name": "Culver's Recycled Canvas Tote Bag",
+    "price": 17,
+    "usd": 17,
+    "picture": "/assets/img/products/2_46464_62737_Culvers14ozRecycledCanvasTote.png",
+    "tag": "Bags"
+  },
+  {
+    "sku": "571",
+    "name": "Culver's The Slim Power Bank (2000mAh)",
+    "price": 24,
+    "usd": 23.3,
+    "picture": "/assets/img/products/2_45521_61281_CulversTheSlimWirelessPowerBank.png",
+    "tag": "Technology"
+  },
+  {
+    "sku": "223",
+    "name": "Culver's Cow Bestie Bottle",
+    "price": 29,
+    "usd": 28.75,
+    "picture": "/assets/img/products/2_45722_61656_CulversAsobuCowBestieBottlecopy.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "407",
+    "name": "Culver's Pro-Weave Sweatshirt Blanket in Arctic Blue",
+    "price": 35,
+    "usd": 35,
+    "picture": "/assets/img/products/2_45522_61282_Culvers2026SweatshirtBlanketRolledcopy.png",
+    "tag": "Misc"
+  },
+  {
+    "sku": "500",
+    "name": "Culver's Full Color Best Coolie",
+    "price": 2,
+    "usd": 1.5,
+    "picture": "/assets/img/products/2_297_369_500_HR.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "450",
+    "name": "Culver's Playing Cards",
+    "price": 5,
+    "usd": 4.75,
+    "picture": "/assets/img/products/2_230_262_450c.png",
+    "tag": "Toys"
+  },
+  {
+    "sku": "505",
+    "name": "Culver's Lagom 16oz Black Tumbler w/ Stainless Steel Straw",
+    "price": 9,
+    "usd": 8.5,
+    "picture": "/assets/img/products/2_309_390_505_HR.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "535",
+    "name": "Culver's Black Zipper Binder Padded Portfolio",
+    "price": 19,
+    "usd": 19,
+    "picture": "/assets/img/products/2_384_515_535_HR.png",
+    "tag": "Misc"
+  },
+  {
+    "sku": "230",
+    "name": "Fresh Like Custard Navy Onesie",
+    "price": 11,
+    "usd": 11,
+    "picture": "/assets/img/products/2_3924_7047_230_HR.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "207",
+    "name": "Culver's Custom Baby Beanie",
+    "price": 4,
+    "usd": 4,
+    "picture": "/assets/img/products/2_30808_42079_207.png",
+    "tag": "Apparel Hat"
+  },
+  {
+    "sku": "209",
+    "name": "Culver's Single Pom Baby Beanie w/Patch",
+    "price": 4,
+    "usd": 4,
+    "picture": "/assets/img/products/2_45444_61164_209BabyBeanie.png",
+    "tag": "Apparel Hat"
+  },
+  {
+    "sku": "206",
+    "name": "Culver's Blue Silicone Baby Bib",
+    "price": 6,
+    "usd": 5.4,
+    "picture": "/assets/img/products/2_46318_62562_Culvers2026BabyBib.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "226",
+    "name": "Culver's Infant Jersey Dress in Heather",
+    "price": 12,
+    "usd": 11.5,
+    "picture": "/assets/img/products/2_33627_45166_226.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "234",
+    "name": "Culver's Youth Royal T-Shirt",
+    "price": 9,
+    "usd": 9,
+    "picture": "/assets/img/products/2_33530_45004_234.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "222",
+    "name": "Culver's Long Sleeve Onesie",
+    "price": 13,
+    "usd": 13,
+    "picture": "/assets/img/products/2_33637_45184_222.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "201",
+    "name": "Culver's Rabbit Skins Toddler Royal Blue Fleece Sweatshirt",
+    "price": 14,
+    "usd": 14,
+    "picture": "/assets/img/products/2_24857_34391_toddlerroyalcrew.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "232",
+    "name": "Culver's Youth Long Sleeve Shirt in Heather Teal",
+    "price": 15,
+    "usd": 14.5,
+    "picture": "/assets/img/products/2_33886_45977_232.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "892Y",
+    "name": "Youth Curd Nerd Hoodie",
+    "price": 35,
+    "usd": 35,
+    "picture": "/assets/img/products/2_3003_5302_892Y_HR.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "556",
+    "name": "Culver's Boxanne Bluetooth Wireless Speaker",
+    "price": 29,
+    "usd": 29,
+    "picture": "/assets/img/products/2_446_623_556_HR.png",
+    "tag": "Technology"
+  },
+  {
+    "sku": "526",
+    "name": "Culver's Yeti 20oz Navy Rambler",
+    "price": 50,
+    "usd": 50,
+    "picture": "/assets/img/products/2_373_494_526_HR.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "515",
+    "name": "Culver's 30 oz. Stanley IceFlow Flip Straw Tumbler in Azure",
+    "price": 53,
+    "usd": 52.55,
+    "picture": "/assets/img/products/2_45727_61661_CulversStanleyIceFlow30ozStrawTumbler.png",
+    "tag": "Drinks"
+  },
+  {
+    "sku": "540",
+    "name": "Culver's Port Authority Backpack Grey Heather",
+    "price": 32,
+    "usd": 32,
+    "picture": "/assets/img/products/2_3042_5374_540_HR.png",
+    "tag": "Bags"
+  },
+  {
+    "sku": "510",
+    "name": "Curd Nerd Drawstring Bag",
+    "price": 7,
+    "usd": 7,
+    "picture": "/assets/img/products/2_312_393_510_HR.png",
+    "tag": "Bags"
+  },
+  {
+    "sku": "501",
+    "name": "Culver's Royal Cotton 1/2\" Lanyard",
+    "price": 2,
+    "usd": 2,
+    "picture": "/assets/img/products/2_298_370_501_HR.png",
+    "tag": "Misc"
+  },
+  {
+    "sku": "560",
+    "name": "Culver's Carhartt Canvas Backpack in Navy",
+    "price": 48,
+    "usd": 47.5,
+    "picture": "/assets/img/products/2_33494_44930_backpack.png",
+    "tag": "Bags"
+  },
+  {
+    "sku": "481",
+    "name": "Culver's Blue Fuzzy Dice",
+    "price": 9,
+    "usd": 9,
+    "picture": "/assets/img/products/2_272_316_481_HR.png",
+    "tag": "Toys Car"
+  },
+  {
+    "sku": "057",
+    "name": "Custard To-Go Cooler",
+    "price": 5,
+    "usd": 5,
+    "picture": "/assets/img/products/2_16_17_057.png",
+    "tag": "Bags"
+  },
+  {
+    "sku": "455",
+    "name": "Culver's Classic Blue Cowbell",
+    "price": 2,
+    "usd": 1.5,
+    "picture": "/assets/img/products/2_24353_33588_Cowbell.png",
+    "tag": "Toys"
+  },
+  {
+    "sku": "103",
+    "name": "Culver's Food, Family, Future T-shirt Black",
+    "price": 17,
+    "usd": 17,
+    "picture": "/assets/img/products/2_4680_8385_103_HR.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "322",
+    "name": "Culver's Curd Nerd Beanie with Pom",
+    "price": 13,
+    "usd": 12.5,
+    "picture": "/assets/img/products/2_166_168_322_HR.png",
+    "tag": "Apparel"
+  },
+  {
+    "sku": "439",
+    "name": "Culver's ButterBurger Catnip Toy",
+    "price": 12,
+    "usd": 11.5,
+    "picture": "/assets/img/products/2_33435_44871_439ButterBurgerCatnipToy.png",
+    "tag": "Pets"
+  },
+  {
+    "sku": "413",
+    "name": "Culver’s Fries Dog Toy",
+    "price": 17,
+    "usd": 16.5,
+    "picture": "/assets/img/products/2_4396_7894_CulversFriesDogToy.png",
+    "tag": "Pets"
+  },
+  {
+    "sku": "435",
+    "name": "Culver's Custard Cone Catnip Toy",
+    "price": 12,
+    "usd": 11.5,
+    "picture": "/assets/img/products/2_33434_44870_435CustardCatnipToy.png",
+    "tag": "Pets"
+  },
+  {
+    "sku": "326",
+    "name": "Culver's Crinkle-Cut Fry Beanie",
+    "price": 12,
+    "usd": 12,
+    "picture": "/assets/img/products/2_46052_62231_326.png",
+    "tag": "Apparel Hat"
+  },
+  {
+    "sku": "K045-K040",
+    "name": "Curdis or Goldie 14\" Plushie",
+    "price": 23,
+    "usd": 23,
+    "picture": "/assets/img/products/plushies14inch.png",
+    "tag": "Plush Toy"
+  },
+  {
+    "sku": "K035-K030",
+    "name": "Curdis or Goldie 24\" Plushie",
+    "price": 41,
+    "usd": 41,
+    "picture": "/assets/img/products/plushies24inch.png",
+    "tag": "Plush Toy"
+  },
+  {
+    "sku": "839",
+    "name": "Culvers Lapel Pin",
+    "price": 2,
+    "usd": 1.75,
+    "picture": "/assets/img/products/2_2969_5240_CULVERPIN.png",
+    "tag": "Pin"
+  },
+  {
+    "sku": "820",
+    "name": "Culver's Hospitality with Heart Lapel Pin",
+    "price": 3,
+    "usd": 2.75,
+    "picture": "/assets/img/products/2_35302_47849_9903.png",
+    "tag": "Pin"
+  },
+  {
+    "sku": "502",
+    "name": "Culver's Silver and Black Key Chain",
+    "price": 3,
+    "usd": 2.5,
+    "picture": "/assets/img/products/2_299_371_502_HR.png",
+    "tag": "Keychain Car"
+  },
+  {
+    "sku": "504",
+    "name": "Culver's 20 oz Bike Bottle",
+    "price": 2,
+    "usd": 2,
+    "picture": "/assets/img/products/2_300_372_504_HR.png",
+    "tag": "Bottle"
+  },
+  {
+    "sku": "K025-K020-K080-K052",
+    "name": "Small Turle, Scoopie, Curdis, or Goldie Plush",
+    "price": 6,
+    "usd": 5.45,
+    "picture": "/assets/img/products/smallplushchoice.png",
+    "tag": "Plush Toy"
+  },
+  {
+    "sku": "482",
+    "name": "Culver's Flexible Keychain",
+    "price": 9,
+    "usd": 9,
+    "picture": "/assets/img/products/keychainschoice.png",
+    "tag": "Keychain"
+  },
+  {
+    "sku": "812",
+    "name": "Curdis Lapel Pin",
+    "price": 4,
+    "usd": 3.5,
+    "picture": "/assets/img/products/2_2967_5238_812.png",
+    "tag": "Pin"
+  },
+  {
+    "sku": "810",
+    "name": "Scoopie Lapel Pin",
+    "price": 6,
+    "usd": 5.3,
+    "picture": "/assets/img/products/2_2966_5237_810.png",
+    "tag": "Pin"
+  },
+  {
+    "sku": "422",
+    "name": "Culver's Reusable Shopping Bag",
+    "price": 4,
+    "usd": 3.25,
+    "picture": "/assets/img/products/2_218_250_422_HR.png",
+    "tag": "Bag"
+  },
+  {
+    "sku": "817S-817C",
+    "name": "Curdis or Scoopie Holiday Pin",
+    "price": 4,
+    "usd": 3.5,
+    "picture": "/assets/img/products/holidaypinchoice.png",
+    "tag": "Pin Xmas Christmas New Year"
+  },
+  {
+    "sku": "432",
+    "name": "Culver's Cow Stress Reliever",
+    "price": 3,
+    "usd": 2.5,
+    "picture": "/assets/img/products/2_24357_33592_CowStress.png",
+    "tag": "Plush Toy Squishy Squeeze"
+  }
+]
