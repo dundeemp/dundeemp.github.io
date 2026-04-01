@@ -3,7 +3,6 @@ content:
     label: Employees
     path: _posts
     type: collection
-    format: datagrid
     fields:
       - name: id
         label: "ID"
@@ -23,6 +22,14 @@ content:
           format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
+      - name: test_field
+        label: "Test"
+        type: reference
+        list: true
+        options:
+          collection: achievements
+          value: "{namespace}"
+          label: "{name} ({points} pts)"
       - name: foh
         label: "Front of the House Training"
         type: block
