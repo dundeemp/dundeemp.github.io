@@ -27,14 +27,9 @@ content:
         type: block
         list: true
         blocks:
-          - name: register
-            label: "Register"
+          - name: runner
+            description: "Runner Competences."
             fields:
-              - name: videos
-                label: "Register – Videos"
-                type: boolean
-                default: false
-              - name: main
-                label: "Register – Cashier Competent"
+              - name: level_1
                 type: boolean
                 default: false
