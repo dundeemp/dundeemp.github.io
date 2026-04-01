@@ -19,7 +19,7 @@ content:
         type: date
         default: ""
         options:
-          format: MMMM d, yyyy
+          format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
       - name: fod
