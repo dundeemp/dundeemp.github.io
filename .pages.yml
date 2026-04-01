@@ -24,7 +24,6 @@ content:
         description: "Date this employee has hired on."
       - name: fod
         label: "Front of the House"
-        description: "Select a station:"
         type: block
         list: true
         blocks:
@@ -35,5 +34,15 @@ content:
               - name: level_1
                 label: "Tier I"
                 description: "Complete the first shift as a Runner."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "Tier II"
+                description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work the station with very little supervision."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
                 type: boolean
                 default: false
