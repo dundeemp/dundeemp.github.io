@@ -41,8 +41,9 @@ content:
       - name: stacks
         label: "Stackable Achievements"
         list: true
-        type: block
-        blocks:
+        type: object
+        list: true
+        fields:
         - name: testname
           label: "Achivement Selection" 
           type: reference
