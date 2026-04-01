@@ -36,12 +36,21 @@ content:
                 type: object
                 fields:
                   - name: name
+                    label: "Name"
                     type: reference
                     options:
                       collection: achievements
                       search: "runner_i,fields.name"
                       label: "{fields.name}"
                       value: "{fields.name}"
+                  - name: description
+                    label: "Description"
+                    type: reference
+                    options:
+                      collection: achievements
+                      search: "runner_i,fields.description"
+                      label: "{fields.description}"
+                      value: "{fields.description}"
               - name: level_2
                 label: "🎖️ Tier II"
                 description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision."
