@@ -24,12 +24,21 @@ content:
         description: "Date this employee has hired on."
       - name: training
         label: "Training Achievements"
-        type: reference
         list: true
-        options:
-          collection: training
-          value: "{namespace}"
-          label: "{fields.name} ({fields.description})"
+        type: object
+        list: true
+        fields:
+        - name: testname
+          label: "Achivement Selection" 
+          type: reference
+          options:
+            collection: training
+            value: "{namespace}"
+            label: "{fields.name} ({fields.description})"
+        - name: completed
+          label: "Is it completed?"
+          type: boolean
+          required: true
       - name: feats
         label: "Feats"
         type: reference
