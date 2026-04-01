@@ -4,21 +4,28 @@ content:
     path: _posts
     type: collection
     fields:
-      - name: id
+      - name: employee_id
         label: "ID"
         type: number
         required: true
-        description: "Employee #"
+        description: "Employee #."
       - name: employee_name
         label: "Name"
         type: string
         required: true
-        description: "Employee Name"
+        description: "Employee Name: First Name + Last Name."
+      - name: employee_date
+        label: "Hire Date"
+        type: date
+        default: ""
+        options:
+          format: MMMM d, yyyy
+        required: true
+        description: "Date this employee has hired on."
       - name: fod
         label: "Front of the House"
         type: block
         list: true
-        required: true
         blocks:
           - name: register
             label: "Register"
@@ -29,69 +36,5 @@ content:
                 default: false
               - name: main
                 label: "Register – Cashier Competent"
-                type: boolean
-                default: false
-          - name: run
-            label: "Run"
-            fields:
-              - name: videos
-                label: "Run – Videos"
-                type: boolean
-                default: false
-              - name: main
-                label: "Run – Runner Competent"
-                type: boolean
-                default: false
-          - name: hospitality
-            label: "Hospitality"
-            fields:
-              - name: videos
-                label: "Hospitality – Videos"
-                type: boolean
-                default: false
-              - name: main
-                label: "Hospitality – Guest-Attendance Competent"
-                type: boolean
-                default: false
-              - name: open
-                label: "Hospitality – Dining Room Opener"
-                type: boolean
-                default: false
-              - name: close
-                label: "Hospitality – Dining Room Closer"
-                type: boolean
-                default: false
-          - name: dt
-            label: "Drive-Thru"
-            fields:
-              - name: videos
-                label: "Drive-Thru – Videos"
-                type: boolean
-                default: false
-              - name: ordertaking
-                label: "Drive-Thru – Order-Taking Competent"
-                type: boolean
-                default: false
-              - name: cashingout
-                label: "Drive-Thru – Cashing-Out Competent"
-                type: boolean
-                default: false
-              - name: openclose
-                label: "Drive Thru – Opener & Closer"
-                type: boolean
-                default: false
-          - name: set
-            label: "Set"
-            fields:
-              - name: videos
-                label: "Set – Videos"
-                type: boolean
-                default: false
-              - name: main
-                label: "Set – Set Competent"
-                type: boolean
-                default: false
-              - name: openclose
-                label: "Set – Opener & Closer"
                 type: boolean
                 default: false
