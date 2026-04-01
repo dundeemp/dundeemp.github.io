@@ -314,10 +314,10 @@ content:
     path: _achievements
     type: collection
     fields:
-    - name: name
+    - name: aname
       type: string
       required: true
-    - name: description
+    - name: adescription
       type: string
       required: true
     - name: reward_title
