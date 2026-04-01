@@ -273,7 +273,6 @@ content:
       - name: ser
         label: "Service Milestones"
         type: object
-        list: true
         fields:
           - name: six_months
             label: "Service 1 (6 months)"
