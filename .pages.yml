@@ -3,6 +3,8 @@ content:
     label: Employees
     path: _posts
     type: collection
+    view:
+      layout: tree
     fields:
       - name: id
         label: "ID"
@@ -25,6 +27,7 @@ content:
       - name: foh
         label: "Front of the House Training"
         type: block
+        list: true
         blocks:
           - name: runner
             label: "👟 Runner"
