@@ -314,9 +314,31 @@ content:
     type: collection
     fields:
       - name: runner_i
-        label: "Starter Pathfinder"
-        description: "Complete your first shift as a Runner."
         type: object
         fields:
-          - name: title
+          - name: type
+            type: select
+            required: true
+            options:
+              values:
+                - name: training
+                  label: "Training"
+                - name: stackable
+                  label: "Stackable"
+                - name: Feats
+                  label: "Feat"
+          - name: name
             type: string
+            required: true
+          - name: description
+            type: string
+            required: true
+          - name: reward_title
+            type: string
+            required: true
+          - name: reward_item
+            type: string
+          - name: points
+            type: number
+            options:
+              min: 0
