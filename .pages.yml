@@ -312,3 +312,11 @@ content:
     label: Achievements
     path: _achievements
     type: collection
+    fields:
+      - name: runner_i
+        label: "Starter Pathfinder"
+        description: "Complete your first shift as a Runner."
+        type: object
+        fields:
+          - name: title
+            type: string
