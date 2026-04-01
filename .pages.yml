@@ -328,6 +328,9 @@ content:
                   label: "Stackable"
                 - name: Feats
                   label: "Feat"
+          - name: namespace
+            type: string
+            required: true
           - name: name
             type: string
             required: true
