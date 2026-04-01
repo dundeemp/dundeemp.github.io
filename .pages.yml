@@ -29,6 +29,20 @@ content:
           collection: training
           value: "{namespace}"
           label: "{fields.name} ({fields.description})"
+      - name: feats
+        label: "Feats"
+        type: reference
+        options:
+          collection: feat
+          value: "{namespace}"
+          label: "{fields.name} ({fields.description})"
+      - name: stacks
+        label: "Stackable Achievements"
+        type: reference
+        options:
+          collection: stackable
+          value: "{namespace}"
+          label: "{fields.name} ({fields.description})"
   - name: training
     label: "Training Achievements"
     path: _training
