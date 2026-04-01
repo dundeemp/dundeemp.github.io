@@ -32,10 +32,11 @@ content:
             description: "Runner Competences."
             fields:
               - name: level_1
-                label: "🎖️ Tier I"
-                description: "Complete the first shift as a Runner."
-                type: boolean
-                default: false
+                type: reference
+                label: "{name}"
+                options:
+                  collection: achievements
+                  search: "name"
               - name: level_2
                 label: "🎖️ Tier II"
                 description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision."
@@ -326,6 +327,7 @@ content:
       type: string
     - name: points
       type: number
+      required: true
       options:
         min: 0
     - name: type
