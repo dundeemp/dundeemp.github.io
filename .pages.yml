@@ -272,8 +272,31 @@ content:
                 default: false
       - name: ser
         label: "Service Milestones"
-        type: oject
+        type: object
         list: true
         fields:
           - name: six_months
+            label: "Service 1 (6 months)"
+            description: "Be part of the team for a period of 6 months."
             type: boolean
+            default: false
+          - name: one_year
+            label: "Service 2 (1 year)"
+            description: "Be part of the team for a period of 1 year."
+            type: boolean
+            default: false
+          - name: three_years
+            label: "Service 3 (3 years)"
+            description: "Be part of the team for a period of 3 years."
+            type: boolean
+            default: false
+          - name: five_years
+            label: "Service 4 (5 years)"
+            description: "Be part of the team for a period of 5 years."
+            type: boolean
+            default: false
+          - name: ten_years
+            label: "Service 5 (10 years)"
+            description: "Be part of the team for a period of 10 years."
+            type: boolean
+            default: false
