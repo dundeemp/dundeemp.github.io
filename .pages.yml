@@ -35,7 +35,7 @@ content:
                 type: reference
                 options:
                   collection: achievements
-                  search: "runner_i,fields.aname"
+                  search: "runner_i,fields.namespace"
               - name: level_2
                 label: "🎖️ Tier II"
                 description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision."
