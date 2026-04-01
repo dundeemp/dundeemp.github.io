@@ -31,13 +31,17 @@ content:
             label: "👟 Runner"
             description: "Runner Competences."
             fields:
-              - name: author
-                type: reference
-                options:
-                  collection: achievements
-                  search: "runner_i,fields.namespace"
-                  label: "{fields.namespace}"
-                  value: "{fields.namespace}"
+              - name: level_1
+                label: "🎖️ Tier I"
+                type: object
+                fields:
+                  - name: name
+                    type: reference
+                    options:
+                      collection: achievements
+                      search: "runner_i,fields.name"
+                      label: "{fields.name}"
+                      value: "{fields.name}"
               - name: level_2
                 label: "🎖️ Tier II"
                 description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision."
