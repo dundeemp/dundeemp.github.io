@@ -22,43 +22,45 @@ content:
           format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
-      - name: achievements
-        label: "Achievements"
-        type: object
-        fields:
-        - name: training
-          label: "Training"
-          type: reference
-          options:
-            collection: achievements
-            value: "{namespace}"
-            label: "{fields.name} ({fields.description})"
+      - name: test_field
+        label: "Test"
+        type: reference
+        options:
+          collection: achievements
+          value: "{namespace}"
+          label: "{fields.name} ({fields.description})"
   - name: achievements
     label: Achievements
     path: _achievements
     type: collection
     fields:
-    - name: training
-      label: "Training"
-      type: object
-      list: true
-      fields:
-      - name: name
-        type: string
-        required: true
-      - name: description
-        type: string
-        required: true
-      - name: reward_title
-        type: string
-        required: true
-      - name: reward_item
-        type: string
-      - name: points
-        type: number
-        required: true
-        options:
-          min: 0
-      - name: namespace
-        type: string
-        required: true
+    - name: name
+      type: string
+      required: true
+    - name: description
+      type: string
+      required: true
+    - name: reward_title
+      type: string
+      required: true
+    - name: reward_item
+      type: string
+    - name: points
+      type: number
+      required: true
+      options:
+        min: 0
+    - name: type
+      type: select
+      required: true
+      options:
+        values:
+          - name: training
+            label: "Training"
+          - name: stackable
+            label: "Stackable"
+          - name: Feats
+            label: "Feat"
+    - name: namespace
+      type: string
+      required: true
