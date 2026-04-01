@@ -313,36 +313,32 @@ content:
     path: _achievements
     type: collection
     fields:
-      - name: add_achievement
-        label: "Add achievement"
-        type: object
-        fields:
-          - name: type
-            type: select
-            required: true
-            options:
-              values:
-                - name: training
-                  label: "Training"
-                - name: stackable
-                  label: "Stackable"
-                - name: Feats
-                  label: "Feat"
-          - name: namespace
-            type: string
-            required: true
-          - name: name
-            type: string
-            required: true
-          - name: description
-            type: string
-            required: true
-          - name: reward_title
-            type: string
-            required: true
-          - name: reward_item
-            type: string
-          - name: points
-            type: number
-            options:
-              min: 0
+    - name: type
+      type: select
+      required: true
+      options:
+        values:
+          - name: training
+            label: "Training"
+          - name: stackable
+            label: "Stackable"
+          - name: Feats
+            label: "Feat"
+    - name: namespace
+      type: string
+      required: true
+    - name: name
+      type: string
+      required: true
+    - name: description
+      type: string
+      required: true
+    - name: reward_title
+      type: string
+      required: true
+    - name: reward_item
+      type: string
+    - name: points
+      type: number
+      options:
+        min: 0
