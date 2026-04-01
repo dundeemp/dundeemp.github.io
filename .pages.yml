@@ -313,6 +313,9 @@ content:
     path: _achievements
     type: collection
     fields:
+    - name: name
+      type: string
+      required: true
     - name: type
       type: select
       required: true
@@ -325,9 +328,6 @@ content:
           - name: Feats
             label: "Feat"
     - name: namespace
-      type: string
-      required: true
-    - name: name
       type: string
       required: true
     - name: description
