@@ -22,7 +22,7 @@ content:
           format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
-      - name: fod
+      - name: foh
         label: "Front of the House"
         type: block
         list: true
@@ -38,12 +38,12 @@ content:
                 default: false
               - name: level_2
                 label: "🎖️ Tier II"
-                description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work the station with very little supervision."
+                description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision."
                 type: boolean
                 default: false
               - name: level_3
                 label: "🎖️ Tier III"
-                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
+                description: "Must be able to work unsupervised and able to handle peak hours proficiently."
                 type: boolean
                 default: false
           - name: guest_attendant
@@ -57,12 +57,12 @@ content:
                 default: false
               - name: level_2
                 label: "🎖️ Tier II"
-                description: "Complete the Dining Room Open & Dining Room Close Learning Paths. Must be able to work the station with very little supervision."
+                description: "Complete the Dining Room Open & Dining Room Close Learning Paths. Must be able to work with very little supervision."
                 type: boolean
                 default: false
               - name: level_3
                 label: "🎖️ Tier III"
-                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
+                description: "Must be able to work unsupervised and able to handle peak hours proficiently."
                 type: boolean
                 default: false
           - name: cashier
@@ -103,3 +103,180 @@ content:
                 description: "Must be able to work the station unsupervised and able to handle peak hours proficiently, handling order taking and cashing out alone if needed."
                 type: boolean
                 default: false
+      - name: boh
+        label: "Back of the House"
+        type: block
+        list: true
+        blocks:
+          - name: buns
+            label: "Buns"
+            description: "Buns Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the ButterBurgers and Sandwiches Learning Path and complete the first shift on Buns."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision and requires full knowledge of silent signals."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently, usually involving both screens."
+                type: boolean
+                default: false
+          - name: grill
+            label: "Grill"
+            description: "Grill Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Grill Master Learning Path and complete the first shift on Grill."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision and requires full knowledge of silent signals and grill techniques."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently, usually involving pressing and off-loading alone."
+                type: boolean
+                default: false
+          - name: fryer
+            label: "Fryer"
+            description: "Fryer Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Fry Specialist Learning Path and complete the first shift on Fryer."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision and requires knowledge on how to work all 4 fryer vats (fries, sides, chicken, and fish)."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently, usually handling all 4 vats alone."
+                type: boolean
+                default: false
+      - name: des
+        label: "Desserts"
+        type: block
+        list: true
+        blocks:
+          - name: custard
+            label: "Custard"
+            description: "Custard Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Dessert Specialist & Custard Production Learning Paths and complete the first shift on Custard."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision. Scooping, topping, and mixing is expected at this point."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently. Requires dexterity handling the shake and custard machine."
+                type: boolean
+                default: false
+      - name: mis
+        label: "Misc"
+        type: block
+        list: true
+        blocks:
+          - name: set
+            label: "Set"
+            description: "Set Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Set Learning Path."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
+                type: boolean
+                default: false
+          - name: middle
+            label: "Middle"
+            description: "Middle Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Middle Learning Path."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
+                type: boolean
+                default: false
+          - name: porter
+            label: "Porting"
+            description: "Porting Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Porting Learning Path."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work with very little supervision."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work unsupervised."
+                type: boolean
+                default: false
+          - name: prep
+            label: "Food Preparation"
+            description: "Food Preparation Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Food Preparation Learning Path."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised."
+                type: boolean
+                default: false
+      - name: ser
+        label: "Service Milestones"
+        type: oject
+        list: true
+        fields:
+          - name: six_months
+            label: "Service 1 (6 months)"
+            description: "Be part of the team for a period of 6 months."
+            type: boolean
+            default: false
