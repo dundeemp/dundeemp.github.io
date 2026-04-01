@@ -3,8 +3,6 @@ content:
     label: Employees
     path: _posts
     type: collection
-    view:
-      layout: tree
     fields:
       - name: id
         label: "ID"
