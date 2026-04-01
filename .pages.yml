@@ -24,9 +24,9 @@ content:
         description: "Date this employee has hired on."
       - name: training_achievements
         label: "Training"
-        type: block
+        type: object
         list: true
-        blocks:
+        fields:
           - name: ach
             label: "Achievements"
             type: reference
