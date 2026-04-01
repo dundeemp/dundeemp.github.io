@@ -36,7 +36,7 @@ content:
                 type: object
                 fields:
                   - name: name
-                    label: "Name"
+                    label: "{fields.name}"
                     type: reference
                     options:
                       collection: achievements
