@@ -35,7 +35,9 @@ content:
                 type: reference
                 options:
                   collection: achievements
-                  search: "namespace"
+                  search: "runner_i,fields.namespace"
+                  label: "{fields.namespace}"
+                  value: "{fields.namespace}"
               - name: level_2
                 label: "🎖️ Tier II"
                 description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision."
@@ -313,10 +315,10 @@ content:
     path: _achievements
     type: collection
     fields:
-    - name: aname
+    - name: name
       type: string
       required: true
-    - name: adescription
+    - name: description
       type: string
       required: true
     - name: reward_title
