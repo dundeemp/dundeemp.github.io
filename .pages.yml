@@ -32,17 +32,74 @@ content:
             description: "Runner Competences."
             fields:
               - name: level_1
-                label: "Tier I"
+                label: "🎖️ Tier I"
                 description: "Complete the first shift as a Runner."
                 type: boolean
                 default: false
               - name: level_2
-                label: "Tier II"
+                label: "🎖️ Tier II"
                 description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work the station with very little supervision."
                 type: boolean
                 default: false
               - name: level_3
-                label: "Tier III"
+                label: "🎖️ Tier III"
                 description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
+                type: boolean
+                default: false
+          - name: guest_attendant
+            label: "Guest Attendant"
+            description: "Guest Attendant Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Guest Attendant Learning Path. Complete the first shift as Guest Attendant."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Complete the Dining Room Open & Dining Room Close Learning Paths. Must be able to work the station with very little supervision."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
+                type: boolean
+                default: false
+          - name: cashier
+            label: "Cashier"
+            description: "Cashier Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Cashier Learning Path. Complete the first shift as Cashier."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision, requires full knowledge of the menu and different modification options."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently."
+                type: boolean
+                default: false
+          - name: drive_thru
+            label: "Drive Thru"
+            description: "Drive Thru Competences."
+            fields:
+              - name: level_1
+                label: "🎖️ Tier I"
+                description: "Complete the Drive Thru Learning Path. Complete the first shift in Drive Thru."
+                type: boolean
+                default: false
+              - name: level_2
+                label: "🎖️ Tier II"
+                description: "Must be able to work the station with very little supervision."
+                type: boolean
+                default: false
+              - name: level_3
+                label: "🎖️ Tier III"
+                description: "Must be able to work the station unsupervised and able to handle peak hours proficiently, handling order taking and cashing out alone if needed."
                 type: boolean
                 default: false
