@@ -28,6 +28,7 @@ content:
         list: true
         blocks:
           - name: runner
+            label: "Runner"
             description: "Runner Competences."
             fields:
               - name: level_1
