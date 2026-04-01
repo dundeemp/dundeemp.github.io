@@ -14,7 +14,7 @@ content:
         type: string
         required: true
         description: "Employee Name: First Name + Last Name."
-      - name: employee_date
+      - name: date
         label: "Hire Date"
         type: date
         default: ""
