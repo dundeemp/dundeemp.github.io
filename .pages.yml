@@ -31,5 +31,7 @@ content:
             description: "Runner Competences."
             fields:
               - name: level_1
+                label: "Tier I"
+                description: "Complete the first shift as a Runner."
                 type: boolean
                 default: false
