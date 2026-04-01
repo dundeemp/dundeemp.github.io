@@ -35,25 +35,28 @@ content:
     type: collection
     fields:
     - name: name
+      label: "Name"
       type: string
       required: true
     - name: description
+      label: "Description"
       type: string
       required: true
     - name: reward_title
+      label: "Title"
       type: string
       required: true
     - name: reward_item
+      label: "Reward"
       type: string
     - name: points
+      label: "Points"
       type: number
       required: true
       options:
         min: 0
-    - name: type
-      type: select
-      required: true
     - name: namespace
+      label: "ID"
       type: string
       required: true
   - name: feat
@@ -62,25 +65,28 @@ content:
     type: collection
     fields:
     - name: name
+      label: "Name"
       type: string
       required: true
     - name: description
+      label: "Description"
       type: string
       required: true
     - name: reward_title
+      label: "Title"
       type: string
       required: true
     - name: reward_item
+      label: "Reward"
       type: string
     - name: points
+      label: "Points"
       type: number
       required: true
       options:
         min: 0
-    - name: type
-      type: select
-      required: true
     - name: namespace
+      label: "ID"
       type: string
       required: true
   - name: stackable
@@ -89,29 +95,33 @@ content:
     type: collection
     fields:
     - name: name
+      label: "Name"
       type: string
       required: true
     - name: description
+      label: "Description"
       type: string
       required: true
-    - name: times
-      type: number
-      required: true
-      options:
-        min: 0
     - name: reward_title
+      label: "Title"
       type: string
       required: true
     - name: reward_item
+      label: "Reward"
       type: string
     - name: points
+      label: "Points"
       type: number
       required: true
       options:
         min: 0
-    - name: type
-      type: select
+    - name: times
+      label: "Times Awarded"
+      type: number
       required: true
+      options:
+        min: 0
     - name: namespace
+      label: "ID"
       type: string
       required: true
