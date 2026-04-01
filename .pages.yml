@@ -26,15 +26,10 @@ content:
         label: "Test"
         type: reference
         list: true
-        fields:
-          - name: completed
-            label: "Completed?"
-            type: boolean
-            default: false
         options:
           collection: achievements
           value: "{namespace}"
-          label: "{fields.name} ({points} pts)"
+          label: "{fields.name} ({fields.description})"
       - name: foh
         label: "Front of the House Training"
         type: block
