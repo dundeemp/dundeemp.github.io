@@ -22,13 +22,13 @@ content:
           format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
-      - name: training_achievements
-        label: "Training"
+      - name: achievements
+        label: "Achievements"
         type: block
         list: true
         blocks:
-          - name: ach
-            label: "Achievements"
+          - name: training
+            label: "Training"
             type: reference
             options:
               collection: achievements
@@ -39,33 +39,27 @@ content:
     path: _achievements
     type: collection
     fields:
-    - name: name
-      type: string
-      required: true
-    - name: description
-      type: string
-      required: true
-    - name: reward_title
-      type: string
-      required: true
-    - name: reward_item
-      type: string
-    - name: points
-      type: number
-      required: true
-      options:
-        min: 0
-    - name: type
-      type: select
-      required: true
-      options:
-        values:
-          - name: training
-            label: "Training"
-          - name: stackable
-            label: "Stackable"
-          - name: Feats
-            label: "Feat"
-    - name: namespace
-      type: string
-      required: true
+    - name: training
+      label: "Training"
+      type: object
+      list: true
+      fields:
+      - name: name
+        type: string
+        required: true
+      - name: description
+        type: string
+        required: true
+      - name: reward_title
+        type: string
+        required: true
+      - name: reward_item
+        type: string
+      - name: points
+        type: number
+        required: true
+        options:
+          min: 0
+      - name: namespace
+        type: string
+        required: true
