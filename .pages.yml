@@ -18,6 +18,7 @@ content:
         label: "Front of the House"
         type: block
         list: true
+        required: true
         blocks:
           - name: register
             label: "Register"
