@@ -24,6 +24,7 @@ content:
         description: "Date this employee has hired on."
       - name: fod
         label: "Front of the House"
+        description: "Choose a station:"
         type: block
         list: true
         blocks:
