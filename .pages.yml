@@ -49,7 +49,7 @@ content:
           label: "Achivement Selection" 
           type: reference
           options:
-            collection: feats
+            collection: feat
             value: "{namespace}"
             label: "{fields.name} ({fields.description})"
         - name: completed
