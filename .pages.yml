@@ -1,5 +1,5 @@
 content:
-  - name: posts
+  - name: users
     label: Employees
     path: _posts
     type: collection
@@ -25,6 +25,7 @@ content:
       - name: foh
         label: "Front of the House Training"
         type: block
+        list: true
         blocks:
           - name: runner
             label: "👟 Runner"
@@ -105,6 +106,7 @@ content:
       - name: boh
         label: "Back of the House Training"
         type: block
+        list: true
         blocks:
           - name: buns
             label: "🍔 Buns"
@@ -166,6 +168,7 @@ content:
       - name: des
         label: "Desserts Training"
         type: block
+        list: true
         blocks:
           - name: custard
             label: "🍦 Custard"
@@ -189,6 +192,7 @@ content:
       - name: mis
         label: "Other Training"
         type: block
+        list: true
         blocks:
           - name: set
             label: "🛍️ Set"
@@ -299,3 +303,20 @@ content:
         label: "Other Milestones"
         type: object
         fields:
+          - name: xmas
+            label: "⏳ Santa's Helper"
+            description: "Work a full shift on Christmas Eve."
+            type: boolean
+            default: false
+  - name: achievements
+    label: Achievements
+    path: _achievements
+    type: collection
+    fields:
+      - name: runner_i
+        label: "Starter Pathfinder"
+        description: "Complete your first shift as a Runner."
+        type: object
+        fields:
+          - name: title
+            type: string
