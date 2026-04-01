@@ -3,6 +3,7 @@ content:
     label: Employees
     path: _posts
     type: collection
+    format: datagrid
     fields:
       - name: id
         label: "ID"
