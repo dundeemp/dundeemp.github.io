@@ -30,7 +30,7 @@ content:
           value: "{namespace}"
           label: "{fields.name} ({fields.description})"
   - name: training
-    label: "Training"
+    label: "Training Achievements"
     path: _training
     type: collection
     fields:
@@ -60,7 +60,7 @@ content:
       type: string
       required: true
   - name: feat
-    label: "Feats"
+    label: "One Time Achievements"
     path: _feat
     type: collection
     fields:
