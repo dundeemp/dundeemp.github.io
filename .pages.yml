@@ -33,17 +33,29 @@ content:
       - name: feats
         label: "Feats"
         type: reference
+        list: true
         options:
           collection: feat
           value: "{namespace}"
           label: "{fields.name} ({fields.description})"
       - name: stacks
         label: "Stackable Achievements"
-        type: reference
-        options:
-          collection: stackable
-          value: "{namespace}"
-          label: "{fields.name} ({fields.description})"
+        list: true
+        type: block
+        blocks:
+        - name: testname
+          label: "Achivement Selection" 
+          type: reference
+          options:
+            collection: stackable
+            value: "{namespace}"
+            label: "{fields.name} ({fields.description})"
+        - name: times
+          label: "Times Awarded"
+          type: number
+          required: true
+          options:
+            min: 0
   - name: training
     label: "Training Achievements"
     path: _training
@@ -126,12 +138,6 @@ content:
       type: string
     - name: points
       label: "Points"
-      type: number
-      required: true
-      options:
-        min: 0
-    - name: times
-      label: "Times Awarded"
       type: number
       required: true
       options:
