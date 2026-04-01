@@ -22,14 +22,18 @@ content:
           format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
-      - name: test_field
-        label: "Test"
-        type: reference
+      - name: training_achievements
+        label: "Training"
+        type: block
         list: true
-        options:
-          collection: achievements
-          value: "{namespace}"
-          label: "{fields.name} ({fields.description})"
+        blocks:
+          - name: ach
+            label: "Achievements"
+            type: reference
+            options:
+              collection: achievements
+              value: "{namespace}"
+              label: "{fields.name} ({fields.description})"
   - name: achievements
     label: Achievements
     path: _achievements
