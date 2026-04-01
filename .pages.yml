@@ -25,7 +25,6 @@ content:
       - name: foh
         label: "Front of the House Training"
         type: block
-        list: true
         blocks:
           - name: runner
             label: "👟 Runner"
@@ -33,24 +32,9 @@ content:
             fields:
               - name: level_1
                 label: "🎖️ Tier I"
-                type: object
-                fields:
-                  - name: name
-                    label: "{fields.name}"
-                    type: reference
-                    options:
-                      collection: achievements
-                      search: "runner_i,fields.name"
-                      label: "{fields.name}"
-                      value: "{fields.name}"
-                  - name: description
-                    label: "Description"
-                    type: reference
-                    options:
-                      collection: achievements
-                      search: "runner_i,fields.description"
-                      label: "{fields.description}"
-                      value: "{fields.description}"
+                description: "Complete the first shift as a Runner."
+                type: boolean
+                default: false
               - name: level_2
                 label: "🎖️ Tier II"
                 description: "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision."
