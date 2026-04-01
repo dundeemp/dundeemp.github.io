@@ -25,6 +25,7 @@ content:
       - name: training
         label: "Training Achievements"
         type: reference
+        list: true
         options:
           collection: training
           value: "{namespace}"
