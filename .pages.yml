@@ -4,12 +4,12 @@ content:
     path: _posts
     type: collection
     fields:
-      - name: employee_id
+      - name: id
         label: "ID"
         type: number
         required: true
         description: "Employee #."
-      - name: employee_name
+      - name: name
         label: "Name"
         type: string
         required: true
