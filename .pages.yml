@@ -23,12 +23,11 @@ content:
         required: true
         description: "Date this employee has hired on."
       - name: foh
-        label: "Front of the House"
+        label: "Front of the House Training"
         type: block
-        list: true
         blocks:
           - name: runner
-            label: "Runner"
+            label: "👟 Runner"
             description: "Runner Competences."
             fields:
               - name: level_1
@@ -47,7 +46,7 @@ content:
                 type: boolean
                 default: false
           - name: guest_attendant
-            label: "Guest Attendant"
+            label: "🧹 Guest Attendant"
             description: "Guest Attendant Competences."
             fields:
               - name: level_1
@@ -66,7 +65,7 @@ content:
                 type: boolean
                 default: false
           - name: cashier
-            label: "Cashier"
+            label: "💰 Cashier"
             description: "Cashier Competences."
             fields:
               - name: level_1
@@ -85,7 +84,7 @@ content:
                 type: boolean
                 default: false
           - name: drive_thru
-            label: "Drive Thru"
+            label: "🚗 Drive Thru"
             description: "Drive Thru Competences."
             fields:
               - name: level_1
@@ -104,12 +103,11 @@ content:
                 type: boolean
                 default: false
       - name: boh
-        label: "Back of the House"
+        label: "Back of the House Training"
         type: block
-        list: true
         blocks:
           - name: buns
-            label: "Buns"
+            label: "🍔 Buns"
             description: "Buns Competences."
             fields:
               - name: level_1
@@ -128,7 +126,7 @@ content:
                 type: boolean
                 default: false
           - name: grill
-            label: "Grill"
+            label: "🫓 Grill"
             description: "Grill Competences."
             fields:
               - name: level_1
@@ -147,7 +145,7 @@ content:
                 type: boolean
                 default: false
           - name: fryer
-            label: "Fryer"
+            label: "🍟 Fryer"
             description: "Fryer Competences."
             fields:
               - name: level_1
@@ -166,12 +164,11 @@ content:
                 type: boolean
                 default: false
       - name: des
-        label: "Desserts"
+        label: "Desserts Training"
         type: block
-        list: true
         blocks:
           - name: custard
-            label: "Custard"
+            label: "🍦 Custard"
             description: "Custard Competences."
             fields:
               - name: level_1
@@ -190,12 +187,11 @@ content:
                 type: boolean
                 default: false
       - name: mis
-        label: "Misc"
+        label: "Other Training"
         type: block
-        list: true
         blocks:
           - name: set
-            label: "Set"
+            label: "🛍️ Set"
             description: "Set Competences."
             fields:
               - name: level_1
@@ -214,7 +210,7 @@ content:
                 type: boolean
                 default: false
           - name: middle
-            label: "Middle"
+            label: "🥡 Middle"
             description: "Middle Competences."
             fields:
               - name: level_1
@@ -233,7 +229,7 @@ content:
                 type: boolean
                 default: false
           - name: porter
-            label: "Porting"
+            label: "🧼 Porting"
             description: "Porting Competences."
             fields:
               - name: level_1
@@ -252,7 +248,7 @@ content:
                 type: boolean
                 default: false
           - name: prep
-            label: "Food Preparation"
+            label: "🍲 Food Preparation"
             description: "Food Preparation Competences."
             fields:
               - name: level_1
@@ -275,27 +271,31 @@ content:
         type: object
         fields:
           - name: six_months
-            label: "Service 1 (6 months)"
+            label: "⏳ Service I (6 months)"
             description: "Be part of the team for a period of 6 months."
             type: boolean
             default: false
           - name: one_year
-            label: "Service 2 (1 year)"
+            label: "⏳ Service II (1 year)"
             description: "Be part of the team for a period of 1 year."
             type: boolean
             default: false
           - name: three_years
-            label: "Service 3 (3 years)"
+            label: "⏳ Service III (3 years)"
             description: "Be part of the team for a period of 3 years."
             type: boolean
             default: false
           - name: five_years
-            label: "Service 4 (5 years)"
+            label: "⏳ Service IV (5 years)"
             description: "Be part of the team for a period of 5 years."
             type: boolean
             default: false
           - name: ten_years
-            label: "Service 5 (10 years)"
+            label: "⏳ Service V (10 years)"
             description: "Be part of the team for a period of 10 years."
             type: boolean
             default: false
+      - name: oth
+        label: "Other Milestones"
+        type: object
+        fields:
