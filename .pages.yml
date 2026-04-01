@@ -313,7 +313,8 @@ content:
     path: _achievements
     type: collection
     fields:
-      - name: runner_i
+      - name: add_achievement
+        label: "Add achievement"
         type: object
         fields:
           - name: type
