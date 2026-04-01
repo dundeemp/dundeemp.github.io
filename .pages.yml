@@ -29,7 +29,7 @@ content:
         options:
           collection: achievements
           value: "{namespace}"
-          label: "{name} ({points} pts)"
+          label: "{fields.name} ({points} pts)"
       - name: foh
         label: "Front of the House Training"
         type: block
