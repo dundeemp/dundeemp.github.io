@@ -33,7 +33,7 @@ content:
             fields:
               - name: level_1
                 type: reference
-                label: "{aname}"
+                label: "{fields.aname}"
                 options:
                   collection: achievements
                   search: "name"
