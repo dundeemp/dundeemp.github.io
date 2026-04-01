@@ -22,16 +22,16 @@ content:
           format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
-      - name: test_field
-        label: "Test"
+      - name: training
+        label: "Training Achievements"
         type: reference
         options:
-          collection: achievements
+          collection: training
           value: "{namespace}"
           label: "{fields.name} ({fields.description})"
-  - name: achievements
-    label: Achievements
-    path: _achievements
+  - name: training
+    label: "Training"
+    path: _training
     type: collection
     fields:
     - name: name
@@ -53,14 +53,65 @@ content:
     - name: type
       type: select
       required: true
+    - name: namespace
+      type: string
+      required: true
+  - name: feat
+    label: "Feats"
+    path: _feat
+    type: collection
+    fields:
+    - name: name
+      type: string
+      required: true
+    - name: description
+      type: string
+      required: true
+    - name: reward_title
+      type: string
+      required: true
+    - name: reward_item
+      type: string
+    - name: points
+      type: number
+      required: true
       options:
-        values:
-          - name: training
-            label: "Training"
-          - name: stackable
-            label: "Stackable"
-          - name: Feats
-            label: "Feat"
+        min: 0
+    - name: type
+      type: select
+      required: true
+    - name: namespace
+      type: string
+      required: true
+  - name: stackable
+    label: "Stackable Achievements"
+    path: _stackable
+    type: collection
+    fields:
+    - name: name
+      type: string
+      required: true
+    - name: description
+      type: string
+      required: true
+    - name: times
+      type: number
+      required: true
+      options:
+        min: 0
+    - name: reward_title
+      type: string
+      required: true
+    - name: reward_item
+      type: string
+    - name: points
+      type: number
+      required: true
+      options:
+        min: 0
+    - name: type
+      type: select
+      required: true
     - name: namespace
       type: string
       required: true
