@@ -40,15 +40,19 @@ content:
         fields:
         - name: training_select
           label: "Achivement Selection" 
-          type: reference
-          options:
-            collection: training
-            value: "{namespace}"
-            label: "{fields.name} ({fields.description})"
-        - name: completed
-          label: "Is it completed?"
-          type: boolean
-          required: true
+          type: object
+          fields:
+          - name: training_select
+            label: "Achivement Selection" 
+            type: reference
+            options:
+              collection: training
+              value: "{namespace}"
+              label: "{fields.name} ({fields.description})"
+          - name: completed
+            label: "Is it completed?"
+            type: boolean
+            required: true
       - name: feats
         label: "One-Time Achievements"
         list: true
