@@ -3,6 +3,11 @@ content:
     label: Employees
     path: _posts
     type: collection
+    view:
+      fields: [id, name, active, date, training, feats, stacks]
+      default:
+        sort: date
+        order: desc
     fields:
       - name: id
         label: "ID"
