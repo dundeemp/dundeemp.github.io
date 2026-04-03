@@ -38,12 +38,12 @@ content:
         type: object
         list: true
         fields:
-        - name: training_select
+        - name: achievement_selection
           label: "Achivement Selection" 
           type: object
           fields:
-          - name: training_select
-            label: "Achivement Selection" 
+          - name: achievement
+            label: "Select an achievement:" 
             type: reference
             options:
               collection: training
