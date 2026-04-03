@@ -22,6 +22,11 @@ content:
           format: yyyy-MM-dd
         required: true
         description: "Date this employee has hired on."
+      - name: active
+        label: "Active?"
+        type: boolean
+        default: true
+        required: true
       - name: training
         label: "Training Achievements"
         list: true
