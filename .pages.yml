@@ -4,7 +4,7 @@ content:
     path: _posts
     type: collection
     view:
-      fields: [id, name, active, date, training, feats, stacks]
+      fields: [name, id, active, date, training, feats, stacks]
       default:
         sort: date
         order: desc
