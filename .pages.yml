@@ -3,11 +3,6 @@
       label: Employees
       path: _posts
       type: collection
-      view:
-        fields: [name, id, active, date, runner_i, runner_ii, runner_iii]
-        default:
-          sort: date
-          order: desc
       fields:
         - name: id
           label: "ID"
