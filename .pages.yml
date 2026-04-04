@@ -32,150 +32,16 @@ content:
         type: boolean
         default: true
         required: true
-      - name: training
-        label: "Training Achievements"
+      - name: achievements
+        label: "Achievements"
         list: true
-        type: object
-        list: true
-        fields:
-        - name: achievement_selection
-          label: "Achivement Selection" 
-          type: object
-          fields:
-          - name: achievement
-            label: "Select an achievement:" 
-            type: reference
-            options:
-              collection: training
-              value: "{namespace}"
-              label: "{fields.name} ({fields.description})"
-          - name: completed
-            label: "Is it completed?"
-            type: boolean
-            required: true
-      - name: feats
-        label: "One-Time Achievements"
-        list: true
-        type: object
-        list: true
-        fields:
-        - name: feats_select
-          label: "Achivement Selection" 
-          type: reference
-          options:
-            collection: feat
-            value: "{namespace}"
-            label: "{fields.name} ({fields.description})"
-        - name: completed
-          label: "Is it completed?"
+        type: block
+        blocks:
+        - name: runner_i
+          label: "Runner I" 
           type: boolean
-          required: true
-      - name: stacks
-        label: "Stackable Achievements"
-        list: true
-        type: object
-        list: true
-        fields:
-        - name: stacks_select
-          label: "Achivement Selection" 
-          type: reference
-          options:
-            collection: stackable
-            value: "{namespace}"
-            label: "{fields.name} ({fields.description})"
-        - name: times
-          label: "Times Awarded"
-          type: number
-          required: true
-          options:
-            min: 0
-  - name: training
-    label: "Training Achievements"
-    path: _training
-    type: collection
-    fields:
-    - name: name
-      label: "Name"
-      type: string
-      required: true
-    - name: description
-      label: "Description"
-      type: string
-      required: true
-    - name: reward_title
-      label: "Title"
-      type: string
-      required: true
-    - name: reward_item
-      label: "Reward"
-      type: string
-    - name: points
-      label: "Points"
-      type: number
-      required: true
-      options:
-        min: 0
-    - name: namespace
-      label: "ID"
-      type: string
-      required: true
-  - name: feat
-    label: "One Time Achievements"
-    path: _feat
-    type: collection
-    fields:
-    - name: name
-      label: "Name"
-      type: string
-      required: true
-    - name: description
-      label: "Description"
-      type: string
-      required: true
-    - name: reward_title
-      label: "Title"
-      type: string
-      required: true
-    - name: reward_item
-      label: "Reward"
-      type: string
-    - name: points
-      label: "Points"
-      type: number
-      required: true
-      options:
-        min: 0
-    - name: namespace
-      label: "ID"
-      type: string
-      required: true
-  - name: stackable
-    label: "Stackable Achievements"
-    path: _stackable
-    type: collection
-    fields:
-    - name: name
-      label: "Name"
-      type: string
-      required: true
-    - name: description
-      label: "Description"
-      type: string
-      required: true
-    - name: reward_title
-      label: "Title"
-      type: string
-      required: true
-    - name: reward_item
-      label: "Reward"
-      type: string
-    - name: points
-      label: "Points"
-      type: number
-      required: true
-      options:
-        min: 0
-    - name: namespace
-      label: "ID"
-      type: string
-      required: true
+          default: false
+        - name: runner_ii
+          label: "Runner II" 
+          type: boolean
+          default: false
