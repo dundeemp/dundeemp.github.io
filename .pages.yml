@@ -35,6 +35,6 @@
         - name: runner
           label: "👟 Runner"
           type: number
-            options:
-              min: 0
-              max: 3
+          options:
+            min: 0
+            max: 3
