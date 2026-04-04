@@ -7,7 +7,7 @@
       path: _posts
       type: collection
       view:
-        fields: [avatar, name, id, active, date]
+        fields: [id, name, title, active, date]
         default:
           sort: date
           order: desc
@@ -35,6 +35,11 @@
           type: image
           options:
             path: assets/img/avatars
+        - name: title
+          label: "Title"
+          type: select
+          options:
+            values: [ Starter Pathfinder, Expert Pathfinder, Elite Pathfinder, Starter Guest Ambassador, Expert Guest Ambassador, Elite Guest Ambassador, Starter Lane Master, Expert Lane Master, Elite Lane Master, Starter Money Maker, Expert Money Maker, Elite Money Maker, Starter Mastermind, Expert Mastermind, Elite Mastermind, Starter Bun Builder, Expert Bun Builder, Elite Bun Builder, Starter Grill Master, Expert Grill Master, Elite Grill Master, Starter Crisp Captain, Expert Crisp Captain, Elite Crisp Captain, Starter Meal Master, Expert Meal Master, Elite Meal Master, Starter Scoop Star, Expert Scoop Star, Elite Scoop Star, Starter Handyman, Expert Handyman, Elite Handyman, Starter Stocksmith, Expert Stocksmith, Elite Stocksmith, Santa’s Helper, Rising Team Member, Dedicated Team Member, Seasoned Team Member, Veteran Team Member, Legacy Team Member, Team MVP, Mentor, Operations Manager, Wingman, Guest Favorite, Shift Grinder, Team Player, Jack Of All Trades ]
         - name: active
           label: "Active?"
           type: boolean
@@ -226,12 +231,3 @@
               type: number
               options:
                 min: 0
-    - name: titles
-      label: Titles
-      path: _titles
-      type: collection
-      fields:
-        - name: title
-          label: Title
-          type: string
-          required: true
