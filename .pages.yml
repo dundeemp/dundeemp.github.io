@@ -39,6 +39,12 @@ content:
         blocks:
         - name: runner
           fields:
-            - name: runner
-              label: "Runner"
-              type: boolean
+            - name: authors
+              type: object
+              readonly: true
+              list: true
+              fields:
+                - name: name
+                  type: string
+                - name: email
+                  type: string
