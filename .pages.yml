@@ -38,30 +38,7 @@ content:
         list: true
         blocks:
           - name: runner
-            label: "👟 Runner" 
-            description: "Select the unlocked tier."
-            type: number
-            option:
-              min: 0
-              max: 3
-          - name: guest_attendant
-            label: "🧹 Guest Attendant" 
-            description: "Select the unlocked tier."
-            type: number
-            option:
-              min: 0
-              max: 3
-          - name: cashier
-            label: "💰 Cashier" 
-            description: "Select the unlocked tier."
-            type: number
-            option:
-              min: 0
-              max: 3
-          - name: drivethru
-            label: "🚗 Drive Thru" 
-            description: "Select the unlocked tier."
-            type: number
-            option:
-              min: 0
-              max: 3
+            type: object
+            fields:
+              - name: completed
+                type: boolean
