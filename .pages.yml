@@ -30,9 +30,6 @@
         - name: foh
           label: "Front Of House"
           type: object
-          list:
-              collapsible:
-                collapsed: true
           fields:
             - name: runner
               label: "👟 Runner"
@@ -61,9 +58,6 @@
         - name: boh
           label: "Back Of House"
           type: object
-          list:
-              collapsible:
-                collapsed: true
           fields:
             - name: buns
               label: "🍔 Buns"
@@ -86,9 +80,6 @@
         - name: boh
           label: "Desserts"
           type: object
-          list:
-              collapsible:
-                collapsed: true
           fields:
             - name: custard
               label: "🍦 Custard"
@@ -99,9 +90,6 @@
         - name: other_stations
           label: "Other Stations"
           type: object
-          list:
-              collapsible:
-                collapsed: true
           fields:
             - name: set
               label: "🛍️ Set"
