@@ -1,6 +1,6 @@
   media:
-    input: assets/img
-    output: /assets/img
+    input: assets/img/avatars
+    output: /assets/img/avatars
   content:
     - name: users
       label: Employees
