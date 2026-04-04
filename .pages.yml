@@ -32,20 +32,12 @@
           type: boolean
           default: true
           required: true
-        - name: achievements
-          label: "Achievements"
-          type: object
-          list:
-            collapsible:
-              collapsed: true
-              summary: "{runner_i} ({index})"
-          fields:
-          - name: runner_i
-            label: "Runner I"
-            type: boolean
-          - name: runner_ii
-            label: "Runner II"
-            type: boolean
-          - name: runner_iii
-            label: "Runner III"
-            type: boolean
+        - name: runner_i
+          label: "Runner I"
+          type: boolean
+        - name: runner_ii
+          label: "Runner II"
+          type: boolean
+        - name: runner_iii
+          label: "Runner III"
+          type: boolean
