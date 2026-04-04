@@ -39,12 +39,12 @@ content:
         blocks:
         - name: runner
           fields:
-            - name: authors
-              type: object
-              readonly: true
-              list: true
-              fields:
-                - name: name
-                  type: string
-                - name: email
-                  type: string
+          - name: sections
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title} ({index})"
+            fields:
+              - name: title
+                type: string
