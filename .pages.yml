@@ -32,8 +32,26 @@ content:
         type: boolean
         default: true
         required: true
-      - name: runner_i
-        label: "👟 Runner I" 
+      - name: runner
+        label: "👟 Runner Competences" 
+        type: number
+        options:
+          min: 0
+          max: 3
+      - name: guest_attendant
+        label: "🧹 Guest Attendant Competences" 
+        type: number
+        options:
+          min: 0
+          max: 3
+      - name: cashier
+        label: "💰 Cashier Competences" 
+        type: number
+        options:
+          min: 0
+          max: 3
+      - name: drivethru
+        label: "🚗 Drive Thru Competences" 
         type: number
         options:
           min: 0
