@@ -226,3 +226,13 @@
               type: number
               options:
                 min: 0
+  content:
+    - name: titles
+      label: Titles
+      path: _titles
+      type: collection
+      fields:
+        - name: title
+          label: Title
+          type: string
+          required: true
