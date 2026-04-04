@@ -4,7 +4,7 @@
       path: _posts
       type: collection
       view:
-        fields: [name, id, active, date, achievements]
+        fields: [name, id, active, date, runner_i, runner_ii, runner_iii]
         default:
           sort: date
           order: desc
