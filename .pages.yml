@@ -32,20 +32,15 @@ content:
         type: boolean
         default: true
         required: true
-      - name: achievements
-        label: "Achievements"
-        list: true
-        type: object
-        fields:
-        - name: runner_i
-          label: "👟 Runner I" 
-          type: boolean
-          default: false
-        - name: runner_ii
-          label: "👟 Runner II" 
-          type: boolean
-          default: false
-        - name: runner_iii
-          label: "👟 Runner III" 
-          type: boolean
-          default: false
+      - name: runner_i
+        label: "👟 Runner I" 
+        type: boolean
+        default: false
+      - name: runner_ii
+        label: "👟 Runner II" 
+        type: boolean
+        default: false
+      - name: runner_iii
+        label: "👟 Runner III" 
+        type: boolean
+        default: false
