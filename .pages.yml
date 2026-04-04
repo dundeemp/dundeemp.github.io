@@ -33,3 +33,69 @@
           options:
             min: 0
             max: 3
+        - name: guest_attendant
+          label: "🧹 Guest Attendant"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: cashier
+          label: "💰 Cashier"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: drive_thru
+          label: "🚗 Drive Thru"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: buns
+          label: "🍔 Buns"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: grill
+          label: "🫓 Grill"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: fryer
+          label: "🍟 Fryer"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: custard
+          label: "🍦 Custard"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: set
+          label: "🛍️ Set"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: middle
+          label: "🥡 Middle"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: porting
+          label: "🧼 Porting"
+          type: number
+          options:
+            min: 0
+            max: 3
+        - name: food_preparation
+          label: "🍲 Food Preparation"
+          type: number
+          options:
+            min: 0
+            max: 3
