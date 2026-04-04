@@ -34,7 +34,6 @@
           label: "Avatar"
           type: image
           options:
-            media: images
             path: assets/img/avatars
         - name: active
           label: "Active?"
