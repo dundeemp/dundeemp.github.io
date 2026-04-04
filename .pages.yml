@@ -27,30 +27,34 @@
           type: boolean
           default: true
           required: true
-        - name: runner
-          label: "👟 Runner"
-          type: number
-          options:
-            min: 0
-            max: 3
-        - name: guest_attendant
-          label: "🧹 Guest Attendant"
-          type: number
-          options:
-            min: 0
-            max: 3
-        - name: cashier
-          label: "💰 Cashier"
-          type: number
-          options:
-            min: 0
-            max: 3
-        - name: drive_thru
-          label: "🚗 Drive Thru"
-          type: number
-          options:
-            min: 0
-            max: 3
+        - name: foh
+          label: "Front Of House"
+          type: object
+          fields:
+            - name: runner
+              label: "👟 Runner"
+              type: number
+              options:
+                min: 0
+                max: 3
+            - name: guest_attendant
+              label: "🧹 Guest Attendant"
+              type: number
+              options:
+                min: 0
+                max: 3
+            - name: cashier
+              label: "💰 Cashier"
+              type: number
+              options:
+                min: 0
+                max: 3
+            - name: drive_thru
+              label: "🚗 Drive Thru"
+              type: number
+              options:
+                min: 0
+                max: 3
         - name: buns
           label: "🍔 Buns"
           type: number
