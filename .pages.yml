@@ -1,43 +1,51 @@
-content:
-  - name: users
-    label: Employees
-    path: _posts
-    type: collection
-    view:
-      fields: [name, id, active, date, achievements]
-      default:
-        sort: date
-        order: desc
-    fields:
-      - name: id
-        label: "ID"
-        type: number
-        required: true
-        description: "Employee #."
-      - name: name
-        label: "Name"
-        type: string
-        required: true
-        description: "Employee Name: First Name + Last Name."
-      - name: date
-        label: "Hire Date"
-        type: date
-        default: ""
-        options:
-          format: yyyy-MM-dd
-        required: true
-        description: "Date this employee has hired on."
-      - name: active
-        label: "Active?"
-        type: boolean
-        default: true
-        required: true
-      - name: achievements
-        label: "Achievements"
-        type: block
-        list: true
-        blocks:
-        - name: {index}
+  content:
+    - name: users
+      label: Employees
+      path: _posts
+      type: collection
+      view:
+        fields: [name, id, active, date, achievements]
+        default:
+          sort: date
+          order: desc
+      fields:
+        - name: id
+          label: "ID"
+          type: number
+          required: true
+          description: "Employee #."
+        - name: name
+          label: "Name"
+          type: string
+          required: true
+          description: "Employee Name: First Name + Last Name."
+        - name: date
+          label: "Hire Date"
+          type: date
+          default: ""
+          options:
+            format: yyyy-MM-dd
+          required: true
+          description: "Date this employee has hired on."
+        - name: active
+          label: "Active?"
+          type: boolean
+          default: true
+          required: true
+        - name: achievements
+          label: "Achievements"
+          type: object
+          list:
+            collapsible:
+              collapsed: true
+              summary: "{title} ({index})"
           fields:
-            - name: test
-              type: number
+          - name: runner_i
+            label: "Runner I"
+            type: boolean
+          - name: runner_ii
+            label: "Runner II"
+            type: boolean
+          - name: runner_iii
+            label: "Runner III"
+            type: boolean
