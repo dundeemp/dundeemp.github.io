@@ -33,7 +33,7 @@
           fields:
             - name: runner
               label: "👟 Runner"
-              description: "A<br>B"
+              description: "A&#10;B"
               type: number
               options:
                 min: 0
