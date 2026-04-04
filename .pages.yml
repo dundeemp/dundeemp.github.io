@@ -33,7 +33,7 @@
           fields:
             - name: runner
               label: "👟 Runner"
-              description: "A&#10;B"
+              description: "🎖️ TIER I: Complete the first shift as a Runner. 🎖️ TIER II: Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision. 🎖️ TIER III: Must be able to work unsupervised and able to handle peak hours proficiently."
               type: number
               options:
                 min: 0
