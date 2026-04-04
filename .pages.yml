@@ -39,5 +39,6 @@ content:
         blocks:
         - name: runner
           fields:
-            - name: completed
+            - name: runner
+              label: "Runner"
               type: boolean
