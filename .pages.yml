@@ -38,10 +38,14 @@ content:
         type: object
         fields:
         - name: runner_i
-          label: "Runner I" 
+          label: "👟 Runner I" 
           type: boolean
           default: false
         - name: runner_ii
-          label: "Runner II" 
+          label: "👟 Runner II" 
+          type: boolean
+          default: false
+        - name: runner_iii
+          label: "👟 Runner III" 
           type: boolean
           default: false
