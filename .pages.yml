@@ -38,7 +38,7 @@
           list:
             collapsible:
               collapsed: true
-              summary: "{title} ({index})"
+              summary: "{name} ({index})"
           fields:
           - name: runner_i
             label: "Runner I"
