@@ -34,7 +34,7 @@ content:
         required: true
       - name: achievements
         label: "Achievements"
-        type: blocks
+        type: block
         list: true
         blocks:
           - name: runner
