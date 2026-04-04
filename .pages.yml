@@ -118,9 +118,6 @@
         - name: service
           label: "Service Milestones"
           type: object
-          list:
-            collapsible:
-              collapsed: true
           fields:
             - name: six_months
               label: "⏳ Service I (6 months)"
@@ -142,3 +139,36 @@
               label: "⏳ Service V (10 years)"
               type: boolean
               default: false
+        - name: other_milestones
+          label: "Other Milestones"
+          type: object
+          fields:
+            - name: xmas
+              label: "🎄 Christmas"
+              type: boolean
+              default: false
+            - name: eotm
+              label: "🏆 Growing Boldly"
+              type: boolean
+              default: false
+            - name: shift_lead
+              label: "⏫ Shift Lead"
+              type: boolean
+              default: false
+            - name: manager
+              label: "⏫ Manager"
+              type: boolean
+              default: false
+            - name: jack_of_all_trades
+              label: "🛠️ Jack Of All Trades"
+              type: boolean
+              default: false
+        - name: stackable_milestones
+          label: "Repeatable Milestones"
+          type: object
+          fields:
+            - name: wingman
+              label: "🤝 Wingman"
+              type: number
+              options:
+                min: 0
