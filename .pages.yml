@@ -115,3 +115,30 @@
               options:
                 min: 0
                 max: 3
+        - name: service
+          label: "Service Milestones"
+          type: object
+          list:
+            collapsible:
+              collapsed: true
+          fields:
+            - name: six_months
+              label: "⏳ Service I (6 months)"
+              type: boolean
+              default: false
+            - name: one_year
+              label: "⏳ Service II (1 year)"
+              type: boolean
+              default: false
+            - name: three_years
+              label: "⏳ Service III (3 years)"
+              type: boolean
+              default: false
+            - name: five_years
+              label: "⏳ Service IV (5 years)"
+              type: boolean
+              default: false
+            - name: ten_years
+              label: "⏳ Service V (10 years)"
+              type: boolean
+              default: false
