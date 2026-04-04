@@ -4,7 +4,7 @@
       path: _posts
       type: collection
       view:
-        fields: [name, id, active, date]
+        fields: [avatar, name, id, active, date]
         default:
           sort: date
           order: desc
@@ -27,6 +27,12 @@
             format: yyyy-MM-dd
           required: true
           description: "Date this employee has hired on."
+        - name: pfp
+          label: "Avatar"
+          type: image
+          options:
+            media: images
+            path: assets/img/avatars
         - name: active
           label: "Active?"
           type: boolean
