@@ -40,18 +40,21 @@
                 max: 3
             - name: guest_attendant
               label: "🧹 Guest Attendant"
+              description: "🎖️ 1: Complete the Guest Attendant Learning Path. Complete the first shift as Guest Attendant. 🎖️ 2: Complete the Dining Room Open & Dining Room Close Learning Paths. Must be able to work with very little supervision. 🎖️ 3: Must be able to work unsupervised and able to handle peak hours proficiently."
               type: number
               options:
                 min: 0
                 max: 3
             - name: cashier
               label: "💰 Cashier"
+              description: "🎖️ 1: Complete the Cashier Learning Path. Complete the first shift as Cashier. 2: 🎖️ Must be able to work the station with very little supervision, requires full knowledge of the menu and different modification options. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently."
               type: number
               options:
                 min: 0
                 max: 3
             - name: drive_thru
               label: "🚗 Drive Thru"
+              description: "🎖️ 1: Complete the Drive Thru Learning Path. Complete the first shift in Drive Thru. 🎖️ 2: Must be able to work the station with very little supervision. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently, handling order taking and cashing out alone if needed."
               type: number
               options:
                 min: 0
@@ -62,18 +65,21 @@
           fields:
             - name: buns
               label: "🍔 Buns"
+              description: "🎖️ 1: Complete the ButterBurgers and Sandwiches Learning Path and complete the first shift on Buns. 🎖️ 2: Must be able to work the station with very little supervision and requires full knowledge of silent signals. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently, usually involving both screens."
               type: number
               options:
                 min: 0
                 max: 3
             - name: grill
               label: "🫓 Grill"
+              description: "🎖️ 1: Complete the Grill Master Learning Path and complete the first shift on Grill. 🎖️ 2: Must be able to work the station with very little supervision and requires full knowledge of silent signals and grill techniques. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently, usually involving pressing and off-loading alone."
               type: number
               options:
                 min: 0
                 max: 3
             - name: fryer
               label: "🍟 Fryer"
+              description: "🎖️ 1: Complete the Fry Specialist Learning Path and complete the first shift on Fryer. 🎖️ 2: Must be able to work the station with very little supervision and requires knowledge on how to work all 4 fryer vats (fries, sides, chicken, and fish). 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently, usually handling all 4 vats alone."
               type: number
               options:
                 min: 0
@@ -84,6 +90,7 @@
           fields:
             - name: custard
               label: "🍦 Custard"
+              description: "🎖️ 1: Complete the Dessert Specialist & Custard Production Learning Paths and complete the first shift on Custard. 🎖️ 2: Must be able to work the station with very little supervision. Scooping, topping, and mixing is expected at this point. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently. Requires dexterity handling the shake and custard machine.""
               type: number
               options:
                 min: 0
@@ -94,24 +101,28 @@
           fields:
             - name: set
               label: "🛍️ Set"
+              description: "🎖️ 1: Complete the Set Learning Path. 🎖️ 2: Must be able to work the station with very little supervision. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently."
               type: number
               options:
                 min: 0
                 max: 3
             - name: middle
               label: "🥡 Middle"
+              description: "🎖️ 1: Complete the Middle Learning Path. 🎖️ 2: Must be able to work the station with very little supervision. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently."
               type: number
               options:
                 min: 0
                 max: 3
             - name: porting
               label: "🧼 Porting"
+              description: "🎖️ 1: Complete the Porting Learning Path. 🎖️ 2: Must be able to work with very little supervision. 🎖️ 3: Must be able to work unsupervised."
               type: number
               options:
                 min: 0
                 max: 3
             - name: food_preparation
               label: "🍲 Food Preparation"
+              description: "🎖️ 1: Complete the Food Preparation Learning Path. 🎖️ 2: Must be able to work the station with very little supervision. 🎖️ 3: Must be able to work the station unsupervised."
               type: number
               options:
                 min: 0
@@ -121,23 +132,28 @@
           type: object
           fields:
             - name: six_months
-              label: "⏳ Service I (6 months)"
+              label: "⏳ Service I"
+              description: "Be part of the team for a period of 6 months."
               type: boolean
               default: false
             - name: one_year
-              label: "⏳ Service II (1 year)"
+              label: "⏳ Service II"
+              description: "Be part of the team for a period of 1 year."
               type: boolean
               default: false
             - name: three_years
-              label: "⏳ Service III (3 years)"
+              label: "⏳ Service III"
+              description: "Be part of the team for a period of 3 years."
               type: boolean
               default: false
             - name: five_years
-              label: "⏳ Service IV (5 years)"
+              label: "⏳ Service IV"
+              description: "Be part of the team for a period of 5 years."
               type: boolean
               default: false
             - name: ten_years
-              label: "⏳ Service V (10 years)"
+              label: "⏳ Service V"
+              description: "Be part of the team for a period of 10 years."
               type: boolean
               default: false
         - name: other_milestones
@@ -145,23 +161,28 @@
           type: object
           fields:
             - name: xmas
-              label: "🎄 Christmas"
+              label: "🎄 Santa's Helper"
+              description: "Work a full shift on Christmas Eve."
               type: boolean
               default: false
             - name: eotm
               label: "🏆 Growing Boldly"
+              description: "Obtain a Growing Boldly Certificate."
               type: boolean
               default: false
             - name: shift_lead
               label: "⏫ Shift Lead"
+              description: "Be promoted to a Crew Chief."
               type: boolean
               default: false
             - name: manager
               label: "⏫ Manager"
+              description: "Be promoted to a Manager."
               type: boolean
               default: false
             - name: jack_of_all_trades
               label: "🛠️ Jack Of All Trades"
+              description: "Complete the FOH, BOH, and Desserts training."
               type: boolean
               default: false
         - name: stackable_milestones
@@ -170,6 +191,25 @@
           fields:
             - name: wingman
               label: "🤝 Wingman"
+              description: "Cover somebody's shift."
+              type: number
+              options:
+                min: 0
+            - name: surveys
+              label: "💌 Guest Favorite"
+              description: "Get 15 or more surveys in a month."
+              type: number
+              options:
+                min: 0
+            - name: double_shift
+              label: "🚂 Shift Grinder"
+              description: "Work a double shift."
+              type: number
+              options:
+                min: 0
+            - name: staying_extra
+              label: "🦮 Team Player"
+              description: "Stay one hour or more after the end of your scheduled shift (must be PIC-approved)."
               type: number
               options:
                 min: 0
