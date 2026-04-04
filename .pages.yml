@@ -37,9 +37,7 @@ content:
         type: block
         list: true
         blocks:
-        - name: hero
-          component: hero
-        - name: text
+        - name: runner
           fields:
-            - name: body
-              type: rich-text
+            - name: completed
+              type: boolean
