@@ -1,5 +1,4 @@
   media:
-    input: assets/img/avatars/raw
     output: /assets/img/avatars
   content:
     - name: users
