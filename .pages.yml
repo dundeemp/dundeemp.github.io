@@ -34,24 +34,28 @@ content:
         required: true
       - name: runner
         label: "👟 Runner Competences" 
+        description: "Select the unlocked tier."
         type: number
         options:
           min: 0
           max: 3
       - name: guest_attendant
         label: "🧹 Guest Attendant Competences" 
+        description: "Select the unlocked tier."
         type: number
         options:
           min: 0
           max: 3
       - name: cashier
         label: "💰 Cashier Competences" 
+        description: "Select the unlocked tier."
         type: number
         options:
           min: 0
           max: 3
       - name: drivethru
         label: "🚗 Drive Thru Competences" 
+        description: "Select the unlocked tier."
         type: number
         options:
           min: 0
