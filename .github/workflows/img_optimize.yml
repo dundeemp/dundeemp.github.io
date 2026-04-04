@@ -1,4 +1,4 @@
-name: Optimize Images
+name: Optimize Avatars
 
 on:
   workflow_dispatch:
@@ -14,27 +14,44 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install ImageMagick
-        run: sudo apt-get install imagemagick -y
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick webp
 
-      - name: Convert images to webp
+      - name: Process images (resize + convert to webp)
         run: |
           mkdir -p assets/img/avatars
+
           for file in assets/img/avatars/raw/*; do
+            [ -e "$file" ] || continue
+
             filename=$(basename "$file")
             name="${filename%.*}"
 
-            convert "$file" -quality 75 "assets/img/avatars/${name}.webp"
+            # Resize + center crop to 120x120
+            convert "$file" \
+              -resize 120x120^ \
+              -gravity center \
+              -extent 120x120 \
+              temp.png
+
+            # Convert to webp (compressed)
+            cwebp -q 75 temp.png -o "assets/img/avatars/${name}.webp"
+
+            rm temp.png
           done
 
       - name: Remove raw images
         run: rm -f assets/img/avatars/raw/*
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+
           git add assets/img/avatars
           git rm -f assets/img/avatars/raw/* || true
-          git commit -m "Optimize and convert avatars to webp" || echo "No changes"
+
+          git commit -m "Optimize avatars: resize to 120x120 and convert to webp" || echo "No changes"
           git push
