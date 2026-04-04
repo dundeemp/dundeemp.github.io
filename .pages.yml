@@ -37,14 +37,7 @@ content:
         type: block
         list: true
         blocks:
-        - name: runner
+        - name: {index}
           fields:
-          - name: sections
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title} ({index})"
-            fields:
-              - name: title
-                type: string
+            - name: test
+              type: number
