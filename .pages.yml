@@ -56,7 +56,7 @@
               options:
                 min: 0
                 max: 3
-            - name: guest_attendant
+            - name: guest_att
               label: "🧹 Guest Attendant"
               description: "🎖️ 1: Complete the Guest Attendant Learning Path. Complete the first shift as Guest Attendant. 🎖️ 2: Complete the Dining Room Open & Dining Room Close Learning Paths. Must be able to work with very little supervision. 🎖️ 3: Must be able to work unsupervised and able to handle peak hours proficiently."
               type: number
@@ -65,7 +65,7 @@
                 max: 3
             - name: cashier
               label: "💰 Cashier"
-              description: "🎖️ 1: Complete the Cashier Learning Path. Complete the first shift as Cashier. 2: 🎖️ Must be able to work the station with very little supervision, requires full knowledge of the menu and different modification options. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently."
+              description: "🎖️ 1: Complete the Cashier Learning Path. Complete the first shift as Cashier. 🎖️ 2: Must be able to work the station with very little supervision, requires full knowledge of the menu and different modification options. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently."
               type: number
               options:
                 min: 0
@@ -102,13 +102,13 @@
               options:
                 min: 0
                 max: 3
-        - name: boh
+        - name: desserts
           label: "Desserts"
           type: object
           fields:
             - name: custard
               label: "🍦 Custard"
-              description: "🎖️ 1: Complete the Dessert Specialist & Custard Production Learning Paths and complete the first shift on Custard. 🎖️ 2: Must be able to work the station with very little supervision. Scooping, topping, and mixing is expected at this point. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently. Requires dexterity handling the shake and custard machine.""
+              description: "🎖️ 1: Complete the Dessert Specialist & Custard Production Learning Paths and complete the first shift on Custard. 🎖️ 2: Must be able to work the station with very little supervision. Scooping, topping, and mixing is expected at this point. 🎖️ 3: Must be able to work the station unsupervised and able to handle peak hours proficiently. Requires dexterity handling the shake and custard machine."
               type: number
               options:
                 min: 0
@@ -138,7 +138,7 @@
               options:
                 min: 0
                 max: 3
-            - name: food_preparation
+            - name: prepping
               label: "🍲 Food Preparation"
               description: "🎖️ 1: Complete the Food Preparation Learning Path. 🎖️ 2: Must be able to work the station with very little supervision. 🎖️ 3: Must be able to work the station unsupervised."
               type: number
@@ -188,7 +188,7 @@
               description: "Obtain a Growing Boldly Certificate."
               type: boolean
               default: false
-            - name: shift_lead
+            - name: trainer
               label: "⏫ Shift Lead"
               description: "Be promoted to a Crew Chief."
               type: boolean
