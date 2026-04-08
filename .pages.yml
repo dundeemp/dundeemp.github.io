@@ -35,7 +35,7 @@
           type: image
           options:
             path: assets/img/avatars
-        - name: title
+        - name: badge
           label: "Title"
           type: select
           options:
