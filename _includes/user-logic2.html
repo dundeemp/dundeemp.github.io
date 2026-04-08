@@ -1,0 +1,565 @@
+{% if page.active %}
+<div id="sidebar-backdrop" onclick="slideOff()"></div>
+<div id="modal-backdrop"></div>
+<div class="sections">
+  <div class="main-section">
+    <div class="section-header">
+      <div class="return">
+        <a class="link" href="/"><i class="bi bi-house-fill"></i> <span>Home</span></a>
+        <a class="link" href="/shop.html"><i class="bi bi-bag-heart-fill"></i> <span>Shop</span></a>
+        <a class="link" href="/faq.html"><i class="bi bi-question-diamond-fill"></i> <span>How To</span></a>
+      </div>
+      <div class="pfp">
+          <img src="{{ page.pfp | default: 'https://imgur.com/1a4WZaq.png'}}">
+      </div>
+      <div class="userinfo">
+        <h4>{{ page.badge | default: '&nbsp;'}}</h4>
+        <h3>{{ page.name | default: 'USER NOT FOUND'}}</h3>
+        {% assign start = page.date | date: "%s" %}
+
+          {% assign now = "now" | date: "%s" %}
+          {% assign diff = now | minus: start %}
+
+          {% assign days = diff | divided_by: 86400 %}
+          {% assign years = days | divided_by: 365 %}
+          {% assign rem_days = days | modulo: 365 %}
+          {% assign months = rem_days | divided_by: 30 %}
+          {% assign final_days = rem_days | modulo: 30 %}
+
+          {% assign parts = "" | split: "" %}
+
+          {% if years > 0 %}
+            {% assign y = years | append: " year" %}
+            {% if years != 1 %}{% assign y = y | append: "s" %}{% endif %}
+            {% assign parts = parts | push: y %}
+          {% endif %}
+
+          {% if months > 0 %}
+            {% assign m = months | append: " month" %}
+            {% if months != 1 %}{% assign m = m | append: "s" %}{% endif %}
+            {% assign parts = parts | push: m %}
+          {% endif %}
+
+          {% if final_days > 0 %}
+            {% assign d = final_days | append: " day" %}
+            {% if final_days != 1 %}{% assign d = d | append: "s" %}{% endif %}
+            {% assign parts = parts | push: d %}
+          {% endif %}
+
+          {% assign size = parts | size %}
+
+          {% if page.date %}
+            <p class="time">Part of the team for
+              {% if size == 1 %}
+                {{ parts[0] }}.
+              {% elsif size == 2 %}
+                {{ parts[0] }} and {{ parts[1] }}.
+              {% elsif size == 3 %}
+                {{ parts[0] }}, {{ parts[1] }}, and {{ parts[2] }}.
+              {% else %}
+                0 days.
+              {% endif %}
+            </p>
+          {% else %}
+          <p class="time">&nbsp;</p>
+          {% endif %}
+      </div>
+    </div>
+
+    <div class="filter-box">
+      <h2 class="filter-title"><i class="bi bi-funnel-fill"></i> Filters:</h2>
+      <label class="filter">
+        <input type="radio" name="type" value="all" checked>
+        <span>All</span>
+      </label>
+      <label class="filter">
+        <input type="radio" name="type" value="training">
+        <span>Training</span>
+      </label>
+      <label class="filter">
+        <input type="radio" name="type" value="feat">
+        <span>Feats</span>
+      </label>
+      <label class="filter">
+        <input type="radio" name="type" value="stack">
+        <span>Repeatable</span>
+      </label>
+      <div class="spacer"></div>
+      <label class="sort">
+        <input type="radio" name="sort" value="grid" checked>
+        <span><i class="bi bi-grid"></i></span>
+      </label>
+      <label class="sort">
+        <input type="radio" name="sort" value="list">
+        <span><i class="bi bi-layout-three-columns"></i></span>
+      </label>
+    </div>
+
+    <div class="achievements">
+      <div class="ach-wrapper">
+        
+{% assign ach_data = site.data.ach.achievements %}
+{% assign all_achievements = "" | split: "" %}
+
+<!-- ============================================================
+  TRAINING (FOH, BOH, DESSERTS, OTHER STATIONS)
+  → ONE ENTRY PER STATION
+============================================================ -->
+
+{% assign training_groups = "foh,boh,desserts,other_stations" | split: "," %}
+
+{% for group in training_groups %}
+  {% assign group_data = ach_data[group] %}
+
+  {% for station in group_data %}
+    {% assign station_key = station[0] %}
+    {% assign tiers = station[1] %}
+
+    <!-- Base achievement (fallback) -->
+    {% assign ach = tiers["1"] %}
+
+    <!-- User level -->
+    {% assign user_station = page[group][station_key] %}
+    {% if user_station == nil %}{% assign user_station = 0 %}{% endif %}
+
+    <!-- Optional: use highest unlocked tier data -->
+    {% assign tier_key = user_station | append: "" %}
+    {% assign tier_ach = tiers[tier_key] %}
+    {% if tier_ach != nil %}
+      {% assign ach = tier_ach %}
+    {% endif %}
+
+    <!-- Build entry -->
+    {% assign entry = "" | split: "" %}
+    {% assign entry = entry | push: station_key %}
+    {% assign entry = entry | push: "" %}
+    {% assign entry = entry | push: ach.name %}
+    {% assign entry = entry | push: ach.type %}
+    {% assign entry = entry | push: ach.points %}
+    {% assign entry = entry | push: ach.unlock_conditions %}
+    {% assign entry = entry | push: ach.title %}
+    {% assign entry = entry | push: ach.reward_items %}
+    {% assign entry = entry | push: user_station %}
+    {% assign entry = entry | push: group %}
+
+    {% assign all_achievements = all_achievements | push: entry %}
+  {% endfor %}
+{% endfor %}
+
+
+<!-- ============================================================
+  FEATS (UNCHANGED)
+============================================================ -->
+
+{% for feat in ach_data.service %}
+  {% assign feat_key = feat[0] %}
+  {% assign ach = feat[1] %}
+
+  {% assign user_val = page.service[feat_key] %}
+  {% if user_val == nil %}{% assign user_val = false %}{% endif %}
+
+  {% assign entry = "" | split: "" %}
+  {% assign entry = entry | push: feat_key %}
+  {% assign entry = entry | push: "" %}
+  {% assign entry = entry | push: ach.name %}
+  {% assign entry = entry | push: ach.type %}
+  {% assign entry = entry | push: ach.points %}
+  {% assign entry = entry | push: ach.unlock_conditions %}
+  {% assign entry = entry | push: ach.title %}
+  {% assign entry = entry | push: ach.reward_items %}
+  {% assign entry = entry | push: user_val %}
+  {% assign entry = entry | push: "service" %}
+
+  {% assign all_achievements = all_achievements | push: entry %}
+{% endfor %}
+
+{% for feat in ach_data.other_milestones %}
+  {% assign feat_key = feat[0] %}
+  {% assign ach = feat[1] %}
+
+  {% assign user_val = page.other_milestones[feat_key] %}
+  {% if user_val == nil %}{% assign user_val = false %}{% endif %}
+
+  {% assign entry = "" | split: "" %}
+  {% assign entry = entry | push: feat_key %}
+  {% assign entry = entry | push: "" %}
+  {% assign entry = entry | push: ach.name %}
+  {% assign entry = entry | push: ach.type %}
+  {% assign entry = entry | push: ach.points %}
+  {% assign entry = entry | push: ach.unlock_conditions %}
+  {% assign entry = entry | push: ach.title %}
+  {% assign entry = entry | push: ach.reward_items %}
+  {% assign entry = entry | push: user_val %}
+  {% assign entry = entry | push: "other_milestones" %}
+
+  {% assign all_achievements = all_achievements | push: entry %}
+{% endfor %}
+
+
+<!-- ============================================================
+  STACKABLE
+============================================================ -->
+
+{% for stack in ach_data.stackable_milestones %}
+  {% assign stack_key = stack[0] %}
+  {% assign ach = stack[1] %}
+
+  {% assign user_count = page.stackable_milestones[stack_key] %}
+  {% if user_count == nil %}{% assign user_count = 0 %}{% endif %}
+
+  {% assign entry = "" | split: "" %}
+  {% assign entry = entry | push: stack_key %}
+  {% assign entry = entry | push: "" %}
+  {% assign entry = entry | push: ach.name %}
+  {% assign entry = entry | push: ach.type %}
+  {% assign entry = entry | push: ach.points %}
+  {% assign entry = entry | push: ach.unlock_conditions %}
+  {% assign entry = entry | push: ach.title %}
+  {% assign entry = entry | push: ach.reward_items %}
+  {% assign entry = entry | push: user_count %}
+  {% assign entry = entry | push: "stackable_milestones" %}
+
+  {% assign all_achievements = all_achievements | push: entry %}
+{% endfor %}
+
+
+<!-- ============================================================
+  RENDER
+============================================================ -->
+{% assign total_score = 0 %}
+
+{% for entry in all_achievements %}
+  {% assign e_key               = entry[0] %}
+  {% assign e_name              = entry[2] %}
+  {% assign e_type              = entry[3] %}
+  {% assign e_points            = entry[4] %}
+  {% assign e_unlock_conditions = entry[5] %}
+  {% assign e_userval           = entry[8] %}
+
+  <!-- Determine unlocked -->
+  {% assign is_unlocked = false %}
+
+  {% if e_type == "training" %}
+    {% if e_userval > 0 %}
+      {% assign is_unlocked = true %}
+    {% endif %}
+  {% elsif e_type == "feat" %}
+    {% if e_userval == true %}
+      {% assign is_unlocked = true %}
+    {% endif %}
+  {% elsif e_type == "stack" %}
+    {% if e_userval > 0 %}
+      {% assign is_unlocked = true %}
+    {% endif %}
+  {% endif %}
+
+  <!-- ================= ADD TO SCORE ================= -->
+   {% if is_unlocked %}
+
+    {% if e_type == "stack" %}
+      {% assign stack_points = e_points | times: e_userval %}
+      {% assign total_score = total_score | plus: stack_points %}
+    {% else %}
+      {% assign total_score = total_score | plus: e_points %}
+    {% endif %}
+
+  {% endif %}
+
+  <!-- ================= LOCK CLASS ================= -->
+  {% if is_unlocked %}
+    {% assign lock_class = "unlocked" %}
+  {% else %}
+    {% assign lock_class = "locked" %}
+  {% endif %}
+
+  <!-- ================= TRAINING ================= -->
+  {% if e_type == "training" %}
+  <div class="achievement {{ lock_class }} tier-{{ e_userval }}" data-type="training" data-id="{{ e_key }}" data-tier="{{ e_userval }}">
+    <span class="description">{{ e_unlock_conditions}}</span>
+    <img src="/assets/img/badges/{{ e_key }}.webp" alt="{{ e_name }}">
+    <div class="star tier-1"><i class="bi bi-star-fill"></i></div>
+    <div class="star tier-2"><i class="bi bi-star-fill"></i></div>
+    <div class="star tier-3"><i class="bi bi-star-fill"></i></div>
+
+    <p><span class="tier_n">Tier {{ e_userval }} – </span>{{ e_name }} {% if e_userval == 3 %} <span class="completed">(Completed)</span>{% endif %}</p>
+  </div>
+
+  <!-- ================= FEATS ================= -->
+  {% elsif e_type == "feat" %}
+    <div class="achievement {{ lock_class }}" data-type="feat" data-id="{{ e_key }}">
+      <span class="description">{{ e_unlock_conditions}}</span>
+      <img src="/assets/img/badges/{{ e_key }}.webp" alt="{{ e_name }}">
+      <div class="star tier-0"><i class="bi bi-star-fill"></i></div>
+      <p>{{ e_name }} {% if e_userval == true %} <span class="completed">(Completed)</span>{% endif %}</p>
+    </div>
+
+  <!-- ================= STACK ================= -->
+  {% else %}
+    <div class="achievement {{ lock_class }}" data-type="stack" data-id="{{ e_key }}">
+      <span class="description">{{ e_unlock_conditions}}</span>
+      <img src="/assets/img/badges/{{ e_key }}.webp" alt="{{ e_name }}">
+      <div class="star tier-0">
+        <span class="xtimes">x {{ e_userval }}</span>&nbsp;
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <p><span class="tier_n">Level {{ e_userval }} – </span>{{ e_name }} {% if e_userval >= 1 %} <span class="completed">(Completed)</span>{% endif %}</p>
+    </div>
+  {% endif %}
+
+{% endfor %}
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="side-section" id="sidebar">
+    <div class="closeBtn2" onClick="slideOff()"><i class="bi bi-x-lg"></i></div>
+    <h1><i class="bi bi-trophy-fill"></i> LEADERBOARD <i class="bi bi-trophy-fill"></i></h1>
+    
+    <table class="leaderboard">
+      <thead>
+        <tr>
+          <th class="name">Name</th>
+          <th class="score">Score</th>
+        </tr>
+      </thead>
+        <tbody>
+          {% assign lb_entries = "" | split: "" %}
+
+          {% for u in site.user %}
+            {% unless u.active %}{% continue %}{% endunless %}
+            {% assign u_score = 0 %}
+
+            {% for group in training_groups %}
+              {% assign group_data = ach_data[group] %}
+              {% for station in group_data %}
+                {% assign station_key = station[0] %}
+                {% assign tiers       = station[1] %}
+                {% assign u_level     = u[group][station_key] %}
+                {% if u_level == nil %}{% assign u_level = 0 %}{% endif %}
+                {% if u_level > 0 %}
+                  {% assign tier_key = u_level | append: "" %}
+                  {% assign tier_ach = tiers[tier_key] %}
+                  {% if tier_ach %}
+                    {% assign u_score = u_score | plus: tier_ach.points %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+
+            {% for feat in ach_data.service %}
+              {% assign feat_key = feat[0] %}
+              {% assign feat_ach = feat[1] %}
+              {% if u.service[feat_key] == true %}
+                {% assign u_score = u_score | plus: feat_ach.points %}
+              {% endif %}
+            {% endfor %}
+
+            {% for feat in ach_data.other_milestones %}
+              {% assign feat_key = feat[0] %}
+              {% assign feat_ach = feat[1] %}
+              {% if u.other_milestones[feat_key] == true %}
+                {% assign u_score = u_score | plus: feat_ach.points %}
+              {% endif %}
+            {% endfor %}
+
+            {% for stack in ach_data.stackable_milestones %}
+              {% assign stack_key   = stack[0] %}
+              {% assign stack_ach   = stack[1] %}
+              {% assign stack_count = u.stackable_milestones[stack_key] %}
+              {% if stack_count == nil %}{% assign stack_count = 0 %}{% endif %}
+              {% if stack_count > 0 %}
+                {% assign stack_pts = stack_ach.points | times: stack_count %}
+                {% assign u_score   = u_score | plus: stack_pts %}
+              {% endif %}
+            {% endfor %}
+
+            {% assign padded = "00000000" | append: u_score %}
+            {% assign padded = padded | slice: -8, 8 %}
+
+            {% assign is_current = "0" %}
+            {% if u.name == page.name %}{% assign is_current = "1" %}{% endif %}
+            {% assign lb_row = padded | append: "|" | append: u_score | append: "|" | append: u.name | append: "|" | append: u.pfp | append: "|" | append: u.badge | append: "|" | append: is_current %}
+            {% assign lb_entries = lb_entries | push: lb_row %}
+          {% endfor %}
+
+          {% assign lb_sorted = lb_entries | sort | reverse %}
+
+          {% for row in lb_sorted %}
+            {% assign p         = row | split: "|" %}
+            {% assign r_score   = p[1] %}
+            {% assign r_name    = p[2] %}
+            {% assign r_pfp     = p[3] | default: "https://imgur.com/1a4WZaq.png" %}
+            {% assign r_badge   = p[4] %}
+            {% assign r_current = p[5] %}
+            {% assign r_rank    = forloop.index %}
+
+{% if r_badge != "" and r_badge != nil %}
+  <tr data-score="{{ r_score }}" {% if r_current == "1" %}class="current-user"{% endif %}>
+    <td class="img title"><img src="{{ r_pfp }}">{{ r_name }}</td>
+    <td class="name-entry">
+      <p class="index title">{{ r_rank }}</p>
+      &nbsp;&nbsp;<span class="username">{{ r_name }}<span class="title-entry">{{ r_badge }}</span></span>
+    </td>
+    <td class="score-entry{% if r_rank == 1 %} first{% elsif r_rank == 2 %} second{% elsif r_rank == 3 %} third{% endif %}">{{ r_score }}</td>
+  </tr>
+{% else %}
+  <tr data-score="{{ r_score }}" {% if r_current == "1" %}class="current-user"{% endif %}>
+    <td class="img"><img src="{{ r_pfp }}">{{ r_name }}</td>
+    <td class="name-entry no-title">
+      <p class="index">{{ r_rank }}</p>
+      &nbsp;&nbsp;<span class="username">{{ r_name }}</span>
+    </td>
+    <td class="score-entry{% if r_rank == 1 %} first{% elsif r_rank == 2 %} second{% elsif r_rank == 3 %} third{% endif %}">{{ r_score }}</td>
+  </tr>
+{% endif %}
+          {% endfor %}
+        </tbody>
+    </table>
+  </div>
+</div>
+<button type="button" id="sidebarButton" onclick="slideOff()"><i class="bi bi-trophy-fill"></i></button>
+
+{% for group in training_groups %}
+  {% assign group_data = ach_data[group] %}
+  {% for station in group_data %}
+    {% assign station_key = station[0] %}
+    {% assign tiers = station[1] %}
+    {% for tier_num in (1..3) %}
+      {% assign tier_key = tier_num | append: "" %}
+      {% assign ach = tiers[tier_key] %}
+      {% if ach %}
+      <div class="modal modal-{{ station_key }}-tier-{{ tier_num }}">
+        <h2>{{ ach.name }}</h2>
+        <p class="description">{{ ach.unlock_conditions }}</p>
+        <div class="awards {% unless ach.title or ach.reward_items %}hidden{% endunless %}">
+          <p class="title-awards">Rewards:</p>
+          <p class="title {% unless ach.title %}hidden{% endunless %}">{{ ach.title }}</p>
+          <p class="item {% unless ach.reward_items %}hidden{% endunless %}">{{ ach.reward_items }}</p>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+{% for entry in all_achievements %}
+  {% assign e_key               = entry[0] %}
+  {% assign e_type              = entry[3] %}
+  {% if e_type == "training" %}{% continue %}{% endif %}
+  {% assign e_name              = entry[2] %}
+  {% assign e_unlock_conditions = entry[5] %}
+  {% assign e_title             = entry[6] %}
+  {% assign e_reward_items      = entry[7] %}
+  <div class="modal modal-{{ e_key }}">
+    <h2>{{ e_name }}</h2>
+    <p class="description">{{ e_unlock_conditions }}</p>
+    <div class="awards {% unless e_title or e_reward_items %}hidden{% endunless %}">
+      <p class="title-awards">Rewards:</p>
+      <p class="title {% unless e_title %}hidden{% endunless %}">{{ e_title }}</p>
+      <p class="item {% unless e_reward_items %}hidden{% endunless %}">{{ e_reward_items }}</p>
+    </div>
+  </div>
+{% endfor %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filterInputs = document.querySelectorAll('input[name="type"]');
+  const sortInputs = document.querySelectorAll('input[name="sort"]');
+  const achievements = document.querySelector(".achievements");
+  const items = document.querySelectorAll(".achievement");
+
+  // =========================
+  // FILTERING
+  // =========================
+  filterInputs.forEach(input => {
+    input.addEventListener("change", () => {
+      const value = document.querySelector('input[name="type"]:checked').value;
+
+      items.forEach(item => {
+        if (value === "all" || item.dataset.type === value) {
+          item.style.display = "flex"; // or "" if you prefer
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // =========================
+  // SORT (GRID / LIST TOGGLE)
+  // =========================
+  sortInputs.forEach(input => {
+    input.addEventListener("change", () => {
+      const value = document.querySelector('input[name="sort"]:checked').value;
+
+      if (value === "list") {
+        achievements.classList.add("list");
+      } else {
+        achievements.classList.remove("list");
+      }
+    });
+  });
+});
+// =========================
+// LEADERBOARD SORT
+// =========================
+const tbody = document.querySelector("table.leaderboard tbody");
+if (tbody) {
+  Array.from(tbody.querySelectorAll("tr"))
+    .sort((a, b) => (parseInt(b.dataset.score) || 0) - (parseInt(a.dataset.score) || 0))
+    .forEach(row => tbody.appendChild(row));
+}
+// =========================
+// LEADERBOARD SHOW MOBILE
+// =========================
+function slideOff() {
+  const sidebar = document.getElementById("sidebar");
+  const backdrop = document.getElementById("sidebar-backdrop");
+  sidebar.classList.toggle("onView");
+  backdrop.classList.toggle("vis");
+}
+// =========================
+// MODALS
+// =========================
+const backdrop = document.getElementById('modal-backdrop');
+
+document.querySelectorAll('.achievement').forEach(ach => {
+  ach.addEventListener('click', () => {
+    const id = ach.dataset.id;
+    const type = ach.dataset.type;
+
+    let modalKey = id;
+
+    if (type === 'training') {
+      const currentTier = parseInt(ach.dataset.tier) || 0;
+      const nextTier = Math.min(currentTier + 1, 3);
+      modalKey = id + '-tier-' + nextTier;
+    }
+
+    const modal = document.querySelector('.modal-' + modalKey);
+    if (!modal) return;
+
+    if (!modal.querySelector('.modal-close')) {
+      const btn = document.createElement('button');
+      btn.className = 'modal-close';
+      btn.innerHTML = '<i class="bi bi-x"></i>';
+      btn.addEventListener('click', hideModals);
+      modal.appendChild(btn);
+    }
+
+    modal.style.display = 'block';
+    backdrop.style.display = 'block';
+  });
+});
+
+backdrop.addEventListener('click', hideModals);
+
+function hideModals() {
+  document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+  backdrop.style.display = 'none';
+}
+</script>
+{% else %}
+  {% include 404.html %}
+{% endif %}

@@ -1,0 +1,418 @@
+{
+  "achievements": {
+    "foh": {
+      "runner": {
+        "1": {
+          "name": "Starter Pathfinder",
+          "type": "training",
+          "unlock_conditions": "Complete the first shift as a Runner.",
+          "title": "Starter Pathfinder Title",
+          "points": 20
+        },
+        "2": {
+          "name": "Expert Pathfinder",
+          "type": "training",
+          "unlock_conditions": "Complete the Front Line Open & Front Line Close Learning Paths. Must be able to work with very little supervision.",
+          "title": "Expert Pathfinder Title",
+          "points": 50
+        },
+        "3": {
+          "name": "Elite Pathfinder",
+          "type": "training",
+          "unlock_conditions": "Must be able to work unsupervised and able to handle peak hours proficiently.",
+          "title": "Elite Pathfinder Title",
+          "points": 100,
+          "reward_items": "x1 Blue Buck"
+        }
+      },
+      "guest_att": {
+        "1": {
+          "name": "Starter Guest Ambassador",
+          "type": "training",
+          "unlock_conditions": "Complete the Guest Attendant Learning Path. Complete the first shift as Guest Attendant.",
+          "title": "Starter Guest Ambassador Title",
+          "points": 25
+        },
+        "2": {
+          "name": "Expert Guest Ambassador",
+          "type": "training",
+          "unlock_conditions": "Complete the Dining Room Open & Dining Room Close Learning Paths. Must be able to work with very little supervision.",
+          "title": "Expert Guest Ambassador Title",
+          "points": 60
+        },
+        "3": {
+          "name": "Elite Guest Ambassador",
+          "type": "training",
+          "unlock_conditions": "Must be able to work unsupervised and able to handle peak hours proficiently.",
+          "title": "Elite Guest Ambassador Title",
+          "points": 120,
+          "reward_items": "x1 Blue Buck"
+        }
+      },
+      "drive_thru": {
+        "1": {
+          "name": "Starter Lane Master",
+          "type": "training",
+          "unlock_conditions": "Complete the Drive Thru Learning Path. Complete your first shift in Drive Thru.",
+          "title": "Starter Lane Master Title",
+          "points": 40
+        },
+        "2": {
+          "name": "Expert Lane Master",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision.",
+          "title": "Expert Lane Master Title",
+          "points": 70
+        },
+        "3": {
+          "name": "Elite Lane Master",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently, handling order taking and cashing out alone if needed.",
+          "title": "Elite Lane Master Title",
+          "points": 140,
+          "reward_items": "x2 Blue Bucks"
+        }
+      },
+      "cashier": {
+        "1": {
+          "name": "Starter Money Maker",
+          "type": "training",
+          "unlock_conditions": "Complete the Cashier Learning Path. Complete the first shift as Cashier.",
+          "title": "Starter Money Maker Title",
+          "points": 30
+        },
+        "2": {
+          "name": "Expert Money Maker",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision, requires full knowledge of the menu and different modification options.",
+          "title": "Expert Money Maker Title",
+          "points": 60
+        },
+        "3": {
+          "name": "Elite Money Maker",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently.",
+          "title": "Elite Money Maker Title",
+          "points": 120,
+          "reward_items": "x1 Blue Buck"
+        }
+      }
+    },
+    "boh": {
+      "buns": {
+        "1": {
+          "name": "Starter Bun Builder",
+          "type": "training",
+          "unlock_conditions": "Complete the ButterBurgers and Sandwiches Learning Path and complete the first shift on Buns.",
+          "title": "Starter Bun Builder Title",
+          "points": 35
+        },
+        "2": {
+          "name": "Expert Bun Builder",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision and requires full knowledge of silent signals.",
+          "title": "Expert Bun Builder Title",
+          "points": 60
+        },
+        "3": {
+          "name": "Elite Bun Builder",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently, usually involving both screens.",
+          "title": "Elite Bun Builder Title",
+          "points": 160,
+          "reward_items": "x2 Blue Bucks"
+        }
+      },
+      "grill": {
+        "1": {
+          "name": "Starter Grill Master",
+          "type": "training",
+          "unlock_conditions": "Complete the Grill Master Learning Path and complete the first shift on Grill.",
+          "title": "Starter Grill Master Title",
+          "points": 40
+        },
+        "2": {
+          "name": "Expert Grill Master",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision and requires full knowledge of silent signals and grill techniques.",
+          "title": "Expert Grill Master Title",
+          "points": 60
+        },
+        "3": {
+          "name": "Elite Grill Master",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently, usually involving pressing and off-loading alone.",
+          "title": "Elite Grill Master Title",
+          "points": 160,
+          "reward_items": "x1 Blue Buck"
+        }
+      },
+      "fryer": {
+        "1": {
+          "name": "Starter Crisp Captain",
+          "type": "training",
+          "unlock_conditions": "Complete the Fry Specialist Learning Path and complete the first shift on Fryer.",
+          "title": "Starter Crisp Captain Title",
+          "points": 30
+        },
+        "2": {
+          "name": "Expert Crisp Captain",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision and requires knowledge on how to work all 4 fryer vats (fries, sides, chicken, and fish).",
+          "title": "Expert Crisp Captain Title",
+          "points": 60
+        },
+        "3": {
+          "name": "Elite Crisp Captain",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently, usually handling all 4 vats alone.",
+          "title": "Elite Crisp Captain Title",
+          "points": 160,
+          "reward_items": "x2 Blue Bucks"
+        }
+      }
+    },
+    "other_stations": {
+      "middle": {
+        "1": {
+          "name": "Starter Meal Master",
+          "type": "training",
+          "unlock_conditions": "Complete the Middle Learning Path.",
+          "title": "Starter Meal Master Title",
+          "points": 20
+        },
+        "2": {
+          "name": "Expert Meal Master",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision.",
+          "title": "Expert Meal Master Title",
+          "points": 110
+        },
+        "3": {
+          "name": "Elite Meal Master",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently.",
+          "title": "Elite Meal Master Title",
+          "points": 250,
+          "reward_items": "x3 Blue Bucks"
+        }
+      },
+      "set": {
+        "1": {
+          "name": "Starter Mastermind",
+          "type": "training",
+          "unlock_conditions": "Complete the Middle Learning Path.",
+          "title": "Starter Mastermind Title",
+          "points": 20
+        },
+        "2": {
+          "name": "Expert Mastermind",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision.",
+          "title": "Expert Mastermind Title",
+          "points": 110
+        },
+        "3": {
+          "name": "Elite Mastermind",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently.",
+          "title": "Elite Mastermind Title",
+          "points": 250,
+          "reward_items": "x3 Blue Bucks"
+        }
+      },
+      "porting": {
+        "1": {
+          "name": "Starter Handyman",
+          "type": "training",
+          "unlock_conditions": "Complete the Porting Learning Path.",
+          "title": "Starter Handyman Title",
+          "points": 35
+        },
+        "2": {
+          "name": "Expert Handyman",
+          "type": "training",
+          "unlock_conditions": "Must be able to work with very little supervision.",
+          "title": "Expert Handyman Title",
+          "points": 60
+        },
+        "3": {
+          "name": "Elite Handyman",
+          "type": "training",
+          "unlock_conditions": "Must be able to work unsupervised.",
+          "title": "Elite Handyman Title",
+          "points": 200,
+          "reward_items": "x3 Blue Bucks"
+        }
+      },
+      "prepping": {
+        "1": {
+          "name": "Starter Stocksmith",
+          "type": "training",
+          "unlock_conditions": "Complete the Food Preparation Learning Path.",
+          "title": "Starter Stocksmith Title",
+          "points": 35
+        },
+        "2": {
+          "name": "Expert Stocksmith",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision.",
+          "title": "Expert Stocksmith Title",
+          "points": 60
+        },
+        "3": {
+          "name": "Elite Stocksmith",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised.",
+          "title": "Elite Stocksmith Title",
+          "points": 190,
+          "reward_items": "x2 Blue Bucks"
+        }
+      }
+    },
+    "desserts": {
+      "custard": {
+        "1": {
+          "name": "Starter Scoop Star",
+          "type": "training",
+          "unlock_conditions": "Complete the Dessert Specialist & Custard Production Learning Paths and complete the first shift on Custard",
+          "title": "Starter Scoop Star Title",
+          "points": 50
+        },
+        "2": {
+          "name": "Expert Scoop Star",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station with very little supervision. Scooping, topping, and mixing is expected at this point",
+          "title": "Expert Scoop Star Title",
+          "points": 80
+        },
+        "3": {
+          "name": "Elite Scoop Star",
+          "type": "training",
+          "unlock_conditions": "Must be able to work the station unsupervised and able to handle peak hours proficiently. Requires dexterity handling the shake and custard machine.",
+          "title": "Elite Scoop Star Title",
+          "points": 200,
+          "reward_items": "x3 Blue Bucks"
+        }
+      }
+    },
+    "service": {
+      "six_months": {
+        "name": "Rising Team Member",
+        "type": "feat",
+        "unlock_conditions": "Be part of the team for a period of 6 months.",
+        "title": "Rising Team Member Title",
+        "reward_items": "x1 Culver's Pin",
+        "points": 250
+      },
+      "one_year": {
+        "name": "Dedicated Team Member",
+        "type": "feat",
+        "unlock_conditions": "Be part of the team for a period of 1 year.",
+        "title": "Dedicated Team Member Title",
+        "reward_items": "x1 25$ Gift Certificate",
+        "points": 500
+      },
+      "three_years": {
+        "name": "Seasoned Team Member",
+        "type": "feat",
+        "unlock_conditions": "Be part of the team for a period of 3 years.",
+        "title": "Seasoned Team Member Title",
+        "reward_items": "x1 25$ Gift Certificate",
+        "points": 1500
+      },
+      "five_years": {
+        "name": "Veteran Team Member",
+        "type": "feat",
+        "unlock_conditions": "Be part of the team for a period of 5 years.",
+        "title": "Veteran Team Member Title",
+        "reward_items": "x1 50$ Gift Certificate",
+        "points": 2500
+      },
+      "ten_years": {
+        "name": "Legacy Team Member",
+        "type": "feat",
+        "unlock_conditions": "Be part of the team for a period of 10 years.",
+        "title": "Legacy Team Member Title",
+        "reward_items": "x1 100$ Gift Certificate",
+        "points": 5000
+      }
+    },
+    "other_milestones": {
+      "xmas": {
+        "name": "Santa’s Helper",
+        "type": "feat",
+        "unlock_conditions": "Work a full shift on Christmas Eve.",
+        "title": "Santa’s Helper Title",
+        "reward_items": "x1 Holiday Pin",
+        "points": 250
+      },
+      "eotm": {
+        "name": "Team MVP",
+        "type": "feat",
+        "unlock_conditions": "Obtain a Growing Boldly Certificate.",
+        "title": "Team MVP Title",
+        "reward_items": "x1 50$ Gift Certificate",
+        "points": 250
+      },
+      "trainer": {
+        "name": "Mentor",
+        "type": "feat",
+        "unlock_conditions": "Be promoted to a Crew Chief.",
+        "title": "Mentor Title",
+        "reward_items": "Pay Raise",
+        "points": 250
+      },
+      "manager": {
+        "name": "Operations Manager",
+        "type": "feat",
+        "unlock_conditions": "Be promoted to a Manager.",
+        "title": "Operations Manager Title",
+        "reward_items": "Pay Raise",
+        "points": 250
+      },
+      "jack_of_all_trades": {
+        "name": "Jack Of All Trades",
+        "type": "feat",
+        "unlock_conditions": "Complete the FOH, BOH, and Desserts training.",
+        "title": "Jack Of All Trades Title",
+        "reward_items": "x9 Blue Bucks + Pay Raise",
+        "points": 1000
+      }
+    },
+    "stackable_milestones": {
+      "wingman": {
+        "name": "Wingman",
+        "type": "stack",
+        "unlock_conditions": "Cover somebody's shift.",
+        "title": "Wingman Title",
+        "points": 50,
+        "reward_items": "x2 Blue Bucks"
+      },
+      "surveys": {
+        "name": "Guest Favorite",
+        "type": "stack",
+        "unlock_conditions": "Get 15 or more surveys in a month.",
+        "title": "Guest Favorite Title",
+        "points": 100,
+        "reward_items": "x3 Blue Bucks"
+      },
+      "double_shift": {
+        "name": "Shift Grinder",
+        "type": "stack",
+        "unlock_conditions": "Work a double shift.",
+        "title": "Shift Grinder Title",
+        "points": 250,
+        "reward_items": "x3 Blue Bucks"
+      },
+      "staying_extra": {
+        "name": "Team Player",
+        "type": "stack",
+        "unlock_conditions": "Stay one hour or more after the end of your scheduled shift (must be PIC-approved).",
+        "title": "Team Player Title",
+        "points": 25,
+        "reward_items": "x1 Blue Buck"
+      }
+    }
+  }
+}
