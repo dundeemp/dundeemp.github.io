@@ -17,7 +17,6 @@
         - name: layout
           label: (ignore)
           type: select
-          readonly: true
           options:
             values:
               - name: user2
