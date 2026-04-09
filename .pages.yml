@@ -15,7 +15,8 @@
           order: desc
       fields:
         - name: layout
-          label: (ignore)
+          label: "Select 'user2' from the list."
+          description: "This is necessary at a developer level."
           type: select
           required: true
           options:
