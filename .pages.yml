@@ -17,9 +17,10 @@
         - name: layout
           label: (ignore)
           type: select
+          readonly: true
           options:
-            value: user2
-            default: user2
+            values:
+              - name: user2
         - name: id
           label: "ID"
           type: number
