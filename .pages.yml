@@ -22,6 +22,7 @@
           options:
             values:
               - name: user2
+            default: user2
         - name: id
           label: "ID"
           type: number
