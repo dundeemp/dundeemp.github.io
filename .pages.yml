@@ -17,6 +17,7 @@
         - name: layout
           label: (ignore)
           type: select
+          required: true
           options:
             values:
               - name: user2
