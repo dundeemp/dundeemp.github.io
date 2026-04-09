@@ -6,6 +6,7 @@
       label: Employees
       path: _user
       type: collection
+      filename: "{primary}.html"
       view:
         fields: [id, name, title, active, date]
         default:
