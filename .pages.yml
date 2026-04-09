@@ -4,7 +4,7 @@
   content:
     - name: users
       label: Employees
-      path: _posts
+      path: _user
       type: collection
       view:
         fields: [id, name, title, active, date]
