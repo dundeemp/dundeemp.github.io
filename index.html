@@ -52,7 +52,7 @@ layout: default
         const id = input.value.trim();
 
         if (/^\d{4}$/.test(id)) {
-            window.location.href = `/user/${id}`;
+            window.location.href = `/user/${id}.html`;
         } else {
             alert("Please enter a valid 4-digit Employee ID.");
             input.focus();
