@@ -489,17 +489,26 @@ document.addEventListener("DOMContentLoaded", () => {
   // =========================
   // SORT (GRID / LIST TOGGLE)
   // =========================
+  // Listen for changes
   sortInputs.forEach(input => {
     input.addEventListener("change", () => {
       const value = document.querySelector('input[name="sort"]:checked').value;
 
-      if (value === "list") {
-        achievements.classList.add("list");
-      } else {
-        achievements.classList.remove("list");
-      }
+      // Save to localStorage
+      localStorage.setItem(STORAGE_KEY, value);
+
+      applySort(value);
     });
   });
+
+  // Extracted logic
+  function applySort(value) {
+    if (value === "list") {
+      achievements.classList.add("list");
+    } else {
+      achievements.classList.remove("list");
+    }
+  }
 });
 // =========================
 // LEADERBOARD SORT
