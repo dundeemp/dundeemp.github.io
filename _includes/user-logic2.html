@@ -489,19 +489,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // =========================
   // SORT (GRID / LIST TOGGLE)
   // =========================
-  // Listen for changes
-  sortInputs.forEach(input => {
-    input.addEventListener("change", () => {
-      const value = document.querySelector('input[name="sort"]:checked').value;
+  // =========================
+  // SORT (GRID / LIST + SAVE)
+  // =========================
+  const STORAGE_KEY = "achievements_sort";
 
-      // Save to localStorage
-      localStorage.setItem(STORAGE_KEY, value);
-
-      applySort(value);
-    });
-  });
-
-  // Extracted logic
   function applySort(value) {
     if (value === "list") {
       achievements.classList.add("list");
@@ -509,6 +501,27 @@ document.addEventListener("DOMContentLoaded", () => {
       achievements.classList.remove("list");
     }
   }
+
+  // Load saved preference
+  const savedSort = localStorage.getItem(STORAGE_KEY);
+  if (savedSort) {
+    const savedInput = document.querySelector(`input[name="sort"][value="${savedSort}"]`);
+    if (savedInput) {
+      savedInput.checked = true;
+      applySort(savedSort);
+    }
+  }
+
+  // Listen for changes
+  sortInputs.forEach(input => {
+    input.addEventListener("change", () => {
+      const value = document.querySelector('input[name="sort"]:checked').value;
+
+      localStorage.setItem(STORAGE_KEY, value);
+      applySort(value);
+    });
+  });
+
 });
 // =========================
 // LEADERBOARD SORT
