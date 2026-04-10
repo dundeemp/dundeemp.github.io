@@ -8,6 +8,14 @@
     "tag": "Apparel Hair"
   },
   {
+    "sku": "Unknown",
+    "name": "Culver's Rubber Ducks",
+    "price": 2,
+    "usd": 0.75,
+    "picture": "/assets/img/products/ducks.webp",
+    "tag": "Toys Rubber Duck Jeep Car Auto"
+  },
+  {
     "sku": "473",
     "name": "Culver's Large Dog Bandana",
     "price": 7,
@@ -298,7 +306,7 @@
   {
     "sku": "057",
     "name": "Custard To-Go Cooler",
-    "price": 5,
+    "price": 9,
     "usd": 5,
     "picture": "/assets/img/products/2_16_17_057.webp",
     "tag": "Bags"
@@ -409,7 +417,7 @@
   },
   {
     "sku": "K025-K020-K080-K052",
-    "name": "Small Turle, Scoopie, Curdis, or Goldie Plush",
+    "name": "Small Plush",
     "price": 6,
     "usd": 5.45,
     "picture": "/assets/img/products/smallplushchoice.webp",
@@ -418,7 +426,7 @@
   {
     "sku": "482",
     "name": "Culver's Flexible Keychain",
-    "price": 9,
+    "price": 3,
     "usd": 9,
     "picture": "/assets/img/products/keychainschoice.webp",
     "tag": "Keychain"
