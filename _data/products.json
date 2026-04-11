@@ -8,14 +8,6 @@
     "tag": "Apparel Hair"
   },
   {
-    "sku": "Unknown",
-    "name": "Culver's Rubber Ducks",
-    "price": 2,
-    "usd": 0.75,
-    "picture": "/assets/img/products/ducks.webp",
-    "tag": "Toys Rubber Duck Jeep Car Auto"
-  },
-  {
     "sku": "473",
     "name": "Culver's Large Dog Bandana",
     "price": 7,
