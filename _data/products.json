@@ -1,466 +1,3251 @@
 [
   {
-    "sku": "074",
-    "name": "Culver's Blue Scrunchie",
-    "price": 6,
-    "usd": 5.75,
-    "picture": "/assets/img/products/2_45738_61672_Culvers2026NylonScrunchie.webp",
-    "tag": "Apparel Hair"
-  },
-  {
-    "sku": "473",
-    "name": "Culver's Large Dog Bandana",
-    "price": 7,
-    "usd": 6.75,
-    "picture": "/assets/img/products/2_45449_61169_Culvers2026DogBandana.webp",
-    "tag": "Pets"
-  },
-  {
-    "sku": "463",
-    "name": "Culver's Small Cat Collar",
-    "price": 7,
-    "usd": 6.75,
-    "picture": "/assets/img/products/2_46466_62739_CatCollar.webp",
-    "tag": "Pets"
-  },
-  {
-    "sku": "423",
-    "name": "Culver's TYFP Therm-O-Tote Bag",
-    "price": 7,
-    "usd": 7,
-    "picture": "/assets/img/products/2_46313_62557_TYFPTote.webp",
-    "tag": "Bags"
-  },
-  {
-    "sku": "531",
-    "name": "Culver's AeroLOFT® Anywhere Belt Bag in Pink",
-    "price": 9,
-    "usd": 8.6,
-    "picture": "/assets/img/products/2_46401_62645_CulversAeroLOFTAnywhereBeltBag.webp",
-    "tag": "Bags"
-  },
-  {
-    "sku": "522A",
-    "name": "Culver's Blue Dual Toned Straw 40 oz. Tumbler",
-    "price": 9,
-    "usd": 8.95,
-    "picture": "/assets/img/products/2_45737_61671_Culvers40ozPolarStrawTumbler.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "511",
-    "name": "Culver's Woden Ceramic Mug",
-    "price": 13,
-    "usd": 12.5,
-    "picture": "/assets/img/products/2_45724_61658_CulversWodenMugSide1copy.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "335",
-    "name": "Culver's Crinkle-Cut Fry Scarf",
-    "price": 13,
-    "usd": 13,
-    "picture": "/assets/img/products/2_46053_62232_335.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "517",
-    "name": "Culver's Darien Deep Etched Blue Mug",
-    "price": 14,
-    "usd": 14,
-    "picture": "/assets/img/products/2_46054_62233_CulversDarienMug.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "410",
-    "name": "Culver's Custard Chew Toy",
-    "price": 17,
-    "usd": 16.5,
-    "picture": "/assets/img/products/2_45451_61171_CulversPlushToyCustard1.webp",
-    "tag": "Pets"
-  },
-  {
-    "sku": "411",
-    "name": "Culver's Blue Spoon Chew Toy",
-    "price": 17,
-    "usd": 16.5,
-    "picture": "/assets/img/products/2_45452_61172_Culvers2026BlueSpoonChewToy.webp",
-    "tag": "Pets"
-  },
-  {
-    "sku": "569",
-    "name": "Culver's Recycled Canvas Tote Bag",
-    "price": 17,
-    "usd": 17,
-    "picture": "/assets/img/products/2_46464_62737_Culvers14ozRecycledCanvasTote.webp",
-    "tag": "Bags"
-  },
-  {
-    "sku": "571",
-    "name": "Culver's The Slim Power Bank (2000mAh)",
-    "price": 24,
-    "usd": 23.3,
-    "picture": "/assets/img/products/2_45521_61281_CulversTheSlimWirelessPowerBank.webp",
-    "tag": "Technology"
-  },
-  {
-    "sku": "223",
-    "name": "Culver's Cow Bestie Bottle",
-    "price": 29,
-    "usd": 28.75,
-    "picture": "/assets/img/products/2_45722_61656_CulversAsobuCowBestieBottlecopy.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "407",
-    "name": "Culver's Pro-Weave Sweatshirt Blanket in Arctic Blue",
-    "price": 35,
-    "usd": 35,
-    "picture": "/assets/img/products/2_45522_61282_Culvers2026SweatshirtBlanketRolledcopy.webp",
-    "tag": "Misc"
-  },
-  {
-    "sku": "500",
-    "name": "Culver's Full Color Best Coolie",
-    "price": 2,
-    "usd": 1.5,
-    "picture": "/assets/img/products/2_297_369_500_HR.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "450",
-    "name": "Culver's Playing Cards",
-    "price": 5,
-    "usd": 4.75,
-    "picture": "/assets/img/products/2_230_262_450c.webp",
-    "tag": "Toys"
-  },
-  {
-    "sku": "505",
-    "name": "Culver's Lagom 16oz Black Tumbler w/ Stainless Steel Straw",
-    "price": 9,
-    "usd": 8.5,
-    "picture": "/assets/img/products/2_309_390_505_HR.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "535",
-    "name": "Culver's Black Zipper Binder Padded Portfolio",
-    "price": 19,
-    "usd": 19,
-    "picture": "/assets/img/products/2_384_515_535_HR.webp",
-    "tag": "Misc"
-  },
-  {
-    "sku": "230",
-    "name": "Fresh Like Custard Navy Onesie",
-    "price": 11,
-    "usd": 11,
-    "picture": "/assets/img/products/2_3924_7047_230_HR.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "207",
-    "name": "Culver's Custom Baby Beanie",
-    "price": 9,
-    "usd": 4,
-    "picture": "/assets/img/products/2_30808_42079_207.webp",
-    "tag": "Apparel Hat"
-  },
-  {
-    "sku": "209",
-    "name": "Culver's Single Pom Baby Beanie w/Patch",
-    "price": 9,
-    "usd": 4,
-    "picture": "/assets/img/products/2_45444_61164_209BabyBeanie.webp",
-    "tag": "Apparel Hat"
-  },
-  {
-    "sku": "206",
-    "name": "Culver's Blue Silicone Baby Bib",
-    "price": 6,
-    "usd": 5.4,
-    "picture": "/assets/img/products/2_46318_62562_Culvers2026BabyBib.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "226",
-    "name": "Culver's Infant Jersey Dress in Heather",
-    "price": 12,
-    "usd": 11.5,
-    "picture": "/assets/img/products/2_33627_45166_226.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "234",
-    "name": "Culver's Youth Royal T-Shirt",
-    "price": 9,
-    "usd": 9,
-    "picture": "/assets/img/products/2_33530_45004_234.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "222",
-    "name": "Culver's Long Sleeve Onesie",
-    "price": 13,
-    "usd": 13,
-    "picture": "/assets/img/products/2_33637_45184_222.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "201",
-    "name": "Culver's Rabbit Skins Toddler Royal Blue Fleece Sweatshirt",
-    "price": 14,
-    "usd": 14,
-    "picture": "/assets/img/products/2_24857_34391_toddlerroyalcrew.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "232",
-    "name": "Culver's Youth Long Sleeve Shirt in Heather Teal",
-    "price": 15,
-    "usd": 14.5,
-    "picture": "/assets/img/products/2_33886_45977_232.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "892Y",
-    "name": "Youth Curd Nerd Hoodie",
-    "price": 35,
-    "usd": 35,
-    "picture": "/assets/img/products/2_3003_5302_892Y_HR.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "556",
-    "name": "Culver's Boxanne Bluetooth Wireless Speaker",
-    "price": 29,
-    "usd": 29,
-    "picture": "/assets/img/products/2_446_623_556_HR.webp",
-    "tag": "Technology"
-  },
-  {
-    "sku": "526",
-    "name": "Culver's Yeti 20oz Navy Rambler",
-    "price": 50,
-    "usd": 50,
-    "picture": "/assets/img/products/2_373_494_526_HR.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "515",
-    "name": "Culver's 30 oz. Stanley IceFlow Flip Straw Tumbler in Azure",
-    "price": 53,
-    "usd": 52.55,
-    "picture": "/assets/img/products/2_45727_61661_CulversStanleyIceFlow30ozStrawTumbler.webp",
-    "tag": "Drinks"
-  },
-  {
-    "sku": "540",
-    "name": "Culver's Port Authority Backpack Grey Heather",
-    "price": 32,
-    "usd": 32,
-    "picture": "/assets/img/products/2_3042_5374_540_HR.webp",
-    "tag": "Bags"
-  },
-  {
-    "sku": "510",
-    "name": "Curd Nerd Drawstring Bag",
-    "price": 7,
-    "usd": 7,
-    "picture": "/assets/img/products/2_312_393_510_HR.webp",
-    "tag": "Bags"
-  },
-  {
-    "sku": "501",
-    "name": "Culver's Royal Cotton 1/2\" Lanyard",
-    "price": 2,
-    "usd": 2,
-    "picture": "/assets/img/products/2_298_370_501_HR.webp",
-    "tag": "Misc"
-  },
-  {
-    "sku": "560",
-    "name": "Culver's Carhartt Canvas Backpack in Navy",
-    "price": 48,
-    "usd": 47.5,
-    "picture": "/assets/img/products/2_33494_44930_backpack.webp",
-    "tag": "Bags"
-  },
-  {
-    "sku": "481",
-    "name": "Culver's Blue Fuzzy Dice",
-    "price": 9,
-    "usd": 9,
-    "picture": "/assets/img/products/2_272_316_481_HR.webp",
-    "tag": "Toys Car"
-  },
-  {
-    "sku": "057",
-    "name": "Custard To-Go Cooler",
-    "price": 9,
-    "usd": 5,
-    "picture": "/assets/img/products/2_16_17_057.webp",
-    "tag": "Bags"
-  },
-  {
-    "sku": "455",
-    "name": "Culver's Classic Blue Cowbell",
-    "price": 2,
-    "usd": 1.5,
-    "picture": "/assets/img/products/2_24353_33588_Cowbell.webp",
-    "tag": "Toys"
-  },
-  {
-    "sku": "103",
-    "name": "Culver's Food, Family, Future T-shirt Black",
-    "price": 17,
-    "usd": 17,
-    "picture": "/assets/img/products/2_4680_8385_103_HR.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "322",
-    "name": "Culver's Curd Nerd Beanie with Pom",
-    "price": 13,
-    "usd": 12.5,
-    "picture": "/assets/img/products/2_166_168_322_HR.webp",
-    "tag": "Apparel"
-  },
-  {
-    "sku": "439",
-    "name": "Culver's ButterBurger Catnip Toy",
-    "price": 12,
-    "usd": 11.5,
-    "picture": "/assets/img/products/2_33435_44871_439ButterBurgerCatnipToy.webp",
-    "tag": "Pets"
-  },
-  {
-    "sku": "413",
-    "name": "Culver’s Fries Dog Toy",
-    "price": 17,
-    "usd": 16.5,
-    "picture": "/assets/img/products/2_4396_7894_CulversFriesDogToy.webp",
-    "tag": "Pets"
-  },
-  {
-    "sku": "435",
-    "name": "Culver's Custard Cone Catnip Toy",
-    "price": 12,
-    "usd": 11.5,
-    "picture": "/assets/img/products/2_33434_44870_435CustardCatnipToy.webp",
-    "tag": "Pets"
-  },
-  {
-    "sku": "326",
-    "name": "Culver's Crinkle-Cut Fry Beanie",
-    "price": 12,
-    "usd": 12,
-    "picture": "/assets/img/products/2_46052_62231_326.webp",
-    "tag": "Apparel Hat"
-  },
-  {
-    "sku": "K045-K040",
-    "name": "Curdis or Goldie 14\" Plushie",
-    "price": 23,
-    "usd": 23,
-    "picture": "/assets/img/products/plushies14inch.webp",
-    "tag": "Plush Toy"
-  },
-  {
-    "sku": "K035-K030",
-    "name": "Curdis or Goldie 24\" Plushie",
-    "price": 41,
-    "usd": 41,
-    "picture": "/assets/img/products/plushies24inch.webp",
-    "tag": "Plush Toy"
-  },
-  {
-    "sku": "839",
-    "name": "Culvers Lapel Pin",
-    "price": 2,
-    "usd": 1.75,
-    "picture": "/assets/img/products/2_2969_5240_CULVERPIN.webp",
-    "tag": "Pin"
-  },
-  {
-    "sku": "820",
     "name": "Culver's Hospitality with Heart Lapel Pin",
-    "price": 3,
-    "usd": 2.75,
-    "picture": "/assets/img/products/2_35302_47849_9903.webp",
-    "tag": "Pin"
+    "usd": 2.7,
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_35302_47849_9903.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Hospitality-with-Heart-Lapel-Pin-820-35302.htm",
+    "active": true
   },
   {
-    "sku": "502",
-    "name": "Culver's Silver and Black Key Chain",
-    "price": 3,
-    "usd": 2.5,
-    "picture": "/assets/img/products/2_299_371_502_HR.webp",
-    "tag": "Keychain Car"
+    "name": "Culver's Single Pom Baby Beanie w/Patch",
+    "usd": 4,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45444_61164_2_45444_61164_209BabyBeanie.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Single-Pom-Baby-Beanie-wPatch-209-45444.htm",
+    "active": true
   },
   {
-    "sku": "504",
-    "name": "Culver's 20 oz Bike Bottle",
-    "price": 2,
-    "usd": 2,
-    "picture": "/assets/img/products/2_300_372_504_HR.webp",
-    "tag": "Bottle"
+    "name": "Culver's Absorbing Car Coasters--Set of 2",
+    "usd": 4.4,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46462_62735_2_46462_62735_CulversAbsorbingStoneCarCoasterSets.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Absorbing-Car-Coasters--Set-of-2-434A-46462.htm",
+    "active": true
   },
   {
-    "sku": "K025-K020-K080-K052",
-    "name": "Small Plush",
-    "price": 6,
+    "name": "Culver's Grey Water Bottle Pouch",
+    "usd": 4.8,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45523_61283_2_45523_61283_CulversBottleBuddyWaterBottlePouch2copy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Grey-Water-Bottle-Pouch-509-45523.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue Silicone Baby Bib",
+    "usd": 5.4,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46318_62562_2_46318_62562_Culvers2026BabyBib.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Blue-Silicone-Baby-Bib-206-46318.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Colorblock Blue Volleyball",
     "usd": 5.45,
-    "picture": "/assets/img/products/smallplushchoice.webp",
-    "tag": "Plush Toy"
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_34554_46944_2_34554_46944_K450.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Colorblock-Blue-Volleyball-K450-34554.htm",
+    "active": true
   },
   {
-    "sku": "482",
-    "name": "Culver's Flexible Keychain",
-    "price": 3,
+    "name": "Culver's Colorblock Dark Blue/Yellow Soccer Ball",
+    "usd": 5.45,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_34555_46945_2_34555_46945_K494.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Colorblock-Dark-BlueYellow-Soccer-Ball-K494-34555.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue Basketball",
+    "usd": 5.45,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_34556_46946_2_34556_46946_K485.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Blue-Basketball-K485-34556.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Collegiate Football",
+    "usd": 5.45,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_34558_46948_2_34558_46948_K438.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Collegiate-Football-K438-34558.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Congrats Sticker Sheet",
+    "usd": 5.5,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46304_62541_2_46304_62541_072Culvers2026StickerSheet2.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Congrats-Sticker-Sheet-072-46304.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue Scrunchie",
+    "usd": 5.75,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45738_61672_2_45738_61672_Culvers2026NylonScrunchie.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Blue-Scrunchie-074-45738.htm",
+    "active": true
+  },
+  {
+    "name": "Delicious Rewards Bag Stickers",
+    "usd": 6,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_43643_58545_041A.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Delicious-Rewards-Bag-Stickers-041A-43643.htm",
+    "active": false
+  },
+  {
+    "name": "Curd Nerd T-Shirt 2025",
+    "usd": 6.25,
+    "bb": 7,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_38403_51737_2_38403_51737_CurdNerd.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curd-Nerd-T-Shirt-2025-893-38403.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Large Dog Bandana",
+    "usd": 6.75,
+    "bb": 7,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45449_61169_2_45449_61169_Culvers2026DogBandana.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Large-Dog-Bandana-473-45449.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Small Cat Collar",
+    "usd": 6.75,
+    "bb": 7,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46466_62739_2_46466_62739_CatCollar.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Small-Cat-Collar-463-46466.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's TYFP Therm-O-Tote Bag",
+    "usd": 7,
+    "bb": 7,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46313_62557_2_46313_62557_TYFPTote.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-TYFP-Therm-O-Tote-Bag-423-46313.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's AeroLOFT® Anywhere Belt Bag in Pink",
+    "usd": 8.6,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46401_62645_2_46401_62645_CulversAeroLOFTAnywhereBeltBag.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-AeroLOFT-Anywhere-Belt-Bag-in-Pink-531-46401.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Tennis Ball Sling Toy",
+    "usd": 8.85,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46315_62559_2_46315_62559_471CulversTennisBallSlingDogToy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Tennis-Ball-Sling-Toy-471-46315.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue Dual Toned Straw 40 oz. Tumbler",
+    "usd": 8.95,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45737_61671_2_45737_61671_Culvers40ozPolarStrawTumbler.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Blue-Dual-Toned-Straw-40-oz-Tumbler-522A-45737.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Friendship Bracelets--Set of 3",
+    "usd": 9.25,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45447_61167_2_45447_61167_friendshipbracelets.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Friendship-Bracelets--Set-of-3-705-45447.htm",
+    "active": true
+  },
+  {
+    "name": "Curd Nerd 2025 Toddler Tee",
+    "usd": 10.25,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_40861_55256_2_40861_55256_toddler.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curd-Nerd-2025-Toddler-Tee-283-40861.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Sprinkles & Swirls Gildan Softstyle T-Shirt in Navy",
+    "usd": 11,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45554_61335_2_45554_61335_CulversSwirlsSprinklesGildanSoftstyleTShirtBackcopy1.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Sprinkles--Swirls-Gildan-Softstyle-T-Shirt-in-Navy-129-45554.htm",
+    "active": true
+  },
+  {
+    "name": "Curd Nerd 2025 Onesie",
+    "usd": 11.75,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_40857_55249_2_40857_55249_onezie.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curd-Nerd-2025-Onesie-282-40857.htm",
+    "active": false
+  },
+  {
+    "name": "Curd Nerd 2025 Youth Tee",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_40865_55263_2_40865_55263_youth.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curd-Nerd-2025-Youth-Tee-284-40865.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Custard Pint Coolers--Set of Two",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45520_61280_2_45520_61280_CulversCollapsibleCustardPintCoolieSets.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Custard-Pint-Coolers--Set-of-Two-554A-45520.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Crinkle-Cut Fry Beanie",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46052_62231_2_46052_62231_326.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Crinkle-Cut-Fry-Beanie-326-46052.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's 2026 Car Show T-Shirt in Indigo Blue",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46294_62520_2_46294_62520_886CarShow2026TShirtBackcopy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-2026-Car-Show-T-Shirt-in-Indigo-Blue-886-46294.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Woden Ceramic Mug",
+    "usd": 12.5,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45724_61658_2_45724_61658_CulversWodenMugSide1copy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Woden-Ceramic-Mug-511-45724.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Custard & Root Beer Gildan Softsyle T-Shirt in Heather Sapphire",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45596_61432_2_45596_61432_CulversCustardRootBeerGildanSoftstyleTShirt.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Custard--Root-Beer-Gildan-Softsyle-T-Shirt-in-Heather-Sapphire-100A-45596.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Crinkle Cut Perfection Gildan Softstyle T-Shirt in Navy",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45628_61475_2_45628_61475_CulversCrinkleCutPerfectionSoftstyleTShirt.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Crinkle-Cut-Perfection-Gildan-Softstyle-T-Shirt-in-Navy-119A-45628.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Cow Print Cord Cap",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_43299_58122_2_43299_58122_CowHat.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cow-Print-Cord-Cap-345-43299.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Crinkle-Cut Fry Scarf",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46053_62232_2_46053_62232_335.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Crinkle-Cut-Fry-Scarf-335-46053.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies' Corduroy Cap in Vanilla",
+    "usd": 13.85,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46468_62741_2_46468_62741_CulversInfinityHerWomensCorduroyCapFrontcopy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Corduroy-Cap-in-Vanilla-313-46468.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Retro Foamie Rope Trucker Cap in Royal/White",
+    "usd": 14,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46406_62650_2_46406_62650_321CulversRetroFoamieTruckerCap.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Retro-Foamie-Rope-Trucker-Cap-in-RoyalWhite-321-46406.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Darien Deep Etched Blue Mug",
+    "usd": 14,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46054_62233_2_46054_62233_CulversDarienMug.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Darien-Deep-Etched-Blue-Mug-517-46054.htm",
+    "active": true
+  },
+  {
+    "name": "Bravo Pen with Black Ink Culver's Script in White",
+    "usd": 14,
+    "bb": 1,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_213_244_2_213_244_060A.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Bravo-Pen-with-Black-Ink-Culvers-Script-in-White-060A-213.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Athletic Crew Socks",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46051_62230_2_46051_62230_2026CulversSocks.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Athletic-Crew-Socks-112A-46051.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Custard Chew Toy",
+    "usd": 16.5,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45451_61171_2_45451_61171_CulversPlushToyCustard1.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Custard-Chew-Toy-410-45451.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue Spoon Chew Toy",
+    "usd": 16.5,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45452_61172_2_45452_61172_Culvers2026BlueSpoonChewToy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Blue-Spoon-Chew-Toy-411-45452.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Navy/Cream 5-Panel Flat Bill Cap",
+    "usd": 17,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46405_62649_2_46405_62649_323Culvers5PanelFlatBillCap.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-NavyCream-5-Panel-Flat-Bill-Cap-323-46405.htm",
+    "active": true
+  },
+  {
+    "name": "Curdis Crinkle Blanket",
+    "usd": 17,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46050_62229_2_46050_62229_CurdisCrinkleBlanket.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curdis-Crinkle-Blanket-213-46050.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Recycled Canvas Tote Bag",
+    "usd": 17,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46464_62737_2_46464_62737_Culvers14ozRecycledCanvasTote.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Recycled-Canvas-Tote-Bag-569-46464.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies Periwinkle Performance Ponytail Cap",
+    "usd": 17.4,
+    "bb": 18,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46039_62215_2_46039_62215_CulversInfinityHerWomensPerforatedPerformanceCapcopy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Periwinkle-Performance-Ponytail-Cap-314-46039.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's 12oz Blue Kidsjoy Vacuum Bottle",
+    "usd": 18,
+    "bb": 18,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46314_62558_2_46314_62558_Culvers2026KidsWaterbottle.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-12oz-Blue-Kidsjoy-Vacuum-Bottle-211-46314.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Bella + Canvas ButterBurger® Faux Pocket Long Sleeve Tee in Navy",
+    "usd": 19,
+    "bb": 19,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45573_61365_2_45573_61365_CulversBellaCanvasLongSleeveBurgerPocketTeeFrontcopy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Bella--Canvas-ButterBurger-Faux-Pocket-Long-Sleeve-Tee-in-Navy-117A-45573.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Reversible Bucket Hat",
+    "usd": 21.8,
+    "bb": 22,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45442_61161_2_45442_61161_CulversCustomPolyesterBucketHatcopy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Reversible-Bucket-Hat-337-45442.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The Slim Power Bank",
+    "usd": 23.3,
+    "bb": 24,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45521_61281_2_45521_61281_CulversTheSlimWirelessPowerBank.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-Slim-Power-Bank-571-45521.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mercer+Mettle Women's Stretch Jersey Long Sleeve Blue Blouse Top",
+    "usd": 24,
+    "bb": 24,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46614_63015_2_46614_63015_CulversMercerMettleWomensJerseyLongSleeveBlouse.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-MercerMettle-Womens-Stretch-Jersey-Long-Sleeve-Blue-Blouse-Top-621-46614.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Scoop & Spatula Crewneck in Navy",
+    "usd": 28,
+    "bb": 28,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46426_62688_2_46426_62688_167ACulversHeavyBlendSpatulaScoopCrewneck.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Scoop--Spatula-Crewneck-in-Navy-167A-46426.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Men's North End Eclipse Polo in Platinum Heather",
+    "usd": 28,
+    "bb": 28,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45946_62028_2_45946_62028_CulversNorthEndEclipseJacquardPoloMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mens-North-End-Eclipse-Polo-in-Platinum-Heather-123A-45946.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies' North End Eclipse Polo in Platinum Heather",
+    "usd": 28,
+    "bb": 28,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45958_62051_2_45958_62051_623ACulversNorthEndEclipseJacquardPoloLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-North-End-Eclipse-Polo-in-Platinum-Heather-623A-45958.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Cow Bestie Bottle",
+    "usd": 28.75,
+    "bb": 29,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45722_61656_2_45722_61656_CulversAsobuCowBestieBottlecopy.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cow-Bestie-Bottle-223-45722.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mineral Wash Joggers in Black",
+    "usd": 31,
+    "bb": 31,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45714_61637_2_45714_61637_CulversMineralWashPantJogger.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mineral-Wash-Joggers-in-Black-197A-45714.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mineral Wash Hoodie in Black",
+    "usd": 33,
+    "bb": 33,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45663_61533_2_45663_61533_194ACulversMineralWashPulloverHoodie.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mineral-Wash-Hoodie-in-Black-194A-45663.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Quilted Puffy Tote",
+    "usd": 34,
+    "bb": 34,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45448_61168_2_45448_61168_Culvers2026QuiltedPuffyTote2.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Quilted-Puffy-Tote-441-45448.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Pro-Weave Sweatshirt Blanket in Arctic Blue",
+    "usd": 35,
+    "bb": 35,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45522_61282_2_45522_61282_Culvers2026SweatshirtBlanketRolledcopy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Pro-Weave-Sweatshirt-Blanket-in-Arctic-Blue-407-45522.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Element Fleece 1/4 Zip Navy Sweatshirt",
+    "usd": 35,
+    "bb": 35,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45912_61961_2_45912_61961_CulversJAmericaElementFleeceQuarterZipMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Element-Fleece-14-Zip-Navy-Sweatshirt-140A-45912.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies Element Fleece 1/4 Zip Navy Sweatshirt",
+    "usd": 35,
+    "bb": 35,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45919_61978_2_45919_61978_CulversJAmericaElementFleeceQuarterZipLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Element-Fleece-14-Zip-Navy-Sweatshirt-640A-45919.htm",
+    "active": true
+  },
+  {
+    "name": "Koozie® Rogue Crossbody Cooler in Gray",
+    "usd": 35,
+    "bb": 35,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46316_62560_2_46316_62560_CulversKoozieRogueCrossbodyCooler.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Koozie-Rogue-Crossbody-Cooler-in-Gray-563-46316.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's \"Welcome to Delicious\" Reverse Applique District Hoodie in Heather Grey",
+    "usd": 35,
+    "bb": 35,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46417_62668_2_46417_62668_159ACulversDistrictLightweightFleeceWelcometoDeliciousHoodie1.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Welcome-to-Delicious-Reverse-Applique-District-Hoodie-in-Heather-Grey-159A-46417.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies' Mercer+Mettle Modern Oxford Shirt in Light Blue",
+    "usd": 38,
+    "bb": 38,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46602_62992_2_46602_62992_CulversMercerMettleWomensLongSleeveOxfordShirt.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-MercerMettle-Modern-Oxford-Shirt-in-Light-Blue-645-46602.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Retro Windbreaker Jacket",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46305_62542_2_46305_62542_windbreaker2.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Retro-Windbreaker-Jacket-131A-46305.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mens' Blue Spoon Sports Blend Polo",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45407_61098_download24.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mens-Blue-Spoon-Sports-Blend-Polo-138A-45407.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies Blue Spoon Sports Blend Polo",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45416_61114_download23.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Blue-Spoon-Sports-Blend-Polo-638A-45416.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mens' Crinkle Fry Sports Blend Polo",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45424_61129_download20.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mens-Crinkle-Fry-Sports-Blend-Polo-133A-45424.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies' Crinkle Fry Sports Blend Polo",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45433_61145_download21.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Crinkle-Fry-Sports-Blend-Polo-633A-45433.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's 30 oz. Stanley IceFlow Flip Straw Tumbler in Azure",
+    "usd": 52.55,
+    "bb": 53,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45727_61661_2_45727_61661_CulversStanleyIceFlow30ozStrawTumbler.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-30-oz-Stanley-IceFlow-Flip-Straw-Tumbler-in-Azure-515-45727.htm",
+    "active": true
+  },
+  {
+    "name": "Culvers Garment Dyed Corded Crewneck in Seafoam",
+    "usd": 55,
+    "bb": 55,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45889_61910_2_45889_61910_CulversCatalogCamdenCrewNeckSweatshirtBrightBlue.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Garment-Dyed-Corded-Crewneck-in-Seafoam-190A-45889.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Adidas Men's Blended Printed Polo in Preloved ink",
+    "usd": 55,
+    "bb": 55,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46569_62925_2_46569_62925_CulversAdidasMensBlendedPrintedPolo.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Adidas-Mens-Blended-Printed-Polo-in-Preloved-ink-181A-46569.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Curd Nerd Adult Hoodie in Denim Blue",
+    "usd": 58,
+    "bb": 58,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46055_62234_2_46055_62234_CurdNerdHoodie2026.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Curd-Nerd-Adult-Hoodie-in-Denim-Blue-879-46055.htm",
+    "active": true
+  },
+  {
+    "name": "Cuver's TYFP Quilted Blanket",
+    "usd": 58.5,
+    "bb": 59,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46317_62561_2_46317_62561_CulversTYFPQuiltedBlanket.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Cuvers-TYFP-Quilted-Blanket-421A-46317.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Greg Norman Micro Pique Spinner Print Polo in Black",
+    "usd": 60,
+    "bb": 60,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46010_62155_2_46010_62155_CulversGregNormanMicroPiqueSpinnerPrintPoloMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Greg-Norman-Micro-Pique-Spinner-Print-Polo-in-Black-186A-46010.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies Greg Norman Micro Pique Spinner Print Polo in Black",
+    "usd": 60,
+    "bb": 60,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46017_62172_2_46017_62172_CulversGregNormanMicroPiqueSpinnerPrintPoloLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Greg-Norman-Micro-Pique-Spinner-Print-Polo-in-Black-686A-46017.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The North Face® Ambition 1/4-Zip in Shady Blue",
+    "usd": 68,
+    "bb": 68,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45842_61836_2_45842_61836_168ACulversTNFAmbitionQuarterZipMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-North-Face-Ambition-14-Zip-in-Shady-Blue-168A-45842.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The North Face® Ladies' Ambition 1/4-Zip in Shady Blue",
+    "usd": 68,
+    "bb": 68,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45849_61853_2_45849_61853_668ACulversTNFAmbitionQuarterZipLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-North-Face-Ladies-Ambition-14-Zip-in-Shady-Blue-668A-45849.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Storm Creek Insulated Bomber Jacket in Navy",
+    "usd": 75,
+    "bb": 75,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46583_62950_2_46583_62950_CulversStormCreekAviatorBomberJacketMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Storm-Creek-Insulated-Bomber-Jacket-in-Navy-156A-46583.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies' Storm Creek Insulated Bomber Jacket in Navy",
+    "usd": 75,
+    "bb": 75,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46593_62977_2_46593_62977_CulversStormCreekAviatorBomberJacketLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Storm-Creek-Insulated-Bomber-Jacket-in-Navy-656A-46593.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Cotopaxi® Amado 1/2-Zip Fleece in Cream/Fjord",
+    "usd": 78,
+    "bb": 78,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46641_63071_2_46641_63071_145ACulversCotopaxiAmadoHalfZipFleeceMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cotopaxi-Amado-12-Zip-Fleece-in-CreamFjord-145A-46641.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies Cotopaxi 1/2 Zip Fleece in Cream/Fjord",
+    "usd": 78,
+    "bb": 78,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46648_63088_2_46648_63088_645ACulversCotopaxiAmadoHalfZipFleeceLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Cotopaxi-12-Zip-Fleece-in-CreamFjord-645A-46648.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's TravisMathew Glenview Solid Polo in Stellar Blue",
+    "usd": 78,
+    "bb": 78,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45980_62094_2_45980_62094_183ACulversTravisMathewGlenviewSolidPoloMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-TravisMathew-Glenview-Solid-Polo-in-Stellar-Blue-183A-45980.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's TravisMathew Ladies' Glenview Solid Polo in Stellar Blue",
+    "usd": 78,
+    "bb": 78,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45987_62111_2_45987_62111_683ACulversTravisMathewGlenviewSolidPoloLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-TravisMathew-Ladies-Glenview-Solid-Polo-in-Stellar-Blue-683A-45987.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's TravisMathew Women’s Long Weekend V-Neck in Kentucky Blue Heather",
+    "usd": 86,
+    "bb": 86,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46030_62196_2_46030_62196_CulversTravisMathewsWomensLongWeekendVNeck.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-TravisMathew-Womens-Long-Weekend-V-Neck-in-Kentucky-Blue-Heather-637-46030.htm",
+    "active": true
+  },
+  {
+    "name": "Post-it Numbers 200-399 - Magenta",
+    "usd": 90,
+    "bb": 90,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_36433_49042_CULP6CulversPostIts200399.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Post-it-Numbers-200-399---Magenta-CULP6-36433.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Carhartt Steel Rain Defender Soft Shell Jacket",
+    "usd": 110,
+    "bb": 110,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46486_62781_2_46486_62781_188ACulversCarharttRainDefenderSoftShellJacketMens.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Carhartt-Steel-Rain-Defender-Soft-Shell-Jacket-188A-46486.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Carhartt Ladies' Steel Rain Defender Soft Shell Jacket",
+    "usd": 110,
+    "bb": 110,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_46508_62825_2_46508_62825_688ACulversCarharttRainDefenderSoftShellJacketLadies.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Carhartt-Ladies-Steel-Rain-Defender-Soft-Shell-Jacket-688A-46508.htm",
+    "active": true
+  },
+  {
+    "name": "Don't Forget To Wash Custom Decal",
+    "usd": 1.2,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_10_11_020_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Dont-Forget-To-Wash-Custom-Decal-020-10.htm",
+    "active": false
+  },
+  {
+    "name": "Order Here Octagon Decal 5\"X5\"",
+    "usd": 3,
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_8_9_018_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Order-Here-Octagon-Decal-5X5-018-8.htm",
+    "active": false
+  },
+  {
+    "name": "Drive Thru Common Allergy Warning Label",
+    "usd": 4,
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_159_161_082N.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Drive-Thru-Common-Allergy-Warning-Label-082N-159.htm",
+    "active": false
+  },
+  {
+    "name": "Umbrella Clips (Pack of 10) for Online Dine-in Sign",
+    "usd": 10,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_22203_31002_PG13_GoogleFeed_Image_Web.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Umbrella-Clips-Pack-of-10-for-Online-Dine-in-Sign-9410-22203.htm",
+    "active": false
+  },
+  {
+    "name": "Magnetic Display",
+    "usd": 14,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_11_12_025MagneticDisplay.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Magnetic-Display-025-11.htm",
+    "active": false
+  },
+  {
+    "name": "Order Carryout Signage Wall Mount Hardware",
+    "usd": 20,
+    "bb": 20,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_20836_29150_9401.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Order-Carryout-Signage-Wall-Mount-Hardware-9401-20836.htm",
+    "active": false
+  },
+  {
+    "name": "Order Carryout Signage Ceiling Mount Hardware",
+    "usd": 26,
+    "bb": 26,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_1886_3323_9400.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Order-Carryout-Signage-Ceiling-Mount-Hardware-9400-1886.htm",
+    "active": false
+  },
+  {
+    "name": "Order Carryout Sign - Down Arrow",
+    "usd": 33.35,
+    "bb": 34,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2065_3649_9405.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Order-Carryout-Sign---Down-Arrow-9405-2065.htm",
+    "active": false
+  },
+  {
+    "name": "Order Carryout Sign - Left/Right Arrow",
+    "usd": 33.35,
+    "bb": 34,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2066_3650_9407.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Order-Carryout-Sign---LeftRight-Arrow-9407-2066.htm",
+    "active": false
+  },
+  {
+    "name": "Four Tier Brochure Holder",
+    "usd": 11.25,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_163_165_087F_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Four-Tier-Brochure-Holder-087F-163.htm",
+    "active": false
+  },
+  {
+    "name": "Acrylic Cone Holder",
+    "usd": 27,
+    "bb": 27,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_162_164_085R_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Acrylic-Cone-Holder-085R-162.htm",
+    "active": false
+  },
+  {
+    "name": "Dye Sublimated Royal Face Mask with Ties",
+    "usd": 0.99,
+    "bb": 1,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_7_8_012_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Dye-Sublimated-Royal-Face-Mask-with-Ties-012-7.htm",
+    "active": true
+  },
+  {
+    "name": "To-Go Shelf Divider",
+    "usd": 1.75,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_26413_36228_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/To-Go-Shelf-Divider-088S-26413.htm",
+    "active": false
+  },
+  {
+    "name": "Blue Badge Holder Retractable 30\" Cord",
+    "usd": 2,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24_25_031_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Blue-Badge-Holder-Retractable-30-Cord-031-24.htm",
+    "active": true
+  },
+  {
+    "name": "Custard To-Go Cooler",
+    "usd": 5,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_16_17_057.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Custard-To-Go-Cooler-057-16.htm",
+    "active": true
+  },
+  {
+    "name": "Join Our Team Roll of 1000 Stickers",
+    "usd": 5.5,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33_34_043_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Join-Our-Team-Roll-of-1000-Stickers-043-33.htm",
+    "active": false
+  },
+  {
+    "name": "Download Delicious Roll of 1000 Stickers",
+    "usd": 5.5,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_25245_34865_050DownloadDeliciousSticker.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Download-Delicious-Roll-of-1000-Stickers-050-25245.htm",
+    "active": false
+  },
+  {
+    "name": "Delivery Stickers--Uber Eats",
+    "usd": 8.5,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_27161_37174_ubereats.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Delivery-Stickers--Uber-Eats-083-27161.htm",
+    "active": false
+  },
+  {
+    "name": "Delivery Stickers--DoorDash",
+    "usd": 8.5,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_27162_37175_doordash.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Delivery-Stickers--DoorDash-084-27162.htm",
+    "active": false
+  },
+  {
+    "name": "Communication Center",
+    "usd": 16.5,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_26511_36378_CulversOpeningStoreKitOrderFormMarch2024.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Communication-Center-081-26511.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Golf Umbrella 64\" in Blue",
+    "usd": 21.5,
+    "bb": 22,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_231_263_467CulversUmbrella2022.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Golf-Umbrella-64-in-Blue-467-231.htm",
+    "active": true
+  },
+  {
+    "name": "Blue Sticker Dispenser",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_26_27_040_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Blue-Sticker-Dispenser-040-26.htm",
+    "active": false
+  },
+  {
+    "name": "Reverse Post-it Numbers - 1-199",
+    "usd": 33,
+    "bb": 33,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2166_3846_CULP2_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Reverse-Post-it-Numbers---1-199-CULP2-2166.htm",
+    "active": false
+  },
+  {
+    "name": "Pint Label Dispenser",
+    "usd": 40,
+    "bb": 40,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_19453_27237_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Pint-Label-Dispenser-039-19453.htm",
+    "active": false
+  },
+  {
+    "name": "Pint Label Container - Holds 16 or more flavors",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_12_13_027_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Pint-Label-Container---Holds-16-or-more-flavors-027-12.htm",
+    "active": false
+  },
+  {
+    "name": "3' x 5' Culver's Double Sided Polyester Flag",
+    "usd": 69.7,
+    "bb": 70,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2122_3772_957_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/3-x-5-Culvers-Double-Sided-Polyester-Flag-957-2122.htm",
+    "active": false
+  },
+  {
+    "name": "Free Scoop Tokens Blue - Pack of 500",
+    "usd": 70,
+    "bb": 70,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_235_267_069_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Free-Scoop-Tokens-Blue---Pack-of-500-069-235.htm",
+    "active": false
+  },
+  {
+    "name": "Post-it Numbers 100-199 - Grey",
+    "usd": 80,
+    "bb": 80,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2168_3848_CULP4.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Post-it-Numbers-100-199---Grey-CULP4-2168.htm",
+    "active": false
+  },
+  {
+    "name": "Post-it Numbers 1-99",
+    "usd": 80,
+    "bb": 80,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2169_3849_c.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Post-it-Numbers-1-99-CULP5-2169.htm",
+    "active": false
+  },
+  {
+    "name": "6\" White Table Numbers - Set of 1-99",
+    "usd": 108,
+    "bb": 108,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2161_3835_CUL10_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/6-White-Table-Numbers---Set-of-1-99-CUL10-2161.htm",
+    "active": false
+  },
+  {
+    "name": "6\" Blue Table Numbers - Set of 1-99",
+    "usd": 108,
+    "bb": 108,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2163_3837_CUL9_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/6-Blue-Table-Numbers---Set-of-1-99-CUL9-2163.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Assorted Flexible Keychains",
     "usd": 9,
-    "picture": "/assets/img/products/keychainschoice.webp",
-    "tag": "Keychain"
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_287_351_482_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Assorted-Flexible-Keychains-482-287.htm",
+    "active": true
   },
   {
-    "sku": "812",
-    "name": "Curdis Lapel Pin",
-    "price": 4,
+    "name": "Activity Color Book Package of 24 Books",
+    "usd": 10,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_206_226_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Activity-Color-Book-Package-of-24-Books-047-206.htm",
+    "active": false
+  },
+  {
+    "name": "Prang Crayons 4 Pack - 24 Packages",
+    "usd": 10,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_207_227_crayons.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Prang-Crayons-4-Pack---24-Packages-048N-207.htm",
+    "active": false
+  },
+  {
+    "name": "Scoopie Stickers Roll of 300",
+    "usd": 11.5,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_18_19_stickers.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Scoopie-Stickers-Roll-of-300-058-18.htm",
+    "active": false
+  },
+  {
+    "name": "Scoopie Tattoos Pack of 200",
+    "usd": 19.5,
+    "bb": 20,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_211_242_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Scoopie-Tattoos-Pack-of-200-049-211.htm",
+    "active": false
+  },
+  {
+    "name": "Pencils - Box of 500",
+    "usd": 100,
+    "bb": 100,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_254_298_064_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Pencils---Box-of-500--064-254.htm",
+    "active": false
+  },
+  {
+    "name": "Scoopie Holiday Lapel Pin",
     "usd": 3.5,
-    "picture": "/assets/img/products/2_2967_5238_812.webp",
-    "tag": "Pin"
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_5148_9486_817S_LG.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Scoopie-Holiday-Lapel-Pin-817S-5148.htm",
+    "active": true
   },
   {
-    "sku": "810",
     "name": "Scoopie Lapel Pin",
-    "price": 6,
-    "usd": 5.3,
-    "picture": "/assets/img/products/2_2966_5237_810.webp",
-    "tag": "Pin"
-  },
-  {
-    "sku": "422",
-    "name": "Culver's Reusable Shopping Bag",
-    "price": 4,
-    "usd": 3.25,
-    "picture": "/assets/img/products/2_218_250_422_HR.webp",
-    "tag": "Bag"
-  },
-  {
-    "sku": "817S-817C",
-    "name": "Curdis or Scoopie Holiday Pin",
-    "price": 4,
     "usd": 3.5,
-    "picture": "/assets/img/products/holidaypinchoice.webp",
-    "tag": "Pin Xmas Christmas New Year"
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2966_5237_810th.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Scoopie-Lapel-Pin---810-2966.htm",
+    "active": true
   },
   {
-    "sku": "432",
-    "name": "Culver's Cow Stress Reliever",
-    "price": 3,
+    "name": "Curdis Holiday Pin",
+    "usd": 3.5,
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2968_5239_817Cth.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curdis-Holiday-Pin-817C-2968.htm",
+    "active": true
+  },
+  {
+    "name": "Collectable Ornament - 2000",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3063_5412_900_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2000-900-3063.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2001",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3064_5413_901_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2001-901-3064.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2002",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3065_5414_902_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2002-902-3065.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2007",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3067_5416_907_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2007-907-3067.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2008",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3068_5417_908_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2008-908-3068.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2011",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3069_5418_911_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2011-911-3069.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2013",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3071_5420_913_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2013-913-3071.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2014",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3072_5421_914_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2014-914-3072.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2015",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3073_5422_915_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2015-915-3073.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2018",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3075_5424_918_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2018-918-3075.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable Ornament - 2023",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_21325_29764_923CulversOrnament2023.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-Ornament---2023-923-21325.htm",
+    "active": false
+  },
+  {
+    "name": "Collectable 2024 Culver's Ornament",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_30275_41490_924.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Collectable-2024-Culvers-Ornament-924-30275.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Full Color Best Coolie",
+    "usd": 1.5,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_297_369_500_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Full-Color-Best-Coolie-500-297.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Cappy",
+    "usd": 1.5,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24566_33862_Cappy.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cappy-001-24566.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's 20 oz Bike Bottle",
+    "usd": 2,
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_300_372_504_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-20-oz-Bike-Bottle-504-300.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Soft Feel Sunglasses Blue with White Imprint",
+    "usd": 3.5,
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_170_172_Sunglasses.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Soft-Feel-Sunglasses-Blue-with-White-Imprint-402-170.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Playing Cards",
+    "usd": 4.75,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_230_262_450c.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Playing-Cards--450-230.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's PopGrip Pop Socket",
+    "usd": 6,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14215_20716_scoopie.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-PopGrip-Pop-Socket-555-14215.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Lagom 16oz Black Tumbler w/ Stainless Steel Straw",
+    "usd": 8.5,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_309_390_505_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Lagom-16oz-Black-Tumbler-w-Stainless-Steel-Straw-505-309.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Lapel Pin",
+    "usd": 1.75,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2969_5240_CULVERPIN.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Lapel-Pin-839-2969.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Teach-IT Pencil Pouch",
+    "usd": 2,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_217_248_066_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Teach-IT-Pencil-Pouch-066-217.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Silver and Black Key Chain",
     "usd": 2.5,
-    "picture": "/assets/img/products/2_24357_33592_CowStress.webp",
-    "tag": "Plush Toy Squishy Squeeze"
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_299_371_502_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Silver-and-Black-Key-Chain-502-299.htm",
+    "active": true
+  },
+  {
+    "name": "Day One Lapel Pin",
+    "usd": 3,
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2965_5236_801_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Day-One-Lapel-Pin-801-2965.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Reusable Shopping Bag",
+    "usd": 3.25,
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_218_250_422_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Reusable-Shopping-Bag-422-218.htm",
+    "active": true
+  },
+  {
+    "name": "Curdis Lapel Pin",
+    "usd": 3.5,
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2967_5238_812th.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curdis-Lapel-Pin-812-2967.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's ClearView SeminarPad",
+    "usd": 8.25,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_5729_10195_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-ClearView-SeminarPad-558-5729.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Black Zipper Binder Padded Portfolio",
+    "usd": 19,
+    "bb": 19,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_384_515_535_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Black-Zipper-Binder-Padded-Portfolio-535-384.htm",
+    "active": true
+  },
+  {
+    "name": "10.5' Culver's Logo - Value Razor Sail Sign Kit - Single Sided with Value Spike",
+    "usd": 150,
+    "bb": 150,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2136_3798_958CulversBanner2022.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/105-Culvers-Logo---Value-Razor-Sail-Sign-Kit---Single-Sided-with-Value-Spike-958-2136.htm",
+    "active": false
+  },
+  {
+    "name": "Non-Fitted Open Back Royal Table Cover",
+    "usd": 200,
+    "bb": 200,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2189_3869_961_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Non-Fitted-Open-Back-Royal-Table-Cover-961-2189.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Custom Baby Beanie",
+    "usd": 4,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_30808_42079_207.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Custom-Baby-Beanie-207-30808.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue Kickball",
+    "usd": 5.45,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_34557_46947_K4742.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Blue-Kickball-K474-34557.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Youth Royal T-Shirt",
+    "usd": 9,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33530_45004_234.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Youth-Royal-T-Shirt-234-33530.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Toddler Unisex Tank in Denim",
+    "usd": 9.25,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33618_45147_243.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Toddler-Unisex-Tank-in-Denim-243-33618.htm",
+    "active": true
+  },
+  {
+    "name": "Fresh Like Custard Navy Onesie",
+    "usd": 11,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3924_7047_230_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Fresh-Like-Custard-Navy-Onesie-230-3924.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Infant Jersey Dress in Heather",
+    "usd": 11.5,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33627_45166_226.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Infant-Jersey-Dress-in-Heather-226-33627.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Long Sleeve Onesie",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33637_45184_222.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Long-Sleeve-Onesie-222-33637.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's  Rabbit Skins Toddler Royal Blue Fleece Sweatshirt",
+    "usd": 14,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24857_34391_toddlerroyalcrew.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers--Rabbit-Skins-Toddler-Royal-Blue-Fleece-Sweatshirt-201-24857.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Youth Long Sleeve Shirt in Heather Teal",
+    "usd": 14.5,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33886_45977_232.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Youth-Long-Sleeve-Shirt-in-Heather-Teal-232-33886.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ice Cream Cone Crinkle Blanket",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3816_6849_212_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ice-Cream-Cone-Crinkle-Blanket-212-3816.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Microfleece Baby Blanket",
+    "usd": 18.5,
+    "bb": 19,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24562_33858_BabyBlanket.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Microfleece-Baby-Blanket-200-24562.htm",
+    "active": true
+  },
+  {
+    "name": "TYFP Gildan Youth Ultra Cotton Royal T-shirt",
+    "usd": 20,
+    "bb": 20,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3896_6997_216_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/TYFP-Gildan-Youth-Ultra-Cotton-Royal-T-shirt-216-3896.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Microsuede Beach Towel Coloring Kit",
+    "usd": 29,
+    "bb": 29,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33433_44869_403.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Microsuede-Beach-Towel-Coloring-Kit-403-33433.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Frosted Blue Frisbee",
+    "usd": 2.5,
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_210_241_412_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Frosted-Blue-Frisbee-412-210.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Relaxed Golf Cap",
+    "usd": 12.5,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_157_159_312_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Relaxed-Golf-Cap-312-157.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Boxanne Bluetooth Wireless Speaker",
+    "usd": 29,
+    "bb": 29,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_446_623_556_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Boxanne-Bluetooth-Wireless-Speaker-556-446.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Port Authority Backpack Grey Heather",
+    "usd": 32,
+    "bb": 32,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3042_5374_540_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Port-Authority-Backpack-Grey-Heather-540-3042.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Yeti 20oz Navy Rambler",
+    "usd": 50,
+    "bb": 50,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_373_494_526_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Yeti-20oz-Navy-Rambler-526-373.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Royal Cotton 1/2\" Lanyard",
+    "usd": 2,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_298_370_501_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Royal-Cotton-12-Lanyard-501-298.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Infinity Wrap Sticker",
+    "usd": 4.25,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33490_44926_Laptop.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Infinity-Wrap-Sticker-073-33490.htm",
+    "active": true
+  },
+  {
+    "name": "Curd Nerd Drawstring Bag",
+    "usd": 7,
+    "bb": 7,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_312_393_510_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curd-Nerd-Drawstring-Bag-510-312.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Livin' My Deluxe Life T-Shirt in Natural",
+    "usd": 7.75,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33806_45818_118A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Livin-My-Deluxe-Life-T-Shirt-in-Natural-118A-33806.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Recycled Cover Spiral Journal in Royal Blue",
+    "usd": 8,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33430_44866_557.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Recycled-Cover-Spiral-Journal-in-Royal-Blue-557-33430.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Navy Bucket Hat",
+    "usd": 27.5,
+    "bb": 28,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33780_45615_338.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Navy-Bucket-Hat-338-33780.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The Hangout™ Portable Hammock in Black",
+    "usd": 35.25,
+    "bb": 36,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33480_44916_Hammock.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-Hangout-Portable-Hammock-in-Black-538-33480.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Carhartt Canvas Backpack in Navy",
+    "usd": 47.5,
+    "bb": 48,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33494_44930_backpack.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Carhartt-Canvas-Backpack-in-Navy-560-33494.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Pickleball Set",
+    "usd": 57.25,
+    "bb": 58,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33437_44873_ss.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Pickleball-Set-701-33437.htm",
+    "active": true
+  },
+  {
+    "name": "2022 New Scoopie - 6\" Tall",
+    "usd": 5.45,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2202_3884_K052_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/2022-New-Scoopie---6-Tall-K052-2202.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Parlour Vibes Ice Cream Scoop",
+    "usd": 9.75,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24563_33859_ParlorVibesScoop.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Parlour-Vibes-Ice-Cream-Scoop-011-24563.htm",
+    "active": true
+  },
+  {
+    "name": "Frozen Custard Scoops",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_5_5_007_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Frozen-Custard-Scoops--007-5.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Kanga Pouch 6/12-Pack Hybrid",
+    "usd": 50,
+    "bb": 50,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_30807_42078_433.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Kanga-Pouch-612-Pack-Hybrid-433-30807.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue Fuzzy Dice",
+    "usd": 9,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_272_316_481_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Blue-Fuzzy-Dice-481-272.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's 2025 Car Show T-Shirt in Pistachio",
+    "usd": 9.5,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33761_45515_2025CarShow.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-2025-Car-Show-T-Shirt-in-Pistachio-885-33761.htm",
+    "active": false
+  },
+  {
+    "name": "Gildan Cotton T-shirt Azalea",
+    "usd": 10,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_1811_3194_091_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Gildan-Cotton-T-shirt-Azalea--091-1811.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Nike Pink Unstructured Twill Cap",
+    "usd": 22,
+    "bb": 22,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4697_8409_360_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Nike-Pink-Unstructured-Twill-Cap-360-4697.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Nike Dri-Fit Team Performance Visor in Black",
+    "usd": 23.75,
+    "bb": 24,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24867_34407_305.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Nike-Dri-Fit-Team-Performance-Visor-in-Black-305-24867.htm",
+    "active": false
+  },
+  {
+    "name": "Black Culver's Nike Dri-FIT Swoosh Perforated Cap",
+    "usd": 27,
+    "bb": 27,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4693_8405_315_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Black-Culvers-Nike-Dri-FIT-Swoosh-Perforated-Cap-315-4693.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Nike Dri-Fit Polo Navy - Culver's Script",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3265_5789_174_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Nike-Dri-Fit-Polo-Navy---Culvers-Script-174-3265.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Nike Dri-Fit Polo - Black",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3398_6032_177_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Nike-Dri-Fit-Polo---Black-177-3398.htm",
+    "active": true
+  },
+  {
+    "name": "Ladies' Nike Dri-Fit Polo Black Sport Shirt",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4310_7730_677_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Ladies-Nike-Dri-Fit-Polo-Black-Sport-Shirt----677-4310.htm",
+    "active": false
+  },
+  {
+    "name": "Titleist Pro Golf Balls 1 Dozen (4 Sleeves of 3)",
+    "usd": 66,
+    "bb": 66,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_225_257_067PRO_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Titleist-Pro-Golf-Balls-1-Dozen-4-Sleeves-of-3-067PRO-225.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Royal Blue Hacky Sack",
+    "usd": 3.5,
+    "bb": 4,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_227_259_438_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Royal-Blue-Hacky-Sack-438-227.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Blue/Black Drawstring Bag",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_48073_64675_518ACulversSpiritDrawstringBackpack.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-BlueBlack-Drawstring-Bag-518A-48073.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Matte Navy Camper Mug 12oz w/ Lid",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_311_392_508_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Matte-Navy-Camper-Mug-12oz-w-Lid-508-311.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Classic Blue Cowbell",
+    "usd": 1.5,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24353_33588_Cowbell.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Classic-Blue-Cowbell-455-24353.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Cow Stress Reliever",
+    "usd": 2.5,
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24357_33592_CowStress.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cow-Stress-Reliever-432-24357.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's FFA Sticker Sheet",
+    "usd": 3,
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24383_33624_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-FFA-Sticker-Sheet-053-24383.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Thank You Farmers Project Blue Cap",
+    "usd": 7.5,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_168_170_340_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Thank-You-Farmers-Project-Blue-Cap-340-168.htm",
+    "active": true
+  },
+  {
+    "name": "TYFP Mug",
+    "usd": 9.1,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_164_166_088_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/TYFP-Mug-088-164.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Thank You Farmers Hard Cover Dark Blue Journal",
+    "usd": 11.5,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_221_253_426_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Thank-You-Farmers-Hard-Cover-Dark-Blue-Journal-426-221.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's TYFP Full Color Tumbler",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_382_513_532_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-TYFP-Full-Color-Tumbler-532-382.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's FFA T-Shirt",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24364_33599_FFASHIRT.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-FFA-T-Shirt-142-24364.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Food, Family, Future T-shirt Black",
+    "usd": 14,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4680_8385_103_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Food-Family-Future-T-shirt-Black--103-4680.htm",
+    "active": true
+  },
+  {
+    "name": "TYFP Gildan Adult Ultra Cotton T-shirt Royal",
+    "usd": 14,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3334_5919_116_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/TYFP-Gildan-Adult-Ultra-Cotton-T-shirt-Royal-116-3334.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's TYFP Garden Tool Set",
+    "usd": 17.45,
+    "bb": 18,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33478_44914_448.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-TYFP-Garden-Tool-Set-448-33478.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's \"Thank You Farmers\" Playing Cards",
+    "usd": 4.75,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24355_33590_Cards.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Thank-You-Farmers-Playing-Cards-452-24355.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Post-It® Notes Cube",
+    "usd": 8.25,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24557_33853_CulversCustomPostItNoteCube.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Post-It-Notes-Cube-401-24557.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's 28oz Trekker Tritan™ Clear Water Bottle",
+    "usd": 9.75,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24570_33866_CulversWelcometoDeliciousWaterbottle.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-28oz-Trekker-Tritan-Clear-Water-Bottle-503-24570.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Champion Unisex Classic Jersey Dip Dye Royal Blue T-Shirt",
+    "usd": 21.5,
+    "bb": 22,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24846_34371_Untitled1.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Champion-Unisex-Classic-Jersey-Dip-Dye-Royal-Blue-T-Shirt-090-24846.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mannitok® Large Cooler Bag in Blue/Black",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24569_33865_mannitok.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mannitok-Large-Cooler-Bag-in-BlueBlack-415-24569.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Super Sipper",
+    "usd": 5.75,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_313_394_512_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Super-Sipper-512-313.htm",
+    "active": true
+  },
+  {
+    "name": "Matte Blue Mug",
+    "usd": 6.3,
+    "bb": 7,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_165_167_089_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Matte-Blue-Mug--089-165.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's White Breckenridge Bottle 21oz",
+    "usd": 12.5,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_374_500_527_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-White-Breckenridge-Bottle-21oz-527-374.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's h2g0 Voyager Bottle",
+    "usd": 19,
+    "bb": 19,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14219_20720_528bottle_1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-h2g0-Voyager-Bottle-528-14219.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's 35oz. Brümate Rotera",
+    "usd": 51.85,
+    "bb": 52,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33436_44872_548.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-35oz-Brmate-Rotera-548-33436.htm",
+    "active": true
+  },
+  {
+    "name": "Curd Nerd Glasses",
+    "usd": 1.7,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2978_5256_890_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curd-Nerd-Glasses-890-2978.htm",
+    "active": true
+  },
+  {
+    "name": "Goldie Plush 4\"",
+    "usd": 5.45,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2170_3850_SmallG.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Goldie-Plush-4-K020-2170.htm",
+    "active": true
+  },
+  {
+    "name": "Curdis Plush 4\"",
+    "usd": 5.45,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2171_3851_SmallC.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curdis-Plush-4-K025-2171.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Curd Nerd Cap",
+    "usd": 11,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_169_171_392_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Curd-Nerd-Cap-392-169.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Curd Nerd Beanie with Pom",
+    "usd": 12.5,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_166_168_322_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Curd-Nerd-Beanie-with-Pom-322-166.htm",
+    "active": true
+  },
+  {
+    "name": "Culver’s Cheese Curds Crew Socks",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4425_7941_CulversCheeseCurdsCrewSocks.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cheese-Curds-Crew-Socks-121-4425.htm",
+    "active": true
+  },
+  {
+    "name": "Goldie Plush 14\" (Medium)",
+    "usd": 17,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2193_3875_MediumG.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Goldie-Plush-14-Medium-K045-2193.htm",
+    "active": true
+  },
+  {
+    "name": "Curdis Plush 14\" (Medium)",
+    "usd": 23,
+    "bb": 23,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2174_3854_MediumC.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curdis-Plush-14-Medium-K040-2174.htm",
+    "active": true
+  },
+  {
+    "name": "Curd Nerd Sweatshirt",
+    "usd": 37,
+    "bb": 37,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2995_5287_892_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curd-Nerd-Sweatshirt-892-2995.htm",
+    "active": true
+  },
+  {
+    "name": "Curdis Pinata",
+    "usd": 39,
+    "bb": 39,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3081_5430_9321_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curdis-Pinata-9321-3081.htm",
+    "active": false
+  },
+  {
+    "name": "Curdis Plush 24\"",
+    "usd": 41,
+    "bb": 41,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2172_3852_LargeC.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Curdis-Plush-24-K030-2172.htm",
+    "active": true
+  },
+  {
+    "name": "Goldie Plush 24\"",
+    "usd": 41,
+    "bb": 41,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2173_3853_LargeG.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Goldie-Plush-24-K035-2173.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Tennis Ball",
+    "usd": 2,
+    "bb": 2,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_256_300_478_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Tennis-Ball-478-256.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Small Blue Collapsible Pet Bowl",
+    "usd": 5.75,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_253_297_DogBowl1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Small-Blue-Collapsible-Pet-Bowl-474-253.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Custard Cone Catnip Toy",
+    "usd": 11.5,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33434_44870_download.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Custard-Cone-Catnip-Toy-435-33434.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's ButterBurger Catnip Toy",
+    "usd": 11.5,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33435_44871_download1.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-ButterBurger-Catnip-Toy-439-33435.htm",
+    "active": true
+  },
+  {
+    "name": "Culver’s Fries Dog Toy",
+    "usd": 16.5,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4396_7894_dogtoyfries350.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Fries-Dog-Toy-413-4396.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Canvas Meshback Adjustable Hat",
+    "usd": 11.5,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_156_158_309_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Canvas-Meshback-Adjustable-Hat-309-156.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Vintage Washed Canvas Cap",
+    "usd": 11.55,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33583_45097_342.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Vintage-Washed-Canvas-Cap-342-33583.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Sundae Best Relaxed Golf Cap in White/Royal Blue",
+    "usd": 13.95,
+    "bb": 14,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33489_44925_334.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Sundae-Best-Relaxed-Golf-Cap-in-WhiteRoyal-Blue-334-33489.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Richardson Trucker Heather Grey Cap",
+    "usd": 17,
+    "bb": 17,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2956_5227_304New2022NavyCulversRFlexTrucker.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Richardson-Trucker-Heather-Grey-Cap-304-2956.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The North Face® Black Circular Rib Beanie",
+    "usd": 19,
+    "bb": 19,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4689_8401_307New2024CircularRibbedBeanie.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-North-Face-Black-Circular-Rib-Beanie-307-4689.htm",
+    "active": true
+  },
+  {
+    "name": "White Culver's Nike Swoosh Legacy 91 Cap",
+    "usd": 25.5,
+    "bb": 26,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_7596_12576_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/White-Culvers-Nike-Swoosh-Legacy-91-Cap-317-7596.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Premium Custom Fuzzy Socks",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14307_20808_111.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Premium-Custom-Fuzzy-Socks-111-14307.htm",
+    "active": true
+  },
+  {
+    "name": "White Culver's Breakout T-shirt",
+    "usd": 7,
+    "bb": 7,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2056_3633_Untitled101.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/White-Culvers-Breakout-T-shirt--101-2056.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Threadfast Apparel Epic T-Shirt in Heather Navy",
+    "usd": 7.55,
+    "bb": 8,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33744_45370_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Threadfast-Apparel-Epic-T-Shirt-in-Heather-Navy-105A-33744.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Serving with Heart Volunteer T-Shirt in Carolina Blue",
+    "usd": 9,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33995_46236_106A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Serving-with-Heart-Volunteer-T-Shirt-in-Carolina-Blue-106A-33995.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Crew T-shirt Heather sapphire",
+    "usd": 9,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_1954_3435_099_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Crew-T-shirt-Heather-sapphire-099-1954.htm",
+    "active": true
+  },
+  {
+    "name": "Blue Breakout T-shirt - Metro Blue",
+    "usd": 9,
+    "bb": 9,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3320_5892_115.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Blue-Breakout-T-shirt---Metro-Blue-115-3320.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Gildan® Ultra Cotton® 100% US Cotton T-Shirt in Tan",
+    "usd": 9.75,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24647_33993_092CulversBagDesignTShirt.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Gildan-Ultra-Cotton-100-US-Cotton-T-Shirt-in-Tan-092-24647.htm",
+    "active": true
+  },
+  {
+    "name": "Team 365 Performance  T-shirt Sport Royal",
+    "usd": 10,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_1856_3273_095_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Team-365-Performance--T-shirt-Sport-Royal-095-1856.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Faux Fry Pocket Tee in Navy",
+    "usd": 10.25,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24591_33897_102CulversFryPocketTShirt.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Faux-Fry-Pocket-Tee-in-Navy-102-24591.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Sky Blue Port & Company ® Crystal Tie-Dye Tee",
+    "usd": 10.5,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24665_34023_104CulversCrystalTieDyeTee.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Sky-Blue-Port--Company--Crystal-Tie-Dye-Tee-104-24665.htm",
+    "active": true
+  },
+  {
+    "name": "Sundae Fundae Premium Blend Tee",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_1869_3297_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Sundae-Fundae-Premium-Blend-Tee-096-1869.htm",
+    "active": true
+  },
+  {
+    "name": "I Speak French Fries Charcoal T-shirt",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3306_5865_114_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/I-Speak-French-Fries-Charcoal-T-shirt-114-3306.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Comfort Colors Adult Heavyweight Color Blast T-Shirt - Ocean",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_1825_3220_093_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Comfort-Colors-Adult-Heavyweight-Color-Blast-T-Shirt---Ocean-093-1825.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Sustainable Long Sleeve Tee in Light Denim",
+    "usd": 17.25,
+    "bb": 18,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33704_45301_152A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Sustainable-Long-Sleeve-Tee-in-Light-Denim-152A-33704.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Crewneck Navy Sweatshirt",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4642_8320_161_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Crewneck-Navy-Sweatshirt-161-4642.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Royal Crewneck Sweatshirt",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14338_20853_162.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Royal-Crewneck-Sweatshirt-162-14338.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's White Crewneck Sweatshirt",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14346_20868_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-White-Crewneck-Sweatshirt-173-14346.htm",
+    "active": true
+  },
+  {
+    "name": "Pennant Pullover Hoodie Grey 10oz Premium Fleece",
+    "usd": 24.5,
+    "bb": 25,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3215_5687_169_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Pennant-Pullover-Hoodie-Grey-10oz-Premium-Fleece--169-3215.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Royal Blue Super-10 Pennant Hoodie",
+    "usd": 24.5,
+    "bb": 25,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24606_33920_143CulversPennantBlueSuper10Hoodie.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Royal-Blue-Super-10-Pennant-Hoodie-143-24606.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Comfort Colors Lightweight Hoodie in Blue Jean",
+    "usd": 28.25,
+    "bb": 29,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33954_46079_166A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Comfort-Colors-Lightweight-Hoodie-in-Blue-Jean-166A-33954.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Cutter & Buck Epic Comfort Hooded Shirt in Digital",
+    "usd": 37.5,
+    "bb": 38,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33652_45209_120A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cutter--Buck-Epic-Comfort-Hooded-Shirt-in-Digital-120A-33652.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Champion Unisex Gameday Hooded Sweatshirt in Grey",
+    "usd": 40.5,
+    "bb": 41,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24627_33959_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Champion-Unisex-Gameday-Hooded-Sweatshirt-in-Grey-136-24627.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's  Champion Ladies' Gameday Hooded Sweatshirt in Grey",
+    "usd": 40.5,
+    "bb": 41,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24633_33970_636ChampionWomensSportHoodedSweatshirt.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers--Champion-Ladies-Gameday-Hooded-Sweatshirt-in-Grey-636-24633.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Carhartt Midweight Crewneck Sweatshirt",
+    "usd": 50,
+    "bb": 50,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14362_20898_157.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Carhartt-Midweight-Crewneck-Sweatshirt-157-14362.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Carhartt® Women’s Clarksburg Full-Zip Hoodie",
+    "usd": 56,
+    "bb": 56,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14539_21202_635.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Carhartt-Womens-Clarksburg-Full-Zip-Hoodie-635-14539.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Member's Only Colorblock Hoodie in Charcoal",
+    "usd": 63.65,
+    "bb": 64,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33788_45624_158A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Members-Only-Colorblock-Hoodie-in-Charcoal-158A-33788.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Men's Carhartt Full Zip",
+    "usd": 64,
+    "bb": 64,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14525_21176_135.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mens-Carhartt-Full-Zip-135-14525.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Adidas White/Grey Quarter-Zip Pullover",
+    "usd": 42.25,
+    "bb": 43,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24711_34117_AdidasLightweightQuarterZipPullover.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Adidas-WhiteGrey-Quarter-Zip-Pullover-150-24711.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Puma Golf Bandon Quarter Zip in Lake Blue",
+    "usd": 45.25,
+    "bb": 46,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33674_45248_163A.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Puma-Golf-Bandon-Quarter-Zip-in-Lake-Blue-163A-33674.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Brooks Brothers® Casual Oxford Cloth Shirt",
+    "usd": 47,
+    "bb": 47,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15238_22357_192.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Brooks-Brothers-Casual-Oxford-Cloth-Shirt-192-15238.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Brooks Brothers® Casual Oxford Cloth Shirt",
+    "usd": 47,
+    "bb": 47,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15246_22372_193.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Brooks-Brothers-Casual-Oxford-Cloth-Shirt-193-15246.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Brooks Brothers® Casual Oxford Cloth Shirt",
+    "usd": 47,
+    "bb": 47,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15230_22321_189.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Brooks-Brothers-Casual-Oxford-Cloth-Shirt-189-15230.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Adidas 3-Stripes Quarter-Zip Grey Sweater",
+    "usd": 53.75,
+    "bb": 54,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24749_34186_AdidasMens3StripeQuarterZip.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Adidas-3-Stripes-Quarter-Zip-Grey-Sweater-151-24749.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Brooks Brothers® Wrinkle-Free Stretch Nailhead Shirt",
+    "usd": 60,
+    "bb": 60,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15177_22212_196.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Brooks-Brothers-Wrinkle-Free-Stretch-Nailhead-Shirt-196-15177.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Brooks Brothers® Wrinkle-Free Stretch Nailhead Shirt",
+    "usd": 60,
+    "bb": 60,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15192_22241_198.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Brooks-Brothers-Wrinkle-Free-Stretch-Nailhead-Shirt-198-15192.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Brooks Brothers® Wrinkle-Free Stretch Nailhead Shirt",
+    "usd": 60,
+    "bb": 60,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15200_22256_199.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Brooks-Brothers-Wrinkle-Free-Stretch-Nailhead-Shirt-199-15200.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mercer+Mettle™ Stretch Pique Henley",
+    "usd": 24,
+    "bb": 24,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14554_21229_182.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-MercerMettle-Stretch-Pique-Henley-182-14554.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mercer+Mettle™ Stretch Jersey Polo",
+    "usd": 24,
+    "bb": 24,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14921_21876_184.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-MercerMettle-Stretch-Jersey-Polo-184-14921.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Charles River Polo - Navy Heather",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4164_7461_160_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Charles-River-Polo---Navy-Heather-160-4164.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Charles River Graphite Heather Polo",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3147_5561_171_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Charles-River-Graphite-Heather-Polo-171-3147.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Charles River Royal Performance Polo",
+    "usd": 32,
+    "bb": 32,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3167_5598_172_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Charles-River-Royal-Performance-Polo-172-3167.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Augusta Repreve Eco Polo",
+    "usd": 32,
+    "bb": 32,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3349_5947_175_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Augusta-Repreve-Eco-Polo--175-3349.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Men's Stormtech Mirage Polo",
+    "usd": 47,
+    "bb": 47,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3377_5993_176_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mens-Stormtech-Mirage-Polo-176-3377.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Adidas White Camo Polo",
+    "usd": 50.25,
+    "bb": 51,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24687_34065_AdidasWhiteCamoPolo.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Adidas-White-Camo-Polo-137-24687.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Adidas Grey Six Camo Polo",
+    "usd": 54,
+    "bb": 54,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24695_34087_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Adidas-Grey-Six-Camo-Polo-139-24695.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Greg Norman Play Dry Heather Polo in Blue Mist",
+    "usd": 63.5,
+    "bb": 64,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33974_46127_176A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Greg-Norman-Play-Dry-Heather-Polo-in-Blue-Mist-176A-33974.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Greg Norman Play Dry Heather Polo in Navy",
+    "usd": 63.5,
+    "bb": 64,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33981_46144_178A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Greg-Norman-Play-Dry-Heather-Polo-in-Navy-178A-33981.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Swannies Tanner Printed Polo in Navy",
+    "usd": 71.25,
+    "bb": 72,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33722_45331_170A.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Swannies-Tanner-Printed-Polo-in-Navy-170A-33722.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Vineyard Vines Men's Edgartown Pique Polo",
+    "usd": 84,
+    "bb": 84,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15263_22401_165.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Vineyard-Vines-Mens-Edgartown-Pique-Polo-165-15263.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Peter Millar Solid  Stretch Mesh Polo",
+    "usd": 90,
+    "bb": 90,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_7049_11963_CulversPeterMillarSolidPerformancePolo.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Peter-Millar-Solid--Stretch-Mesh-Polo-164-7049.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Burnside Men's Plaid Flannel Shirt",
+    "usd": 34,
+    "bb": 34,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14936_21898_128.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Burnside-Mens-Plaid-Flannel-Shirt-128-14936.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Pack-N-Go® Full Zip Reflective Navy Jacket",
+    "usd": 40.5,
+    "bb": 41,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24734_34158_packngofullzip.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Pack-N-Go-Full-Zip-Reflective-Navy-Jacket-141-24734.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Port Authority Jacket - Black/Charcoal Heather",
+    "usd": 42,
+    "bb": 42,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3626_6463_132_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Port-Authority-Jacket---BlackCharcoal-Heather--132-3626.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mercer+Mettle™ Double-Knit Bomber",
+    "usd": 42.5,
+    "bb": 43,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14600_21319_127.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-MercerMettle-Double-Knit-Bomber-127-14600.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Sport-Tek 1/4 Zip Black Pullover",
+    "usd": 45,
+    "bb": 45,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3676_6556_187_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Sport-Tek-14-Zip-Black-Pullover-187-3676.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Perry Ellis Men's Quarter Zip Pullover",
+    "usd": 48.5,
+    "bb": 49,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14951_21927_195.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Perry-Ellis-Mens-Quarter-Zip-Pullover-195-14951.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Cutter & Buck Roam Eco 1/4 Zip in Grey",
+    "usd": 49.75,
+    "bb": 50,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33820_45850_Untitled1.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Cutter--Buck-Roam-Eco-14-Zip-in-Grey-154A-33820.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Men's Augusta Repreve Eco Vest",
+    "usd": 51,
+    "bb": 51,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3529_6270_124_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Mens-Augusta-Repreve-Eco-Vest-124-3529.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Nike Fleece 1/2 Zip in Royal",
+    "usd": 54,
+    "bb": 54,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33841_45887_146.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Nike-Fleece-12-Zip-in-Royal-146-33841.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Ogio Endurance Full Zip - Black",
+    "usd": 56,
+    "bb": 56,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4129_7396_147_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Ogio-Endurance-Full-Zip---Black--147-4129.htm",
+    "active": true
+  },
+  {
+    "name": "Men's Eddie Bauer Soft Shell Jacket - Cobalt Blue",
+    "usd": 57,
+    "bb": 57,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4040_7243_134_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Mens-Eddie-Bauer-Soft-Shell-Jacket---Cobalt-Blue--134-4040.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Highland Plaid Shacket in Navy",
+    "usd": 60.5,
+    "bb": 61,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33511_44958_144A.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Highland-Plaid-Shacket-in-Navy-144A-33511.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The North Face® Glacier Full-Zip Fleece Jacket in Grey/Black",
+    "usd": 81.5,
+    "bb": 82,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33869_45946_148.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-North-Face-Glacier-Full-Zip-Fleece-Jacket-in-GreyBlack-148-33869.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mercer+Mettle™ Women’s Stretch Jersey Polo",
+    "usd": 24,
+    "bb": 24,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14694_21465_684MercerMettleLadiesStretchJerseyPolo01.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-MercerMettle-Womens-Stretch-Jersey-Polo-684-14694.htm",
+    "active": true
+  },
+  {
+    "name": "Ladies' Charles River Navy Heather Polo",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4211_7549_660_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Ladies-Charles-River-Navy-Heather-Polo-660-4211.htm",
+    "active": true
+  },
+  {
+    "name": "Ladies' Charles River Graphite Heathered Polo",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4218_7562_661_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Ladies-Charles-River-Graphite-Heathered-Polo-661-4218.htm",
+    "active": true
+  },
+  {
+    "name": "Ladies' Charles River Royal Performance Polo",
+    "usd": 30,
+    "bb": 30,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4265_7649_672_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Ladies-Charles-River-Royal-Performance-Polo-----672-4265.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Augusta Ladies' Repreve Eco Polo",
+    "usd": 32,
+    "bb": 32,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4278_7673_675_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Augusta-Ladies-Repreve-Eco-Polo-675-4278.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Women's Optimist Short Sleeve Polo Shirt in Navy",
+    "usd": 32.75,
+    "bb": 33,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24577_33878_642CulversLadiesOptimistPoloShirt.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Womens-Optimist-Short-Sleeve-Polo-Shirt-in-Navy-642-24577.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Women's Adidas Micro Pique Polo in Navy",
+    "usd": 39.5,
+    "bb": 40,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24804_34293_AdidasLadiesMicroPiquePolo.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Womens-Adidas-Micro-Pique-Polo-in-Navy-643-24804.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Women's Greg Norman Freedom Polo in Grey",
+    "usd": 44,
+    "bb": 44,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_23523_32551_LadiesGregNormanFreedomPolo.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Womens-Greg-Norman-Freedom-Polo-in-Grey-641-23523.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Women's Stormtech Mirage Polo",
+    "usd": 47,
+    "bb": 47,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4291_7696_676_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Womens-Stormtech-Mirage-Polo-676-4291.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Adidas Women's Melange Sport Shirt",
+    "usd": 50,
+    "bb": 50,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4325_7756_678_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Adidas-Womens-Melange-Sport-Shirt-678-4325.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Vineyard Vines Ladies' Edgartown Pique Polo",
+    "usd": 84,
+    "bb": 84,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_15275_22423_665.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Vineyard-Vines-Ladies-Edgartown-Pique-Polo-665-15275.htm",
+    "active": true
+  },
+  {
+    "name": "Ladies' Port Authority Blue Heather Cardigan",
+    "usd": 28,
+    "bb": 28,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4344_7790_681_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Ladies-Port-Authority-Blue-Heather-Cardigan-681-4344.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mercer+Mettle™ Women's Stretch Crepe Long Sleeve Camp Blouse",
+    "usd": 33,
+    "bb": 33,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14738_21547_659CulversMercerMettleCrepeBlouse01.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-MercerMettle-Womens-Stretch-Crepe-Long-Sleeve-Camp-Blouse-659-14738.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's  Burnside Ladies' Plaid Boyfriend Flannel Shirt",
+    "usd": 34,
+    "bb": 34,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14767_21613_628LadiesBurnsidePlaidFlannelShirt01.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers--Burnside-Ladies-Plaid-Boyfriend-Flannel-Shirt-628-14767.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Ladies' Port Authority Charcoal Heather Jacket",
+    "usd": 42,
+    "bb": 42,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3966_7107_632_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Port-Authority-Charcoal-Heather-Jacket-632-3966.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Mercer+Mettle™ Women's Double-Knit Bomber",
+    "usd": 42.5,
+    "bb": 43,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14781_21639_627LadiesMercerMettleBomberJacket01.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-MercerMettle-Womens-Double-Knit-Bomber-627-14781.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Port Authority® Ladies' Network Fleece Jacket",
+    "usd": 44,
+    "bb": 44,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14813_21683_625.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Port-Authority-Ladies-Network-Fleece-Jacket-625-14813.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Boxercraft Women's Quilted Pullover",
+    "usd": 44,
+    "bb": 44,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14865_21768_612.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Boxercraft-Womens-Quilted-Pullover-612-14865.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies Ogio Transcend 1/4 Zip in Black",
+    "usd": 47.85,
+    "bb": 48,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33939_46040_605.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Ogio-Transcend-14-Zip-in-Black-605-33939.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Perry Ellis Ladies' 1/4 Zip Pullover",
+    "usd": 48.5,
+    "bb": 49,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14850_21742_695.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Perry-Ellis-Ladies-14-Zip-Pullover-695-14850.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies' Augusta Repreve® Eco Vest",
+    "usd": 51,
+    "bb": 51,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3852_6915_624_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Augusta-Repreve-Eco-Vest-624-3852.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Women's Adidas 3-Stripes Quarter-Zip Grey Sweater",
+    "usd": 53.75,
+    "bb": 54,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24764_34214_ladiesadidasquarterzip.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Womens-Adidas-3-Stripes-Quarter-Zip-Grey-Sweater-651-24764.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Women's Nike Fleece 1/2 Zip",
+    "usd": 54,
+    "bb": 54,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33849_45906_646.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Womens-Nike-Fleece-12-Zip-646-33849.htm",
+    "active": true
+  },
+  {
+    "name": "Ladies' Ogio Endurance Fulcrum Full Zip - Black",
+    "usd": 56,
+    "bb": 56,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4114_7368_647_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Ladies-Ogio-Endurance-Fulcrum-Full-Zip---Black-647-4114.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Ladies' Eddie Bauer® Cobalt Blue Jacket",
+    "usd": 57,
+    "bb": 57,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_4024_7214_634_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Ladies-Eddie-Bauer-Cobalt-Blue-Jacket-634-4024.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Women's Highland Plaid Shacket in Navy",
+    "usd": 60.5,
+    "bb": 61,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33518_44977_644.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Womens-Highland-Plaid-Shacket-in-Navy-644A-33518.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Greg Norman Women's Lab 1/4-Zip Hoodie",
+    "usd": 67,
+    "bb": 67,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14880_21794_614.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Greg-Norman-Womens-Lab-14-Zip-Hoodie-614-14880.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's North End Ladies' Aura Sweater Fleece Quarter-Zip",
+    "usd": 74.5,
+    "bb": 75,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14907_21849_697.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-North-End-Ladies-Aura-Sweater-Fleece-Quarter-Zip-697-14907.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The North Face® Women's Glacier Full-Zip Fleece Jacket in Grey/Black",
+    "usd": 81.5,
+    "bb": 82,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33876_45959_648.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-North-Face-Womens-Glacier-Full-Zip-Fleece-Jacket-in-GreyBlack-648-33876.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's The North Face® Women’s Double-Knit 1/2-Zip Fleece in Steel Blue",
+    "usd": 88.15,
+    "bb": 89,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_33689_45275_609.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-The-North-Face-Womens-Double-Knit-12-Zip-Fleece-in-Steel-Blue-609-33689.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Extra Large Kraft Paper Bag",
+    "usd": 3,
+    "bb": 3,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14386_20934_427428429.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Extra-Large-Kraft-Paper-Bag-427-14386.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Tissue Paper Metallic Silver - Pack of 10",
+    "usd": 4.5,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_212_243_417S_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Tissue-Paper-Metallic-Silver---Pack-of-10-417S-212.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Tissue Paper - Midnight Blue - Pack of 10",
+    "usd": 5.5,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14379_20927_NavyTissueth.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Tissue-Paper---Midnight-Blue---Pack-of-10-417B-14379.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Die Cut Handle Bag",
+    "usd": 10.5,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24559_33855_414.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Die-Cut-Handle-Bag-414-24559.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Small Kraft Paper Bag - Pack of 10",
+    "usd": 11,
+    "bb": 11,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14388_20936_2_14388_20936_10_14387_20935_427428429.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Small-Kraft-Paper-Bag---Pack-of-10-429-14388.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Medium Kraft Paper Bag - Pack of 10",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14387_20935_427428429.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Medium-Kraft-Paper-Bag---Pack-of-10-428-14387.htm",
+    "active": false
+  },
+  {
+    "name": "Balloons without Ties Culver's Logo 250 pcs",
+    "usd": 70,
+    "bb": 70,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_220_252_065CulversBalloons.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Balloons-without-Ties-Culvers-Logo-250-pcs-065-220.htm",
+    "active": false
+  },
+  {
+    "name": "Water Ball and Disk Set",
+    "usd": 4.95,
+    "bb": 5,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_20501_28630_WaterBallDiscSet.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Water-Ball-and-Disk-Set-K280-20501.htm",
+    "active": true
+  },
+  {
+    "name": "Deluxe Foot Pump",
+    "usd": 9.5,
+    "bb": 10,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_5244_9667_k100_th.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Deluxe-Foot-Pump-K100-5244.htm",
+    "active": true
+  },
+  {
+    "name": "Royal Blue Cotton Face Mask - USA Made",
+    "usd": 0.81,
+    "bb": 1,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_1_1_002_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Royal-Blue-Cotton-Face-Mask---USA-Made-002-1.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Delicious Rewards T-Shirt in Daisy",
+    "usd": 6,
+    "bb": 6,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_47682_64255_9115.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Delicious-Rewards-T-Shirt-in-Daisy-9115-47682.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Asobu Reusable Food Bags - Set of 5",
+    "usd": 11.47,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_226_258_bagg.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Asobu-Reusable-Food-Bags---Set-of-5-436-226.htm",
+    "active": true
+  },
+  {
+    "name": "Royal/White Custom Culver's socks",
+    "usd": 12,
+    "bb": 12,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3253_5767_109_TH.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/RoyalWhite-Custom-Culvers-socks-109-3253.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's BELLA + CANVAS - Women's Relaxed Triblend Short Sleeve V-Neck Tee",
+    "usd": 13,
+    "bb": 13,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_3049_5386_601_TH.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-BELLA--CANVAS---Womens-Relaxed-Triblend-Short-Sleeve-V-Neck-Tee-601-3049.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's 2026 Reunion District® V.I.T.™ Fleece Crew in Heathered Navy",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45468_61202_9615.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-2026-Reunion-District-VIT-Fleece-Crew-in-Heathered-Navy-9615-45468.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's 2026 Reunion District® V.I.T.™ Fleece Crew in Royal Frost",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45476_61221_9610.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-2026-Reunion-District-VIT-Fleece-Crew-in-Royal-Frost-9610-45476.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's 2026 Reunion Richardson Trucker-Blue/White",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45486_61243_9635.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-2026-Reunion-Richardson-Trucker-BlueWhite-9635-45486.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's 2026 Reunion Richardson Navy Pigment Dyed Cap",
+    "usd": 15,
+    "bb": 15,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_45496_61254_9630.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-2026-Reunion-Richardson-Navy-Pigment-Dyed-Cap-9630-45496.htm",
+    "active": false
+  },
+  {
+    "name": "Culver's Light Blue Performance Ponytail Cap",
+    "usd": 20.75,
+    "bb": 21,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_24863_34401_WomensImperialPonyCap.png",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Light-Blue-Performance-Ponytail-Cap-306-24863.htm",
+    "active": true
+  },
+  {
+    "name": "Culver's Swoosh Hoodie",
+    "usd": 55.5,
+    "bb": 56,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_14422_20976_159.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culvers-Swoosh-Hoodie-159-14422.htm",
+    "active": true
+  },
+  {
+    "name": "Culver Gift Certificate - $25",
+    "usd": 25,
+    "bb": 25,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2176_3856_CulversGiftCertificate.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culver-Gift-Certificate---25-GC-CULVER25-2176.htm",
+    "active": false
+  },
+  {
+    "name": "Culver Gift Certificate - $50",
+    "usd": 50,
+    "bb": 50,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2177_3857_CulversGiftCertificate.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culver-Gift-Certificate---50-GC-CULVER50-2177.htm",
+    "active": false
+  },
+  {
+    "name": "Culver Gift Certificate - $100",
+    "usd": 100,
+    "bb": 100,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2179_3859_CulversGiftCertificate.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culver-Gift-Certificate---100-GC-CULVER100-2179.htm",
+    "active": false
+  },
+  {
+    "name": "Culver Gift Certificate - $250",
+    "usd": 250,
+    "bb": 250,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2180_3860_CulversGiftCertificate.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culver-Gift-Certificate---250-GC-CULVER250-2180.htm",
+    "active": false
+  },
+  {
+    "name": "Culver Gift Certificate - $500",
+    "usd": 500,
+    "bb": 500,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2181_3861_CulversGiftCertificate.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culver-Gift-Certificate---500-GC-CULVER500-2181.htm",
+    "active": false
+  },
+  {
+    "name": "Culver Gift Certificate - $1,000",
+    "usd": 1,
+    "bb": 1,
+    "img": "https://www.toolsforculvers.com/SiteData/Products/1_2175_3855_CulversGiftCertificate.jpg",
+    "new": false,
+    "url": "https://www.toolsforculvers.com/Product/Culver-Gift-Certificate---1000-GC-CULVER1000-2175.htm",
+    "active": false
   }
 ]

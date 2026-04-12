@@ -2,9 +2,11 @@
 layout: default
 ---
 <div class="shop">
-    <div class="header">
+    <div class="header" id="caitmode1">
         <h1>Blue Buck Shop</h1>
+        <h2>You enabled Manager View Mode</h2>
         <h3>Exchange your Blue Bucks for awesome products below! <br>Simply search the product you want and let a Trainer know.</h3>
+        <small>Some products are subject to corporate availability.<br>Items updated on a monthly basis.</small>
     </div>
     <div class="shop-main">
         <div class="shop-search">
@@ -13,16 +15,23 @@ layout: default
             <button id="sortPrice"><i class="bi bi-currency-dollar"></i><i class="bi bi-filter-left"></i></button>
         </div>
         <div class="shop-content">
-            {% assign sorted_products = site.data.products | sort: "price" %}
+            {% assign sorted_products = site.data.products | sort: "bb" %}
             {% for product in sorted_products %}
-            <div class="product {{ product.sku }} {{ product.tag | slugify }} {{ product.name | slugify }}" title="{{ product.name }}">
-                <small>SKU: {{ product.sku }}</small>
-                <div class="image">
-                    <img src="{{ product.picture }}" alt="{{ product.name }}">
-                </div>
-                <h2>{{ product.name | replace_first: "Culver's ", "" }}</h2>
-                <div class="price"><p>{{ product.price }}</p><svg width="32" height="32" viewBox="0 0 32 32"><path d="M29.538,0H2.462C1.102,0,0,1.102,0,2.462v13.231c0,1.359,1.102,2.462,2.462,2.462h27.077c1.359,0,2.462-1.102,2.462-2.462V2.462c0-1.36-1.102-2.462-2.462-2.462ZM10.833,12.401H3.231v-7.94c0-.679.552-1.231,1.231-1.231h9.265c-1.396.774-2.407,1.791-2.997,3.058-1.135,2.438-.353,4.995.104,6.112ZM18.947,12.401h-6.135s-3.265-6.85,4.507-8.695c.015-.003.029-.005.043-.005.105,0,.199.089.208.21.031.407.168,1.198.751,1.683.812.675,3.258,4.543.626,6.807ZM28.769,12.401h-7.587c.616-.809.951-1.757.942-2.815-.019-2.412-1.767-4.748-2.654-5.408-.313-.232-.385-.711-.401-.906-.001-.015-.01-.027-.012-.042h8.481c.679,0,1.231.552,1.231,1.231v7.94ZM13.019,8.554c0-.581.471-1.053,1.053-1.053s1.053.471,1.053,1.053-.471.298-1.053.298-1.053.283-1.053-.298ZM18.085,7.501c.581,0,1.053.471,1.053,1.053s-.471.298-1.053.298-1.053.283-1.053-.298.471-1.053,1.053-1.053ZM19.137,10.115c-1.123,2.472-4.896,2.289-6.118,0,2.167.973,4.063,1.138,6.118,0Z"/></svg></div>
-            </div>
+                {% if product.active %}
+                    <div class="product {% if product.new %} new{% endif %} {{ product.sku }} {{ product.tag | slugify }} {{ product.name | slugify }} cait" title="{{ product.name }}">
+                        <h6>Price: $ {{ product.usd }}</h6>
+                        <button class="on shopbtn cait"></button>
+                        <div class="image">
+                            <img src="{{ product.img | default: '/assets/img/products/not_found.webp' }}" alt="{{ product.name }}">
+                        </div>
+                        <h2>{{ product.name | replace_first: "Culver's ", "" }}</h2>
+                        <div class="price" onclick="window.open('https://forms.gle/DWViXendRBwUHm6i8', '_blank')">
+                            <p>{{ product.bb }}</p>
+                            <svg width="32" height="32" viewBox="0 0 32 32"><path d="M29.538,0H2.462C1.102,0,0,1.102,0,2.462v13.231c0,1.359,1.102,2.462,2.462,2.462h27.077c1.359,0,2.462-1.102,2.462-2.462V2.462c0-1.36-1.102-2.462-2.462-2.462ZM10.833,12.401H3.231v-7.94c0-.679.552-1.231,1.231-1.231h9.265c-1.396.774-2.407,1.791-2.997,3.058-1.135,2.438-.353,4.995.104,6.112ZM18.947,12.401h-6.135s-3.265-6.85,4.507-8.695c.015-.003.029-.005.043-.005.105,0,.199.089.208.21.031.407.168,1.198.751,1.683.812.675,3.258,4.543.626,6.807ZM28.769,12.401h-7.587c.616-.809.951-1.757.942-2.815-.019-2.412-1.767-4.748-2.654-5.408-.313-.232-.385-.711-.401-.906-.001-.015-.01-.027-.012-.042h8.481c.679,0,1.231.552,1.231,1.231v7.94ZM13.019,8.554c0-.581.471-1.053,1.053-1.053s1.053.471,1.053,1.053-.471.298-1.053.298-1.053.283-1.053-.298ZM18.085,7.501c.581,0,1.053.471,1.053,1.053s-.471.298-1.053.298-1.053.283-1.053-.298.471-1.053,1.053-1.053ZM19.137,10.115c-1.123,2.472-4.896,2.289-6.118,0,2.167.973,4.063,1.138,6.118,0Z"/></svg>
+                            <a href="{{ product.url }}" target="_blank">go to item page &ensp;<i class="bi bi-arrow-up-right-square-fill"></i></a>
+                        </div>
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -102,4 +111,32 @@ sortPriceBtn.addEventListener("click", () => {
 
     priceAscending = !priceAscending;
 });
+</script>
+<script>
+    const targetMM = "managermode";
+    let index = 0;
+
+    document.addEventListener("keydown", (e) => {
+    const key = e.key.toLowerCase();
+
+    // Ignore non-character keys
+    if (key.length !== 1) return;
+
+    if (key === targetMM[index]) {
+        index++;
+
+        if (index === targetMM.length) {
+        index = 0;
+        activateManagerMode();
+        }
+    } else {
+        index = 0;
+    }
+    });
+
+    function activateManagerMode() {
+        alert("Manager mode activated");
+        document.getElementById("caitmode1").classList.toggle("caitmode");
+        document.querySelectorAll('.cait').forEach(el => {el.classList.add("caitmode")});
+    }
 </script>

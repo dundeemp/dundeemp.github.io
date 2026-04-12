@@ -63,6 +63,22 @@ body {
   background-color: $primary-500;
   text-align: center;
   padding: 24px 16px;
+  h2 {display: none}
+  &.caitmode {
+    background-color: #e7b029;
+    h1, h3, small {
+      display: none;
+    }
+    h2 {
+      display: block;
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-family: $title-font;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+    }
+  }
   h1 {
     text-transform: uppercase;
     font-size: 4rem;
@@ -85,6 +101,10 @@ body {
     letter-spacing: 0.1rem;
     color: $gray-100;
     font-weight: 400;
+  }
+  small {
+    color: $primary-200;
+    font-family: $mono-font;
   }
 }
 .not-found-page {
@@ -1050,6 +1070,40 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         position: relative;
+        h6 {display: none}
+        &.caitmode {
+          h6 {
+            background-color: rgba(#e7b029, 0.5);
+            width: 100%;
+            color: black;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            text-align: center;
+            font-size: 1.1rem;
+          }
+          &::after {
+            background-color: #eeaf26;
+          }
+          .price {
+            p, svg {display: none;}
+            a {
+              display: flex;
+              font-family: $text-font;
+              color: $black;
+              font-size: 1rem;
+              text-decoration: none;
+              height: 39px;
+              justify-content: center;
+              padding-top: 4px;
+              font-weight: bold;
+              text-transform: uppercase;
+              white-space: nowrap
+            }
+          }
+        }
         small {
           font-size: 0.6rem;
           position: absolute;
@@ -1116,6 +1170,10 @@ body {
           color: $gray-100;
           display: flex;
           align-items: center;
+          width: 100%;
+          justify-content: center;
+          cursor: pointer;
+          a {display: none}
           p {
             margin-right: 4px;
           }
