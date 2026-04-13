@@ -242,3 +242,31 @@
               type: number
               options:
                 min: 0
+        - name: hidden_milestones
+          label: "Hidden Milestones"
+          type: object
+          fields:
+            - name: kitchen_open
+              label: "🌟 Kitchen Open"
+              type: boolean
+              default: false
+            - name: kitchen_close
+              label: "🌟 Kitchen Close"
+              type: boolean
+              default: false
+            - name: custard_open
+              label: "🌟 Custard Open"
+              type: boolean
+              default: false
+            - name: custard_close
+              label: "🌟 Custard Close"
+              type: boolean
+              default: false
+            - name: dish_close
+              label: "🌟 Dish Close"
+              type: boolean
+              default: false
+            - name: lobby_close
+              label: "🌟 Lobby Close"
+              type: boolean
+              default: false
