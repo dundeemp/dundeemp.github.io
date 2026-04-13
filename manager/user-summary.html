@@ -1,0 +1,360 @@
+---
+layout: default
+---
+<div class="shop">
+    <div class="header caitmode">
+        <h2>User Summary</h2>
+        <h4>Select the people scheduled to work today:</h4>
+    </div>
+    <div class="user-summary">
+        {% assign managers = site.user | where: "other_milestones.manager", true %}
+
+        {% for user in managers %}
+            <p>{{ user.name }}</p>
+        {% endfor %}
+        <div class="lunch">
+            <br>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">LUNCH</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">M.O.D.</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Porter / Truck</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Tills / Office</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Custard Open</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Prep</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Kitchen Open</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">FOH</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Set</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Cashier 1</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Cashier 2</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Guest Attendant 1</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Guest Attendant 2</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Front Float</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">DESSERTS</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Custard - Scoop</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Custard - Topper</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">DRIVE THRU</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Lane A</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Lane B</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">DT Cashier</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">KITCHEN</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Middle</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Grill Master - Press</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Grill Master - Top</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Bun Station - Dine In</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Bun Station - Drive Thru</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Fry Specialist - Fish</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Fry Specialist - Drop</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Fry Specialist - Bag</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Kitchen Float</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="dinner">
+            <br>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">DINNER</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">M.O.D.</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Front / Dining Close</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Tills / Office</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Custard Close</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Dishes Close</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Kitchen Close</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">FOH</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Set</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Cashier 1</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Cashier 2</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Guest Attendant 1</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Guest Attendant 2</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Front Float</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">DESSERTS</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Custard - Scoop</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Custard - Topper</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">DRIVE THRU</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Lane A</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Lane B</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">DT Cashier</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr class="area">
+                    <th scope="col" rowspan="1" colspan="2">KITCHEN</th>
+                </tr>
+                <tr class="headers">
+                    <th class="position-col">Position</th>
+                    <th class="name-col">Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="semibold">Middle</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Grill Master - Press</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Grill Master - Top</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Bun Station - Dine In</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Bun Station - Drive Thru</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Fry Specialist - Fish</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Fry Specialist - Drop</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Fry Specialist - Bag</td>
+                  <td>input</td>
+                </tr>
+                <tr>
+                  <td class="semibold">Kitchen Float</td>
+                  <td>input</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
