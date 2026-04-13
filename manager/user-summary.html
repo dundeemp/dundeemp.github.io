@@ -8,10 +8,18 @@ layout: default
     </div>
     <div class="user-summary">
         {% assign managers = site.user | where: "other_milestones.manager", true %}
+        {% assign trainers = site.user | where: "other_milestones.trainer", true %}
+        {% assign pic = managers | concat: trainers %}
 
-        {% for user in managers %}
-            <p>{{ user.name }}</p>
-        {% endfor %}
+        {% assign kitchen_closer = site.user | where: "hidden_milestones.kitchen_close", true %}
+        {% assign kitchen_opener = site.user | where: "hidden_milestones.kitchen_open", true %}
+
+        {% assign custard_closer = site.user | where: "hidden_milestones.custard_close", true %}
+        {% assign custard_opener = site.user | where: "hidden_milestones.custard_open", true %}
+
+        {% assign lobby_close = site.user | where: "hidden_milestones.lobby_close", true %}
+
+        {% assign dish_close = site.user | where: "hidden_milestones.dish_close", true %}
         <div class="lunch">
             <br>
             <table>
@@ -199,27 +207,93 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">M.O.D.</td>
-                  <td>input</td>
+                  <td>
+                    <select name="dinner_MOD" id="dinner_MOD">
+                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
+                        {% for user in pic %}
+                            <option
+                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
+                                value="{{ user.id }}"
+                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
+                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
                 </tr>
                 <tr>
                   <td class="semibold">Front / Dining Close</td>
-                  <td>input</td>
+                  <td>
+                    <select name="dinner_frontdiningclose" id="dinner_frontdiningclose">
+                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
+                        {% for user in lobby_close %}
+                            <option
+                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
+                                value="{{ user.id }}"
+                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
+                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
+                        {% endfor %}
+                    </select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Tills / Office</td>
-                  <td>input</td>
+                  <td>
+                    <select name="dinner_tills" id="dinner_tills">
+                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
+                        {% for user in pic %}
+                            <option
+                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
+                                value="{{ user.id }}"
+                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
+                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
+                        {% endfor %}
+                    </select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Custard Close</td>
-                  <td>input</td>
+                  <td>
+                    <select name="dinner_custard_close" id="dinner_custard_close">
+                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
+                        {% for user in custard_closer %}
+                            <option
+                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
+                                value="{{ user.id }}"
+                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
+                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
+                        {% endfor %}
+                    </select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Dishes Close</td>
-                  <td>input</td>
+                  <td>
+                    <select name="dinner_dish" id="dinner_dish">
+                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
+                        {% for user in dish_close %}
+                            <option
+                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
+                                value="{{ user.id }}"
+                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
+                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
+                        {% endfor %}
+                    </select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Kitchen Close</td>
-                  <td>input</td>
+                  <td>
+                    <select name="dinner_kitchen_close" id="dinner_kitchen_close">
+                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
+                        {% for user in kitchen_closer %}
+                            <option
+                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
+                                value="{{ user.id }}"
+                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
+                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
+                        {% endfor %}
+                    </select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -358,3 +432,31 @@ layout: default
         </div>
     </div>
 </div>
+
+<script>
+function updateSelectColor(select) {
+  const selectedOption = select.options[select.selectedIndex];
+  if (!selectedOption) return;
+
+  const isManager = selectedOption.dataset.manager === "true";
+  const isTrainer = selectedOption.dataset.trainer === "true";
+
+  // reset first
+  select.classList.remove("manager", "trainer");
+
+  if (isManager) {
+    select.classList.add("manager");
+  } else if (isTrainer) {
+    select.classList.add("trainer");
+  }
+}
+
+// Apply to all selects
+document.querySelectorAll("select").forEach(select => {
+  updateSelectColor(select);
+
+  select.addEventListener("change", () => {
+    updateSelectColor(select);
+  });
+});
+</script>

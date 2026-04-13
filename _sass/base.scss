@@ -297,6 +297,12 @@ body {
           transform: scale(0.8);
           border-radius: 200px;
           overflow: hidden;
+          &.manager {
+            outline: 2px solid magenta;
+          }
+          &.trainer {
+            outline: 2px solid lawngreen;
+          }
         }
       }
       .userinfo {
@@ -752,6 +758,12 @@ body {
             top: 50%;
             transform: translateY(-50%);
             left: 32px;
+            &.manager {
+              outline: 1px solid $primary-400 !important;
+            }
+            &.trainer {
+              outline: 1px solid $primary-200;
+            }
             img {
               width: 100%;
               height: 100%;
@@ -1362,6 +1374,33 @@ body {
         }
         .position-col {width: 60%}
         .name-col {width: 40%}
+        tbody {
+          select {
+            border: none;
+            background-color: transparent;
+            text-align: center;
+            &.trainer {
+              background-color: rgba(0, 0, 0, 0.65);
+              color: $white;
+            }
+            &.manager {
+              background-color: rgba(0, 0, 0, 1);
+              color: $white;
+            }
+            option {
+              background-color: $white;
+              color: $black;
+              &.trainer {
+                background-color: rgba(0, 0, 0, 0.65);
+                color: $white;
+              }
+              &.manager {
+                background-color: rgba(0, 0, 0, 1);
+                color: $white;
+              }
+            }
+          }
+        }
       }
     }
   }

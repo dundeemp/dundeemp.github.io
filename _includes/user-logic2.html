@@ -328,7 +328,10 @@
           {% assign lb_entries = "" | split: "" %}
 
           {% for u in site.user %}
-            {% unless u.active %}{% continue %}{% endunless %}
+            {% assign is_active = u.active | default: false %}
+            {% unless is_active == true or is_active == "true" %}
+              {% continue %}
+            {% endunless %}
             {% assign u_score = 0 %}
 
             {% for group in training_groups %}
@@ -380,7 +383,18 @@
 
             {% assign is_current = "0" %}
             {% if u.name == page.name %}{% assign is_current = "1" %}{% endif %}
-            {% assign lb_row = padded | append: "|" | append: u_score | append: "|" | append: u.name | append: "|" | append: u.pfp | append: "|" | append: u.badge | append: "|" | append: is_current %}
+            {% assign is_manager = u.other_milestones.manager | default: false %}
+            {% assign is_trainer = u.other_milestones.trainer | default: false %}
+
+            {% assign lb_row = padded
+              | append: "|" | append: u_score
+              | append: "|" | append: u.name
+              | append: "|" | append: u.pfp
+              | append: "|" | append: u.badge
+              | append: "|" | append: is_current
+              | append: "|" | append: is_manager
+              | append: "|" | append: is_trainer
+            %}
             {% assign lb_entries = lb_entries | push: lb_row %}
           {% endfor %}
 
@@ -394,10 +408,20 @@
             {% assign r_badge   = p[4] %}
             {% assign r_current = p[5] %}
             {% assign r_rank    = forloop.index %}
+            {% assign is_manager = false %}
+            {% assign is_trainer = false %}
+
+            {% if p[6] == "true" or p[6] == true %}
+              {% assign is_manager = true %}
+            {% endif %}
+
+            {% if p[7] == "true" or p[7] == true %}
+              {% assign is_trainer = true %}
+            {% endif %}
 
 {% if r_badge != "" and r_badge != nil %}
   <tr data-score="{{ r_score }}" {% if r_current == "1" %}class="current-user"{% endif %}>
-    <td class="img title"><img src="{{ r_pfp }}">{{ r_name }}</td>
+    <td class="img title{% if is_manager %} manager{% endif %}{% if is_trainer %} trainer{% endif %}"><img src="{{ r_pfp }}">{{ r_name }}</td>
     <td class="name-entry">
       <p class="index title">{{ r_rank }}</p>
       &nbsp;&nbsp;<span class="username">{{ r_name }}<span class="title-entry">{{ r_badge }}</span></span>
@@ -406,7 +430,7 @@
   </tr>
 {% else %}
   <tr data-score="{{ r_score }}" {% if r_current == "1" %}class="current-user"{% endif %}>
-    <td class="img"><img src="{{ r_pfp }}">{{ r_name }}</td>
+    <td class="img {% if is_manager %} manager{% endif %}{% if is_trainer %} trainer{% endif %}"><img src="{{ r_pfp }}">{{ r_name }}</td>
     <td class="name-entry no-title">
       <p class="index">{{ r_rank }}</p>
       &nbsp;&nbsp;<span class="username">{{ r_name }}</span>
