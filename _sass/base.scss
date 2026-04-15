@@ -65,7 +65,7 @@ body {
   padding: 24px 16px;
   h2 {display: none}
   &.caitmode {
-    background-color: #e7b029;
+    background-color: #eeb15f;
     h1, h3, small {
       display: none;
     }
@@ -1085,7 +1085,7 @@ body {
         h6 {display: none}
         &.caitmode {
           h6 {
-            background-color: rgba(#e7b029, 0.5);
+            background-color: rgba(#eeb15f, 0.5);
             width: 100%;
             color: black;
             display: block;
@@ -1304,12 +1304,94 @@ body {
 }
 
 .shop {
+  .banner {
+      background-color: #eeb15f;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      width: 100%;
+      min-height: 32px;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
   .user-summary {
     width: calc(100% - 64px);
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 8px;
+    .userpool {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row !important;
+      align-content: flex-start;
+      justify-content: end;
+      h4 {
+        text-align: center;
+        width: 100%;
+        &.managers {background-color: #353a40; color: $white;}
+        &.trainers {background-color: #6d757d; color: $white;}
+        &.team_members {background-color: $primary-500; color: $white;}
+      }
+      .managers, .trainers, .team_members {
+        width: 100%;
+        max-width: 380px;
+        flex-wrap: wrap;
+        flex-direction: row !important;
+        align-content: flex-start;
+      }
+      .managers {background-color: rgba(53, 58, 64, 0.5)}
+      .trainers {background-color: rgba(109, 117, 125, 0.5)}
+      .team_members {background-color: rgba($primary-500, 0.5)}
+      label {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 8px;
+        white-space: nowrap;
+        border-bottom: 1px solid rgba(0,0,0, 0.5);
+        input {
+          opacity: 0;
+          position: absolute;
+          cursor: pointer;
+        }
+        .checkmark {
+          width: 18px;
+          height: 18px;
+          background-color: $primary-100;
+          border: 2px solid $primary-500;
+          transition: 0.15s;
+          border-radius: 4px;
+          display: inline-block;
+          position: relative;
+          flex-shrink: 0;
+          margin-left: 8px;
+          &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 1px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+        }
+        input:checked + .checkmark {
+          background-color: $primary-500;
+          border-color: $primary-500;
+          &::after {
+            display: block;
+          }
+        }
+        &:hover .checkmark {
+          background-color: $primary-300;
+        }
+      }
+    }
     .lunch {
       align-items: end;
       .area {background-color: $primary-500}
@@ -1342,8 +1424,8 @@ body {
         }
       }
     }
-    .lunch, .dinner {
-      width: 50%;
+    .lunch, .dinner, .userpool {
+      width: 33%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -1407,3 +1489,96 @@ body {
 }
 .text-align-left {text-align: left}
 .semibold {font-weight: 500}
+.summary-table {
+  font-size: 0.8rem;
+  width: 100%;
+  border-collapse: collapse;
+  color: #000000;
+  .role {width: 2%}
+  .name {width: 10%}
+  .narrow {
+    width: 4.8%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  td, th {padding: 2px}
+  thead {
+    color: $primary-900;
+    .base {background-color: #658dff; border: 1px solid #658dff}
+    .base.light {background-color: rgba(#658dff, 0.6); border: 1px solid #658dff}
+    .foh {background-color: #f08680; border: 1px solid #f08680}
+    .foh.light {background-color: rgba(#f08680, 0.6); border: 1px solid #f08680}
+    .boh {background-color: #f5b05e; border: 1px solid #f5b05e}
+    .boh.light {background-color: rgba(#f5b05e, 0.6); border: 1px solid #f5b05e}
+    .desserts {background-color: #ec82ab; border: 1px solid #ec82ab}
+    .desserts.light {background-color: rgba(#ec82ab, 0.6); border: 1px solid #ec82ab}
+    .special {background-color: #9b9ed6; border: 1px solid #9b9ed6}
+    .special.light {background-color: rgba(#9b9ed6, 0.6); border: 1px solid #9b9ed6}
+  }
+  tbody {
+    .text-center, .text {
+      text-align: center;
+      &.manager {background-color: #19191d; color: #ededf0}
+      &.trainer {background-color: #5b5b6a; color: #f7f7fa}
+      &.team    {background-color: #3f60d1; color: #ecf2ff}
+    }
+    .cell {
+      background-color: #d2d2d6;
+      &:nth-of-type(odd) {
+        background-color: #e1e1e3;
+      }
+    }
+    .empty {
+      position: relative;
+      &::after {
+        content: "\F62A";
+        font-weight: bold;
+        font-family: "bootstrap-icons";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: rgba(0,0,0,0.1);
+      }
+    }
+    .checked {
+      position: relative;
+      &.one {
+        background-color: #ed635d;
+        border: 1px solid #ea3f3b;
+        &::after {
+          color: #962826;
+          content: "\F586";
+        }
+      }
+      &.two {
+        background-color: #f5b05e;
+        border: 1px solid #f39832;
+        &::after {
+          color: #9a5306;
+          content: "\F586\00a0\F586";
+        }
+      }
+      &.three, &.known {
+        background-color: #8bc388;
+        border: 1px solid #6ab367;
+        &::after {
+          color: #30672d;
+          content: "\F586\00a0\F586\00a0\F586";
+        }
+      }
+      &::after {
+        content: "";
+        font-weight: bold;
+        font-family: "bootstrap-icons";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: $white;
+      }
+    }
+  }
+}
+

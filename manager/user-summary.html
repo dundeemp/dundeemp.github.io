@@ -1,27 +1,204 @@
 ---
 layout: default
 ---
+<style>
+    .return {display: none !important}
+    .header {margin-top: 0;}
+</style>
 <div class="shop">
     <div class="header caitmode">
-        <h2>User Summary</h2>
-        <h4>Select the people scheduled to work today:</h4>
+        <h2>Deployment Helper</h2>
     </div>
+    <h4 id="Station_Summary" class="banner">Below is a summary of every employee and the stations they can work. Each station is marked with a number of stars based on proficiency.</h4>
+    <table class="summary-table">
+        <thead>
+            <tr>
+                <th class="base" colspan="2">Employee</th>
+                <th class="foh" colspan="5">Front of House</th>
+                <th class="boh" colspan="4">Back of House</th>
+                <th class="desserts">Desserts</th>
+                <th class="special" colspan="8">Specialized</th>
+            </tr>
+            <tr>
+                <th class="role base light">Role</th>
+                <th class="name base light">Name</th>
+                <th class="narrow foh light">Run</th>
+                <th class="narrow foh light">Cashier</th>
+                <th class="narrow foh light">Guest Attendant</th>
+                <th class="narrow foh light">Drive Thru</th>
+                <th class="narrow foh light">Set</th>
+                <th class="narrow boh light">Buns</th>
+                <th class="narrow boh light">Grill</th>
+                <th class="narrow boh light">Fryer</th>
+                <th class="narrow boh light">Middle</th>
+                <th class="narrow desserts light">Custard</th>
+                <th class="narrow special light">Prep</th>
+                <th class="narrow special light">Porting</th>
+                <th class="narrow special light">Open Kitchen </th>
+                <th class="narrow special light">Close Kitchen </th>
+                <th class="narrow special light">Open Custard </th>
+                <th class="narrow special light">Close Custard</th>
+                <th class="narrow special light">Dish Close</th>
+                <th class="narrow special light">Lobby Close</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign sorted_u = site.user | sort: "name" %}
+            {% for u in sorted_u %}
+            <tr class="cell">
+                <td class="text-center {% if u.other_milestones.manager == true%}manager{% elsif u.other_milestones.trainer == true%}trainer{% else %}team{% endif %}">{% if u.other_milestones.manager == true%}MGR{% elsif u.other_milestones.trainer == true%}TRN{% else %}TM{% endif %}</td>
+                <td style="text-align: start;" class="text {% if u.other_milestones.manager == true%}manager{% elsif u.other_milestones.trainer == true%}trainer{% else %}team{% endif %}">{{ u.name }}</td>
+                <td class="{% if u.foh.runner %}checked {% if u.foh.runner == 3 %}three {% elsif u.foh.runner == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.foh.cashier %}checked {% if u.foh.cashier == 3 %}three {% elsif u.foh.cashier == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.foh.guest_att %}checked {% if u.foh.guest_att == 3 %}three {% elsif u.foh.guest_att == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.foh.drive_thru %}checked {% if u.foh.drive_thru == 3 %}three {% elsif u.foh.drive_thru == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations.set %}checked {% if u.other_stations.set == 3 %}three {% elsif u.other_stations.set == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.boh.buns %}checked {% if u.boh.buns == 3 %}three {% elsif u.boh.buns == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.boh.grill %}checked {% if u.boh.grill == 3 %}three {% elsif u.boh.grill == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.boh.fryer %}checked {% if u.boh.fryer == 3 %}three {% elsif u.boh.fryer == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations.middle %}checked {% if u.other_stations.middle == 3 %}three {% elsif u.other_stations.middle == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.desserts.custard %}checked {% if u.desserts.custard == 3 %}three {% elsif u.desserts.custard == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations.prepping %}checked {% if u.other_stations.prepping == 3 %}three {% elsif u.other_stations.prepping == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations.porting %}checked {% if u.other_stations.porting == 3 %}three {% elsif u.other_stations.porting == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones.kitchen_open %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones.kitchen_close %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones.custard_open %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones.custard_close %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones.dish_close %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones.lobby_close %}checked known {% else %}empty{% endif %}"></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h4 id="Deployment Helper" class="banner">Below is a list of employees. Select the employees scheduled this day to add them to the employee pool. <br>Once you have them all, simply choose one for each station from the list.</h4>
     <div class="user-summary">
-        {% assign managers = site.user | where: "other_milestones.manager", true %}
-        {% assign trainers = site.user | where: "other_milestones.trainer", true %}
-        {% assign pic = managers | concat: trainers %}
+        {% assign managers = site.user | where: "other_milestones.manager", true | sort: "name" %}
 
-        {% assign kitchen_closer = site.user | where: "hidden_milestones.kitchen_close", true %}
-        {% assign kitchen_opener = site.user | where: "hidden_milestones.kitchen_open", true %}
+        {% assign trainers = site.user 
+        | where: "other_milestones.trainer", true 
+        | where_exp: "user", "user.other_milestones.manager != true" 
+        | sort: "name" %}
 
-        {% assign custard_closer = site.user | where: "hidden_milestones.custard_close", true %}
-        {% assign custard_opener = site.user | where: "hidden_milestones.custard_open", true %}
+        {% assign team_members = site.user 
+        | where_exp: "user", "user.other_milestones.manager != true" 
+        | where_exp: "user", "user.other_milestones.trainer != true" 
+        | sort: "name" %}
+        
+        <div class="userpool">
+            <h4 class="managers">Managers</h4>
+            <div class="managers">
+                {% for person in managers %}
+                    <label>
+                        <input type="checkbox" name="people" value="{{ person.id }}"
+                            data-name="{{ person.name }}"
+                            data-manager="{% if person.other_milestones.manager %}true{% else %}false{% endif %}"
+                            data-trainer="{% if person.other_milestones.trainer %}true{% else %}false{% endif %}"
 
-        {% assign lobby_close = site.user | where: "hidden_milestones.lobby_close", true %}
+                            data-runner="{% if person.foh.runner %}true{% else %}false{% endif %}"
+                            data-cashier="{% if person.foh.cashier %}true{% else %}false{% endif %}"
+                            data-drive_thru="{% if person.foh.drive_thru %}true{% else %}false{% endif %}"
+                            data-guest_att="{% if person.foh.guest_att %}true{% else %}false{% endif %}"
+                            
+                            data-buns="{% if person.boh.buns %}true{% else %}false{% endif %}"
+                            data-grill="{% if person.boh.grill %}true{% else %}false{% endif %}"
+                            data-fryer="{% if person.boh.fryer %}true{% else %}false{% endif %}"
 
-        {% assign dish_close = site.user | where: "hidden_milestones.dish_close", true %}
+                            data-custard="{% if person.desserts.custard %}true{% else %}false{% endif %}"
+
+                            data-set="{% if person.other_stations.set %}true{% else %}false{% endif %}"
+                            data-middle="{% if person.other_stations.middle %}true{% else %}false{% endif %}"
+                            data-prepping="{% if person.other_stations.prepping %}true{% else %}false{% endif %}"
+                            data-porting="{% if person.other_stations.porting %}true{% else %}false{% endif %}"
+
+                            data-kitchen_open="{% if person.hidden_milestones.kitchen_open %}true{% else %}false{% endif %}"
+                            data-kitchen_close="{% if person.hidden_milestones.kitchen_close %}true{% else %}false{% endif %}"
+                            data-custard_open="{% if person.hidden_milestones.custard_open %}true{% else %}false{% endif %}"
+                            data-custard_close="{% if person.hidden_milestones.custard_close %}true{% else %}false{% endif %}"
+                            data-dish_close="{% if person.hidden_milestones.dish_close %}true{% else %}false{% endif %}"
+                            data-lobby_close="{% if person.hidden_milestones.lobby_close %}true{% else %}false{% endif %}"
+                        >
+                        <span class="checkmark"></span>
+                        {{ person.name }}
+                    </label>
+                {% endfor %}
+            </div>
+            <h4 class="trainers">Trainers</h4>
+            <div class="trainers">
+                {% for person in trainers %}
+                    <label>
+                        <input type="checkbox" name="people" value="{{ person.id }}"
+                            data-name="{{ person.name }}"
+                            data-manager="{% if person.other_milestones.manager %}true{% else %}false{% endif %}"
+                            data-trainer="{% if person.other_milestones.trainer %}true{% else %}false{% endif %}"
+
+                            data-runner="{% if person.foh.runner %}true{% else %}false{% endif %}"
+                            data-cashier="{% if person.foh.cashier %}true{% else %}false{% endif %}"
+                            data-drive_thru="{% if person.foh.drive_thru %}true{% else %}false{% endif %}"
+                            data-guest_att="{% if person.foh.guest_att %}true{% else %}false{% endif %}"
+                            
+                            data-buns="{% if person.boh.buns %}true{% else %}false{% endif %}"
+                            data-grill="{% if person.boh.grill %}true{% else %}false{% endif %}"
+                            data-fryer="{% if person.boh.fryer %}true{% else %}false{% endif %}"
+
+                            data-custard="{% if person.desserts.custard %}true{% else %}false{% endif %}"
+
+                            data-set="{% if person.other_stations.set %}true{% else %}false{% endif %}"
+                            data-middle="{% if person.other_stations.middle %}true{% else %}false{% endif %}"
+                            data-prepping="{% if person.other_stations.prepping %}true{% else %}false{% endif %}"
+                            data-porting="{% if person.other_stations.porting %}true{% else %}false{% endif %}"
+
+                            data-kitchen_open="{% if person.hidden_milestones.kitchen_open %}true{% else %}false{% endif %}"
+                            data-kitchen_close="{% if person.hidden_milestones.kitchen_close %}true{% else %}false{% endif %}"
+                            data-custard_open="{% if person.hidden_milestones.custard_open %}true{% else %}false{% endif %}"
+                            data-custard_close="{% if person.hidden_milestones.custard_close %}true{% else %}false{% endif %}"
+                            data-dish_close="{% if person.hidden_milestones.dish_close %}true{% else %}false{% endif %}"
+                            data-lobby_close="{% if person.hidden_milestones.lobby_close %}true{% else %}false{% endif %}"
+                        >
+                        <span class="checkmark"></span>
+                        {{ person.name }}
+                    </label>
+                {% endfor %}
+            </div>
+            <h4 class="team_members">Team Members</h4>
+            <div class="team_members">
+                {% for person in team_members %}
+                    <label>
+                        <input type="checkbox" name="people" value="{{ person.id }}"
+                            data-name="{{ person.name }}"
+                            data-manager="{% if person.other_milestones.manager %}true{% else %}false{% endif %}"
+                            data-trainer="{% if person.other_milestones.trainer %}true{% else %}false{% endif %}"
+
+                            data-runner="{% if person.foh.runner %}true{% else %}false{% endif %}"
+                            data-cashier="{% if person.foh.cashier %}true{% else %}false{% endif %}"
+                            data-drive_thru="{% if person.foh.drive_thru %}true{% else %}false{% endif %}"
+                            data-guest_att="{% if person.foh.guest_att %}true{% else %}false{% endif %}"
+                            
+                            data-buns="{% if person.boh.buns %}true{% else %}false{% endif %}"
+                            data-grill="{% if person.boh.grill %}true{% else %}false{% endif %}"
+                            data-fryer="{% if person.boh.fryer %}true{% else %}false{% endif %}"
+
+                            data-custard="{% if person.desserts.custard %}true{% else %}false{% endif %}"
+
+                            data-set="{% if person.other_stations.set %}true{% else %}false{% endif %}"
+                            data-middle="{% if person.other_stations.middle %}true{% else %}false{% endif %}"
+                            data-prepping="{% if person.other_stations.prepping %}true{% else %}false{% endif %}"
+                            data-porting="{% if person.other_stations.porting %}true{% else %}false{% endif %}"
+
+                            data-kitchen_open="{% if person.hidden_milestones.kitchen_open %}true{% else %}false{% endif %}"
+                            data-kitchen_close="{% if person.hidden_milestones.kitchen_close %}true{% else %}false{% endif %}"
+                            data-custard_open="{% if person.hidden_milestones.custard_open %}true{% else %}false{% endif %}"
+                            data-custard_close="{% if person.hidden_milestones.custard_close %}true{% else %}false{% endif %}"
+                            data-dish_close="{% if person.hidden_milestones.dish_close %}true{% else %}false{% endif %}"
+                            data-lobby_close="{% if person.hidden_milestones.lobby_close %}true{% else %}false{% endif %}"
+                        >
+                        <span class="checkmark"></span>
+                        {{ person.name }}
+                    </label>
+                {% endfor %}
+            </div>
+        </div>
+
         <div class="lunch">
-            <br>
             <table>
               <thead>
                 <tr class="area">
@@ -35,27 +212,39 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">M.O.D.</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a1" data-filter="pic"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Porter / Truck</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a2" data-filter="porting"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Tills / Office</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a3" data-filter="pic"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Custard Open</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a4" data-filter="custard_open"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Prep</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a5" data-filter="prepping"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Kitchen Open</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a6" data-filter="kitchen_open"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -72,27 +261,39 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Set</td>
-                  <td>input</td>
+                  <td>
+                      <select id="a7" data-filter="pic"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Cashier 1</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a8" data-filter="cashier"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Cashier 2</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a9" data-filter="cashier"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Guest Attendant 1</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a10" data-filter="guest_att"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Guest Attendant 2</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a11" data-filter="guest_att"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Front Float</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a12" data-filter="all"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -109,11 +310,15 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Custard - Scoop</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a13" data-filter="custard"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Custard - Topper</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a14" data-filter="custard"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -130,15 +335,21 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Lane A</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a15" data-filter="drive_thru"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Lane B</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a16" data-filter="drive_thru"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">DT Cashier</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a17" data-filter="drive_thru"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -155,45 +366,62 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Middle</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a18" data-filter="pic"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Grill Master - Press</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a19" data-filter="grill"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Grill Master - Top</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a20" data-filter="grill"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Bun Station - Dine In</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a21" data-filter="buns"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Bun Station - Drive Thru</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a22" data-filter="buns"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Fry Specialist - Fish</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a23" data-filter="fryer"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Fry Specialist - Drop</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a24" data-filter="fryer"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Fry Specialist - Bag</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a25" data-filter="fryer"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Kitchen Float</td>
-                  <td>input</td>
+                  <td>
+                    <select id="a26" data-filter="all"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
         </div>
         <div class="dinner">
-            <br>
             <table>
               <thead>
                 <tr class="area">
@@ -208,91 +436,37 @@ layout: default
                 <tr>
                   <td class="semibold">M.O.D.</td>
                   <td>
-                    <select name="dinner_MOD" id="dinner_MOD">
-                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
-                        {% for user in pic %}
-                            <option
-                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
-                                value="{{ user.id }}"
-                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
-                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
-                        {% endfor %}
-                    </select>
+                    <select id="b1" data-filter="pic"></select>
                 </td>
                 </tr>
                 <tr>
                   <td class="semibold">Front / Dining Close</td>
                   <td>
-                    <select name="dinner_frontdiningclose" id="dinner_frontdiningclose">
-                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
-                        {% for user in lobby_close %}
-                            <option
-                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
-                                value="{{ user.id }}"
-                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
-                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
-                        {% endfor %}
-                    </select>
+                    <select id="b2" data-filter="lobby_close"></select>
                   </td>
                 </tr>
                 <tr>
                   <td class="semibold">Tills / Office</td>
                   <td>
-                    <select name="dinner_tills" id="dinner_tills">
-                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
-                        {% for user in pic %}
-                            <option
-                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
-                                value="{{ user.id }}"
-                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
-                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
-                        {% endfor %}
-                    </select>
+                    <select id="b3" data-filter="pic"></select>
                   </td>
                 </tr>
                 <tr>
                   <td class="semibold">Custard Close</td>
                   <td>
-                    <select name="dinner_custard_close" id="dinner_custard_close">
-                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
-                        {% for user in custard_closer %}
-                            <option
-                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
-                                value="{{ user.id }}"
-                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
-                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
-                        {% endfor %}
-                    </select>
+                    <select id="b4" data-filter="custard_close"></select>
                   </td>
                 </tr>
                 <tr>
                   <td class="semibold">Dishes Close</td>
                   <td>
-                    <select name="dinner_dish" id="dinner_dish">
-                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
-                        {% for user in dish_close %}
-                            <option
-                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
-                                value="{{ user.id }}"
-                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
-                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
-                        {% endfor %}
-                    </select>
+                    <select id="b5" data-filter="dish_close"></select>
                   </td>
                 </tr>
                 <tr>
                   <td class="semibold">Kitchen Close</td>
                   <td>
-                    <select name="dinner_kitchen_close" id="dinner_kitchen_close">
-                        <option value="select" class="noselection">&#9888; No Selection &#9888;</option>
-                        {% for user in kitchen_closer %}
-                            <option
-                                class="{% if user.other_milestones.manager %}manager{% endif %} {% if user.other_milestones.trainer %}trainer{% endif %}"
-                                value="{{ user.id }}"
-                                data-manager="{% if user.other_milestones.manager %}true{% else %}false{% endif %}"
-                                data-trainer="{% if user.other_milestones.trainer %}true{% else %}false{% endif %}">{{ user.name }}</option>
-                        {% endfor %}
-                    </select>
+                    <select id="b6" data-filter="kitchen_close"></select>
                   </td>
                 </tr>
               </tbody>
@@ -310,27 +484,39 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Set</td>
-                  <td>input</td>
+                  <td>
+                      <select id="b7" data-filter="pic"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Cashier 1</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b8" data-filter="cashier"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Cashier 2</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b9" data-filter="cashier"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Guest Attendant 1</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b10" data-filter="guest_att"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Guest Attendant 2</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b11" data-filter="guest_att"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Front Float</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b12" data-filter="all"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -347,11 +533,15 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Custard - Scoop</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b13" data-filter="custard"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Custard - Topper</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b14" data-filter="custard"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -368,15 +558,21 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Lane A</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b15" data-filter="drive_thru"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Lane B</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b16" data-filter="drive_thru"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">DT Cashier</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b17" data-filter="drive_thru"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -393,44 +589,64 @@ layout: default
               <tbody>
                 <tr>
                   <td class="semibold">Middle</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b18" data-filter="pic"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Grill Master - Press</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b19" data-filter="grill"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Grill Master - Top</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b20" data-filter="grill"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Bun Station - Dine In</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b21" data-filter="buns"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Bun Station - Drive Thru</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b22" data-filter="buns"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Fry Specialist - Fish</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b23" data-filter="fryer"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Fry Specialist - Drop</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b24" data-filter="fryer"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Fry Specialist - Bag</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b25" data-filter="fryer"></select>
+                  </td>
                 </tr>
                 <tr>
                   <td class="semibold">Kitchen Float</td>
-                  <td>input</td>
+                  <td>
+                    <select id="b26" data-filter="all"></select>
+                  </td>
                 </tr>
               </tbody>
             </table>
         </div>
     </div>
+    <h4 id="Blue Buck Tracker" class="banner">Below is a list of the blue bucks everybody should have based on their achievements:</h4>
+    <table></table>
 </div>
 
 <script>
@@ -459,4 +675,103 @@ document.querySelectorAll("select").forEach(select => {
     updateSelectColor(select);
   });
 });
+</script>
+<script>
+// 1. Get all selected users
+function getSelectedUsers() {
+  const checked = document.querySelectorAll('input[name="people"]:checked');
+
+  return Array.from(checked).map(input => ({
+    id: input.value,
+    name: input.dataset.name,
+
+    // roles
+    manager: input.dataset.manager === "true",
+    trainer: input.dataset.trainer === "true",
+
+    // FOH
+    runner: input.dataset.runner === "true",
+    cashier: input.dataset.cashier === "true",
+    drive_thru: input.dataset.drive_thru === "true",
+    guest_att: input.dataset.guest_att === "true",
+
+    // BOH
+    buns: input.dataset.buns === "true",
+    grill: input.dataset.grill === "true",
+    fryer: input.dataset.fryer === "true",
+
+    // desserts
+    custard: input.dataset.custard === "true",
+
+    // other stations
+    set: input.dataset.set === "true",
+    middle: input.dataset.middle === "true",
+    prepping: input.dataset.prepping === "true",
+    porting: input.dataset.porting === "true",
+
+    // hidden
+    kitchen_open: input.dataset.kitchen_open === "true",
+    kitchen_close: input.dataset.kitchen_close === "true",
+    custard_open: input.dataset.custard_open === "true",
+    custard_close: input.dataset.custard_close === "true",
+    dish_close: input.dataset.dish_close === "true",
+    lobby_close: input.dataset.lobby_close === "true",
+  }));
+}
+
+// 2. Generic filter
+function filterBy(users, key) {
+  return users.filter(user => user[key]);
+}
+
+// 3. Populate a select
+function populateSelect(select, users) {
+  const currentValue = select.value; // preserve selection
+
+  select.innerHTML = '<option value="select">Select</option>';
+
+  users.forEach(user => {
+    const option = document.createElement("option");
+    option.value = user.id;
+    option.textContent = user.name;
+    select.appendChild(option);
+  });
+
+  // restore selection if still valid
+  if ([...select.options].some(o => o.value === currentValue)) {
+    select.value = currentValue;
+  }
+}
+
+// 4. Update all selects
+const selects = document.querySelectorAll("select[data-filter]");
+
+function updateAllSelects() {
+  const users = getSelectedUsers();
+
+  selects.forEach(select => {
+    const key = select.dataset.filter;
+
+    let filteredUsers = [];
+
+    if (key === "all") {
+      filteredUsers = users;
+    } else if (key === "pic") {
+      filteredUsers = users.filter(u => u.manager || u.trainer);
+    } else {
+      filteredUsers = filterBy(users, key);
+    }
+
+    populateSelect(select, filteredUsers);
+    select.disabled = filteredUsers.length === 0;
+  });
+}
+
+// 5. Listen for checkbox changes
+document.querySelectorAll('input[name="people"]').forEach(input => {
+  input.addEventListener("change", updateAllSelects);
+});
+
+// 6. Initial run (important if some are pre-checked)
+updateAllSelects();
 </script>
