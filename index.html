@@ -31,6 +31,15 @@ layout: default
         <a class="shoplink" href="/shop.html">Have blue bucks?&nbsp;<b><u>See what you can get!</u></b></a>
     </div>
 </div>
+<div id="caitmode">
+    <button onclick="disableManagerMode()">Exit Manager Mode</button>
+    <h2>Manager Mode Active</h2>
+    <h4>Select what you want to do:</h4>
+    <a href="/shop.html">Access the Manager Shop</a>
+    <a href="/manager/user-summary.html#Station_Summary">Access Training Summary</a>
+    <a href="/manager/user-summary.html#Deployment_Helper">Access Deployment Helper</a>
+    <a href="/manager/user-summary.html#Blue_Buck_Tracker">Access Blue Buck Tracker</a>
+</div>
 
 
 <script>
@@ -58,4 +67,45 @@ layout: default
             input.focus();
         }
     });
+</script>
+<script>
+    const targetMM = "caitmode";
+    let index = 0;
+
+    document.addEventListener("keydown", (e) => {
+        const key = e.key.toLowerCase();
+
+        if (key.length !== 1) return;
+
+        if (key === targetMM[index]) {
+            index++;
+
+            if (index === targetMM.length) {
+                index = 0;
+                activateManagerMode();
+            }
+        } else {
+            index = 0;
+        }
+    });
+
+    function activateManagerMode() {
+        sessionStorage.setItem("managermode", "true");
+
+        alert("Manager mode activated");
+
+        document.getElementById("caitmode").classList.add("caitmode");
+    }
+
+    // optional: run on page load if already enabled in this tab session
+    window.addEventListener("DOMContentLoaded", () => {
+        if (sessionStorage.getItem("managermode") === "true") {
+            document.getElementById("caitmode").classList.add("caitmode");
+        }
+    });
+    function disableManagerMode() {
+        sessionStorage.removeItem("managermode");
+        // also remove visual effect if currently active
+        document.getElementById("caitmode")?.classList.remove("caitmode");
+    }
 </script>

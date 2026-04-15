@@ -7,7 +7,7 @@ layout: default
 </style>
 <div class="shop">
     <div class="header caitmode">
-        <h2>Deployment Helper</h2>
+        <h2>Manager Tools</h2>
     </div>
     <h4 id="Station_Summary" class="banner">Below is a summary of every employee and the stations they can work. Each station is marked with a number of stars based on proficiency.</h4>
     <table class="summary-table">
@@ -70,7 +70,7 @@ layout: default
             {% endfor %}
         </tbody>
     </table>
-    <h4 id="Deployment Helper" class="banner">Below is a list of employees. Select the employees scheduled this day to add them to the employee pool. <br>Once you have them all, simply choose one for each station from the list.</h4>
+    <h4 id="Deployment_Helper" class="banner">Below is a list of employees. Select the employees scheduled this day to add them to the employee pool. <br>Once you have them all, simply choose one for each station from the list.</h4>
     <div class="user-summary">
         {% assign with_milestones = site.user | where_exp: "u", "u.other_milestones" %}
 
@@ -650,8 +650,129 @@ layout: default
             </table>
         </div>
     </div>
-    <h4 id="Blue Buck Tracker" class="banner">Below is a list of the blue bucks everybody should have based on their achievements:</h4>
-    <table></table>
+    <h4 id="Blue_Buck_Tracker" class="banner">Below is a list of the blue bucks everybody should have based on their achievements:</h4>
+<table class="blue-buck-tracker">
+  <thead>
+    <tr>
+      <th class="nameid">ID</th>
+      <th class="nameid">Name</th>
+      <th class="nameid">Was Given</th>
+      <th class="nameid">Should Have</th>
+    </tr>
+  </thead>
+
+  {% assign non_managers = "" | split: "" %}
+  {% for u in site.user %}
+    {% unless u.other_milestones.manager %}
+      {% assign non_managers = non_managers | push: u %}
+    {% endunless %}
+  {% endfor %}
+  {% assign sorted_users = non_managers | sort: "name" %}
+  <tbody>
+    {% for u in sorted_users %}
+
+      {% assign total_bb = 0 %}
+
+      {% assign foh = site.data.ach.achievements.foh %}
+
+      {% if u.foh.runner %}
+        {% for tier in foh.runner %}
+          {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+            {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+            {% assign total_bb = total_bb | plus: raw %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% assign boh = site.data.ach.achievements.boh %}
+
+      {% if u.boh.buns %}
+        {% for tier in boh.buns %}
+          {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+            {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+            {% assign total_bb = total_bb | plus: raw %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if u.boh.grill %}
+        {% for tier in boh.grill %}
+          {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+            {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+            {% assign total_bb = total_bb | plus: raw %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if u.boh.fryer %}
+        {% for tier in boh.fryer %}
+          {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+            {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+            {% assign total_bb = total_bb | plus: raw %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% assign other = site.data.ach.achievements.other_stations %}
+
+      {% for station in other %}
+        {% assign key = station[0] %}
+        {% if u.other_stations[key] %}
+          {% for tier in station[1] %}
+            {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+              {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+              {% assign total_bb = total_bb | plus: raw %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign service = site.data.ach.achievements.service %}
+
+      {% for tier in service %}
+        {% assign key = tier[0] %}
+        {% if u.service[key] %}
+          {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+            {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+            {% assign total_bb = total_bb | plus: raw %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign om = site.data.ach.achievements.other_milestones %}
+
+      {% for tier in om %}
+        {% assign key = tier[0] %}
+        {% if u.other_milestones[key] %}
+          {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+            {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+            {% assign total_bb = total_bb | plus: raw %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign stack = site.data.ach.achievements.stackable_milestones %}
+
+      {% for tier in stack %}
+        {% assign key = tier[0] %}
+        {% if u.stackable_milestones[key] %}
+          {% if tier[1].reward_items and tier[1].reward_items contains "Blue Buck" %}
+            {% assign raw = tier[1].reward_items | split: "x" | last | split: " " | first %}
+            {% assign total_bb = total_bb | plus: raw %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <tr>
+        <td class="nameid">{{ u.id | remove: "/user/" }}</td>
+        <td class="nameid">{{ u.name }}</td>
+        <td class="text-center {% if u.bb != total_bb %}red{% else %}green{% endif %}">{{ u.bb }}<i class="bi bi-currency-bitcoin"></i></td>
+        <td class="text-center nameid">{{ total_bb }}<i class="bi bi-currency-bitcoin"></i></td>
+      </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
 </div>
 
 <script>

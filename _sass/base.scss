@@ -1096,25 +1096,15 @@ body {
             text-align: center;
             font-size: 1.1rem;
           }
+          .shopbtn {
+            display: flex;
+            font-family: $text-font;
+            color: black;
+          }
           &::after {
-            background-color: #eeaf26;
+            background-color: #eeb15f;
           }
-          .price {
-            p, svg {display: none;}
-            a {
-              display: flex;
-              font-family: $text-font;
-              color: $black;
-              font-size: 1rem;
-              text-decoration: none;
-              height: 39px;
-              justify-content: center;
-              padding-top: 4px;
-              font-weight: bold;
-              text-transform: uppercase;
-              white-space: nowrap
-            }
-          }
+          .price {display: none}
         }
         small {
           font-size: 0.6rem;
@@ -1170,6 +1160,23 @@ body {
           width: 100%;
           color: $primary-800;
           z-index: 2;
+        }
+        .shopbtn {
+          z-index: 2;
+          position: absolute;
+          bottom: 0;
+          text-transform: uppercase;
+          text-decoration: none;
+          left: 50%;
+          transform: translate(-50%);
+          font-size: 1.25rem;
+          font-family: $marker-font;
+          color: $gray-100;
+          display: none;
+          align-items: center;
+          width: 100%;
+          justify-content: center;
+          cursor: pointer;
         }
         .price {
           z-index: 2;
@@ -1581,4 +1588,81 @@ body {
     }
   }
 }
-
+.blue-buck-tracker {
+  border-collapse: collapse;
+  thead th {
+    padding: 2px 6px;
+    &.nameid {background-color: #658dff; border: 1px solid #3f60d1; color: $white;}
+  }
+  tbody td {
+    font-weight: bold;
+    padding: 2px 6px;
+    &.text-center {text-align: center}
+    &.nameid {background-color: rgba(#658dff, 0.6); border: 1px solid #3f60d1; color: #142046}
+    &.red {background-color: rgba(#ea3f3b, 0.6); border: 1px solid #c03431; color: #401210}
+    &.green {background-color: rgba(#4ba245, 0.6); border: 1px solid #3d853a; color: #152d14}
+  }
+}
+#caitmode {
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 350px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  &.caitmode {display: flex}
+  &::after {
+    content: "";
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    backdrop-filter: blur(8px);
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    max-height: 350px;
+    border-radius: 4px;
+    background-color: #eeb15f;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  button { 
+    background-color: #c03431;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 16px;
+    z-index: 101;
+    font-weight: bold;
+  }
+  h2, h4, a {z-index: 101}
+  a {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #4ba245;
+    color: #152d14;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin-top: 6px;
+    font-weight: bold;
+  }
+}
