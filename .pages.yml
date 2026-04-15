@@ -56,6 +56,9 @@
           type: boolean
           default: true
           required: true
+        - name: bb
+          label: "Blue Bucks Given"
+          type: number
         - name: foh
           label: "Front Of House"
           type: object
