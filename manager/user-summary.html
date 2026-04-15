@@ -46,40 +46,44 @@ layout: default
             {% assign sorted_u = site.user | sort: "name" %}
             {% for u in sorted_u %}
             <tr class="cell">
-                <td class="text-center {% if u.other_milestones.manager == true%}manager{% elsif u.other_milestones.trainer == true%}trainer{% else %}team{% endif %}">{% if u.other_milestones.manager == true%}MGR{% elsif u.other_milestones.trainer == true%}TRN{% else %}TM{% endif %}</td>
-                <td style="text-align: start;" class="text {% if u.other_milestones.manager == true%}manager{% elsif u.other_milestones.trainer == true%}trainer{% else %}team{% endif %}">{{ u.name }}</td>
-                <td class="{% if u.foh.runner %}checked {% if u.foh.runner == 3 %}three {% elsif u.foh.runner == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.foh.cashier %}checked {% if u.foh.cashier == 3 %}three {% elsif u.foh.cashier == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.foh.guest_att %}checked {% if u.foh.guest_att == 3 %}three {% elsif u.foh.guest_att == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.foh.drive_thru %}checked {% if u.foh.drive_thru == 3 %}three {% elsif u.foh.drive_thru == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.other_stations.set %}checked {% if u.other_stations.set == 3 %}three {% elsif u.other_stations.set == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.boh.buns %}checked {% if u.boh.buns == 3 %}three {% elsif u.boh.buns == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.boh.grill %}checked {% if u.boh.grill == 3 %}three {% elsif u.boh.grill == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.boh.fryer %}checked {% if u.boh.fryer == 3 %}three {% elsif u.boh.fryer == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.other_stations.middle %}checked {% if u.other_stations.middle == 3 %}three {% elsif u.other_stations.middle == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.desserts.custard %}checked {% if u.desserts.custard == 3 %}three {% elsif u.desserts.custard == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.other_stations.prepping %}checked {% if u.other_stations.prepping == 3 %}three {% elsif u.other_stations.prepping == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.other_stations.porting %}checked {% if u.other_stations.porting == 3 %}three {% elsif u.other_stations.porting == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
-                <td class="{% if u.hidden_milestones.kitchen_open %}checked known {% else %}empty{% endif %}"></td>
-                <td class="{% if u.hidden_milestones.kitchen_close %}checked known {% else %}empty{% endif %}"></td>
-                <td class="{% if u.hidden_milestones.custard_open %}checked known {% else %}empty{% endif %}"></td>
-                <td class="{% if u.hidden_milestones.custard_close %}checked known {% else %}empty{% endif %}"></td>
-                <td class="{% if u.hidden_milestones.dish_close %}checked known {% else %}empty{% endif %}"></td>
-                <td class="{% if u.hidden_milestones.lobby_close %}checked known {% else %}empty{% endif %}"></td>
+                <td class="text-center {% if u.other_milestones and u.other_milestones.manager == true%}manager{% elsif u.other_milestones and u.other_milestones.trainer == true%}trainer{% else %}team{% endif %}">{% if u.other_milestones and u.other_milestones.manager == true%}MGR{% elsif u.other_milestones and u.other_milestones.trainer == true%}TRN{% else %}TM{% endif %}</td>
+                <td style="text-align: start;" class="text {% if u.other_milestones and u.other_milestones.manager == true%}manager{% elsif u.other_milestones and u.other_milestones.trainer == true%}trainer{% else %}team{% endif %}">{{ u.name }}</td>
+                <td class="{% if u.foh and u.foh.runner %}checked {% if u.foh.runner == 3 %}three {% elsif u.foh.runner == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.foh and u.foh.cashier %}checked {% if u.foh.cashier == 3 %}three {% elsif u.foh.cashier == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.foh and u.foh.guest_att %}checked {% if u.foh.guest_att == 3 %}three {% elsif u.foh.guest_att == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.foh and u.foh.drive_thru %}checked {% if u.foh.drive_thru == 3 %}three {% elsif u.foh.drive_thru == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations and u.other_stations.set %}checked {% if u.other_stations.set == 3 %}three {% elsif u.other_stations.set == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.boh and u.boh.buns %}checked {% if u.boh.buns == 3 %}three {% elsif u.boh.buns == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.boh and u.boh.grill %}checked {% if u.boh.grill == 3 %}three {% elsif u.boh.grill == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.boh and u.boh.fryer %}checked {% if u.boh.fryer == 3 %}three {% elsif u.boh.fryer == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations and u.other_stations.middle %}checked {% if u.other_stations.middle == 3 %}three {% elsif u.other_stations.middle == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.desserts and u.desserts.custard %}checked {% if u.desserts.custard == 3 %}three {% elsif u.desserts.custard == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations and u.other_stations.prepping %}checked {% if u.other_stations.prepping == 3 %}three {% elsif u.other_stations.prepping == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.other_stations and u.other_stations.porting %}checked {% if u.other_stations.porting == 3 %}three {% elsif u.other_stations.porting == 2 %}two {% else %}one {% endif %} {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones and u.hidden_milestones.kitchen_open %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones and u.hidden_milestones.kitchen_close %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones and u.hidden_milestones.custard_open %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones and u.hidden_milestones.custard_close %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones and u.hidden_milestones.dish_close %}checked known {% else %}empty{% endif %}"></td>
+                <td class="{% if u.hidden_milestones and u.hidden_milestones.lobby_close %}checked known {% else %}empty{% endif %}"></td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
     <h4 id="Deployment Helper" class="banner">Below is a list of employees. Select the employees scheduled this day to add them to the employee pool. <br>Once you have them all, simply choose one for each station from the list.</h4>
     <div class="user-summary">
-        {% assign managers = site.user | where: "other_milestones.manager", true | sort: "name" %}
+        {% assign with_milestones = site.user | where: "other_milestones" %}
 
-        {% assign trainers = site.user 
+        {% assign managers = with_milestones 
+        | where: "other_milestones.manager", true 
+        | sort: "name" %}
+
+        {% assign trainers = with_milestones 
         | where: "other_milestones.trainer", true 
         | where_exp: "user", "user.other_milestones.manager != true" 
         | sort: "name" %}
 
-        {% assign team_members = site.user 
+        {% assign team_members = with_milestones 
         | where_exp: "user", "user.other_milestones.manager != true" 
         | where_exp: "user", "user.other_milestones.trainer != true" 
         | sort: "name" %}
@@ -90,32 +94,33 @@ layout: default
                 {% for person in managers %}
                     <label>
                         <input type="checkbox" name="people" value="{{ person.id }}"
-                            data-name="{{ person.name }}"
-                            data-manager="{% if person.other_milestones.manager %}true{% else %}false{% endif %}"
-                            data-trainer="{% if person.other_milestones.trainer %}true{% else %}false{% endif %}"
+                          data-name="{{ person.name }}"
 
-                            data-runner="{% if person.foh.runner %}true{% else %}false{% endif %}"
-                            data-cashier="{% if person.foh.cashier %}true{% else %}false{% endif %}"
-                            data-drive_thru="{% if person.foh.drive_thru %}true{% else %}false{% endif %}"
-                            data-guest_att="{% if person.foh.guest_att %}true{% else %}false{% endif %}"
-                            
-                            data-buns="{% if person.boh.buns %}true{% else %}false{% endif %}"
-                            data-grill="{% if person.boh.grill %}true{% else %}false{% endif %}"
-                            data-fryer="{% if person.boh.fryer %}true{% else %}false{% endif %}"
+                          data-manager="{% if person.other_milestones and person.other_milestones.manager %}true{% else %}false{% endif %}"
+                          data-trainer="{% if person.other_milestones and person.other_milestones.trainer %}true{% else %}false{% endif %}"
 
-                            data-custard="{% if person.desserts.custard %}true{% else %}false{% endif %}"
+                          data-runner="{% if person.foh and person.foh.runner %}true{% else %}false{% endif %}"
+                          data-cashier="{% if person.foh and person.foh.cashier %}true{% else %}false{% endif %}"
+                          data-drive_thru="{% if person.foh and person.foh.drive_thru %}true{% else %}false{% endif %}"
+                          data-guest_att="{% if person.foh and person.foh.guest_att %}true{% else %}false{% endif %}"
 
-                            data-set="{% if person.other_stations.set %}true{% else %}false{% endif %}"
-                            data-middle="{% if person.other_stations.middle %}true{% else %}false{% endif %}"
-                            data-prepping="{% if person.other_stations.prepping %}true{% else %}false{% endif %}"
-                            data-porting="{% if person.other_stations.porting %}true{% else %}false{% endif %}"
+                          data-buns="{% if person.boh and person.boh.buns %}true{% else %}false{% endif %}"
+                          data-grill="{% if person.boh and person.boh.grill %}true{% else %}false{% endif %}"
+                          data-fryer="{% if person.boh and person.boh.fryer %}true{% else %}false{% endif %}"
 
-                            data-kitchen_open="{% if person.hidden_milestones.kitchen_open %}true{% else %}false{% endif %}"
-                            data-kitchen_close="{% if person.hidden_milestones.kitchen_close %}true{% else %}false{% endif %}"
-                            data-custard_open="{% if person.hidden_milestones.custard_open %}true{% else %}false{% endif %}"
-                            data-custard_close="{% if person.hidden_milestones.custard_close %}true{% else %}false{% endif %}"
-                            data-dish_close="{% if person.hidden_milestones.dish_close %}true{% else %}false{% endif %}"
-                            data-lobby_close="{% if person.hidden_milestones.lobby_close %}true{% else %}false{% endif %}"
+                          data-custard="{% if person.desserts and person.desserts.custard %}true{% else %}false{% endif %}"
+
+                          data-set="{% if person.other_stations and person.other_stations.set %}true{% else %}false{% endif %}"
+                          data-middle="{% if person.other_stations and person.other_stations.middle %}true{% else %}false{% endif %}"
+                          data-prepping="{% if person.other_stations and person.other_stations.prepping %}true{% else %}false{% endif %}"
+                          data-porting="{% if person.other_stations and person.other_stations.porting %}true{% else %}false{% endif %}"
+
+                          data-kitchen_open="{% if person.hidden_milestones and person.hidden_milestones.kitchen_open %}true{% else %}false{% endif %}"
+                          data-kitchen_close="{% if person.hidden_milestones and person.hidden_milestones.kitchen_close %}true{% else %}false{% endif %}"
+                          data-custard_open="{% if person.hidden_milestones and person.hidden_milestones.custard_open %}true{% else %}false{% endif %}"
+                          data-custard_close="{% if person.hidden_milestones and person.hidden_milestones.custard_close %}true{% else %}false{% endif %}"
+                          data-dish_close="{% if person.hidden_milestones and person.hidden_milestones.dish_close %}true{% else %}false{% endif %}"
+                          data-lobby_close="{% if person.hidden_milestones and person.hidden_milestones.lobby_close %}true{% else %}false{% endif %}"
                         >
                         <span class="checkmark"></span>
                         {{ person.name }}
