@@ -72,7 +72,7 @@ layout: default
     </table>
     <h4 id="Deployment Helper" class="banner">Below is a list of employees. Select the employees scheduled this day to add them to the employee pool. <br>Once you have them all, simply choose one for each station from the list.</h4>
     <div class="user-summary">
-        {% assign with_milestones = site.user | where: "other_milestones" %}
+        {% assign with_milestones = site.user | where_exp: "u", "u.other_milestones" %}
 
         {% assign managers = with_milestones 
         | where: "other_milestones.manager", true 
