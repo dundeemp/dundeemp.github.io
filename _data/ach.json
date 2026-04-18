@@ -201,7 +201,7 @@
         "1": {
           "name": "Starter Mastermind",
           "type": "training",
-          "unlock_conditions": "Complete the Middle Learning Path.",
+          "unlock_conditions": "Complete the Set Learning Path.",
           "title": "Starter Mastermind Title",
           "points": 20
         },
