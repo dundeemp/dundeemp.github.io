@@ -12,7 +12,7 @@
         fields: [id, name, title, active, date]
         default:
           sort: name
-          order: desc
+          order: asc
       fields:
         - name: layout
           label: "Select 'user2' from the list."
