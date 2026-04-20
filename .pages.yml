@@ -11,7 +11,7 @@
         primary: id
         fields: [id, name, title, active, date]
         default:
-          sort: date
+          sort: name
           order: desc
       fields:
         - name: layout
