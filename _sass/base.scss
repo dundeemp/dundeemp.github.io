@@ -237,6 +237,10 @@ body {
   min-height: 100vh;
   display: flex;
   position: relative;
+  margin-bottom: 80px;
+  @include respond(lg) {
+    margin-bottom: 0;
+  }
   .main-section {
     width: 100%;
     padding: 8px 12px;
@@ -265,10 +269,6 @@ body {
         top: 50%;
         transform: translateY(-50%);
         gap: 4px;
-        @include respond(sm) {
-          display: flex;
-          flex-direction: row;
-        }
         @include respond(lg) {
           display: flex;
           flex-direction: column;
@@ -297,12 +297,6 @@ body {
           transform: scale(0.8);
           border-radius: 200px;
           overflow: hidden;
-          &.manager {
-            outline: 2px solid magenta;
-          }
-          &.trainer {
-            outline: 2px solid lawngreen;
-          }
         }
       }
       .userinfo {
@@ -327,6 +321,17 @@ body {
           @include respond(lg) {
             font-size: 2.5rem;
             margin-top: -12px;
+          }
+          button {
+            display: none;
+            font-size: 0.9rem;
+            background-color: unset;
+            color: $white;
+            text-decoration: underline;
+            font-family: $text-font;
+            @include respond(lg) {
+              display: inline-block;
+            }
           }
         }
         h4 {
@@ -895,12 +900,27 @@ body {
 }
 .hidden {display: none !important}
 .vis {display: block !important}
-#sidebarButton {
+// #sidebarButton {
+//   width: 48px;
+//   height: 48px;
+//   border-radius: 100px;
+//   position: fixed;
+//   right: 16px;
+//   bottom: 16px;
+//   background-color: $primary-500;
+//   color: $white;
+//   font-size: 1.5rem;
+//   box-shadow: 5px 5px 15px 0 rgba($primary-900, 0.2);
+//   @include respond(lg) {
+//     display: none;
+//   }
+// }
+#rewardHistoryButton {
   width: 48px;
   height: 48px;
   border-radius: 100px;
   position: fixed;
-  right: 16px;
+  left: 16px;
   bottom: 16px;
   background-color: $primary-500;
   color: $white;
@@ -1664,5 +1684,112 @@ body {
     padding: 4px 8px;
     margin-top: 6px;
     font-weight: bold;
+  }
+}
+.mobileMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+  background-color: $white;
+  border-top: 2px solid $primary-500;
+  border-left: 2px solid $primary-500;
+  border-right: 2px solid $primary-500;
+  box-shadow: 0px 10px 15px 5px $black;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  @include respond(lg) {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 450px;
+    height: 80px;
+    display: flex;
+    button {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: $primary-500;
+        background-color: unset;
+        &:first-of-type::after {
+          content: "";
+          width: 100%;
+          height: 80%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          border-right: 2px solid rgba($primary-400, 0.4);
+          border-left: 2px solid rgba($primary-400, 0.4);
+        }
+        &:last-of-type::after {
+          content: "";
+          width: 100%;
+          height: 80%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          border-right: 2px solid rgba($primary-400, 0.4);
+          border-left: 2px solid rgba($primary-400, 0.4);
+        }
+        &:nth-of-type(3):after {
+          content: "";
+          width: 100%;
+          height: 80%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          border-left: 2px solid rgba($primary-400, 0.4);
+          border-right: 2px solid rgba($primary-400, 0.4);
+        }
+        i {
+          font-size: 1.75rem;
+          width: 100%;
+        }
+        p {
+          font-size: 0.8rem;
+          width: 100%;
+          margin-top: -25px;
+        }
+      }
+  }
+}
+.modal-rewards {
+  color: $primary-700;
+  ul {
+    list-style: none;
+    border: 1px solid $primary-500;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    li:nth-child(even) {
+      background-color: $gray-100;
+      padding: 2px 4px;
+    }
+    li:nth-child(odd) {
+      background-color: $gray-200;
+      padding: 2px 4px;
+    }
+    li.paid {
+      color: $primary-500;
+      background-color: transparent !important;
+      border-top: 1px solid $primary-500;
+      text-align: right;
+      h3 {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
   }
 }

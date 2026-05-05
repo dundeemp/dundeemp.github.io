@@ -21,8 +21,7 @@
           "type": "training",
           "unlock_conditions": "Must be able to work unsupervised and able to handle peak hours proficiently.",
           "title": "Elite Pathfinder Title",
-          "points": 100,
-          "reward_items": "x1 Blue Buck"
+          "points": 100
         }
       },
       "guest_att": {
@@ -45,8 +44,7 @@
           "type": "training",
           "unlock_conditions": "Must be able to work unsupervised and able to handle peak hours proficiently.",
           "title": "Elite Guest Ambassador Title",
-          "points": 120,
-          "reward_items": "x1 Blue Buck"
+          "points": 120
         }
       },
       "drive_thru": {

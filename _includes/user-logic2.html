@@ -14,7 +14,7 @@
       </div>
       <div class="userinfo">
         <h4>{{ page.badge | default: '&nbsp;'}}</h4>
-        <h3>{{ page.name | default: 'USER NOT FOUND'}}</h3>
+        <h3>{{ page.name | default: 'USER NOT FOUND'}} <button onclick="showRewards()">(View reward history)</button></h3>
         {% assign start = page.date | date: "%s" %}
 
           {% assign now = "now" | date: "%s" %}
@@ -227,6 +227,7 @@
   RENDER
 ============================================================ -->
 {% assign total_score = 0 %}
+{% assign user_rewards = "" | split: "" %}
 
 {% for entry in all_achievements %}
   {% assign e_key               = entry[0] %}
@@ -263,6 +264,12 @@
       {% assign total_score = total_score | plus: e_points %}
     {% endif %}
 
+  {% endif %}
+
+  {% if is_unlocked %}
+    {% if entry[7] and entry[7] != "" %}
+      {% assign user_rewards = user_rewards | push: entry[7] %}
+    {% endif %}
   {% endif %}
 
   <!-- ================= LOCK CLASS ================= -->
@@ -443,7 +450,31 @@
     </table>
   </div>
 </div>
-<button type="button" id="sidebarButton" onclick="slideOff()"><i class="bi bi-trophy-fill"></i></button>
+<div class="mobileMenu">
+<div class="wrapper">
+  <button>
+    <i class="bi bi-house-fill"></i>
+    <p>Home</p>
+  </button>
+  <button>
+    <i class="bi bi-bag-heart-fill"></i>
+    <p>Shop</p>
+  </button>
+  <button>
+    <i class="bi bi-question-diamond-fill"></i>
+    <p>F.A.Q.</p>
+  </button>
+  <button id="sidebarButton" onclick="slideOff()">
+    <i class="bi bi-trophy-fill"></i>
+    <p>Score</p>
+  </button>
+  <button onclick="showRewards()">
+    <i class="bi bi-gift-fill"></i>
+    <p>Rewards</p>
+  </button>
+</div>
+</div>
+<!-- <button type="button" id="rewardHistoryButton" onclick="slideOffRewardHistory()"><i class="bi bi-gift-fill"></i></button> -->
 
 {% for group in training_groups %}
   {% assign group_data = ach_data[group] %}
@@ -467,6 +498,63 @@
     {% endfor %}
   {% endfor %}
 {% endfor %}
+<div class="modal modal-rewards">
+{% assign clean_rewards = user_rewards | uniq %}
+
+{% assign blue_bucks_total = 0 %}
+{% assign final_rewards = "" | split: "" %}
+
+{% for reward in user_rewards %}
+
+  {% assign r = reward | strip | downcase %}
+
+  <!-- REMOVE Pay Raise completely -->
+  {% assign r = r | remove: "pay raise" | strip %}
+
+  <!-- If Blue Bucks exist anywhere in string -->
+  {% if r contains "blue buck" %}
+
+    {% assign cleaned = r | split: "+" %}
+
+    {% for part in cleaned %}
+      {% assign p = part | strip %}
+
+      {% if p contains "blue buck" %}
+
+        <!-- Extract number safely -->
+        {% assign qty_str = p | remove: "blue bucks" | remove: "blue buck" | remove: "x" | strip %}
+        {% assign qty = qty_str | plus: 0 %}
+
+        {% if qty == 0 %}
+          {% assign qty = 1 %}
+        {% endif %}
+
+        {% assign blue_bucks_total = blue_bucks_total | plus: qty %}
+      {% endif %}
+
+    {% endfor %}
+
+  {% elsif r != "" %}
+    {% assign final_rewards = final_rewards | push: reward %}
+  {% endif %}
+
+{% endfor %}
+
+  <h2><i class="bi bi-gift-fill"></i> Your Rewards</h2>
+    {% if blue_bucks_total > 0 or final_rewards.size > 0 %}
+    <ul class="rewards-list">
+      {% if blue_bucks_total > 0 %}
+        <li>x{{ blue_bucks_total }} Blue Bucks</li>
+      {% endif %}
+      {% for reward in final_rewards %}
+        <li>{{ reward }}</li>
+      {% endfor %}
+      <li class="paid"><h3>Blue Bucks Paid: <strong>{{ page.bb }}</strong></h3></li>
+    </ul>
+    {% else %}
+      <p>No rewards yet.</p>
+    {% endif %}
+</div>
 
 {% for entry in all_achievements %}
   {% assign e_key               = entry[0] %}
@@ -604,6 +692,21 @@ backdrop.addEventListener('click', hideModals);
 function hideModals() {
   document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
   backdrop.style.display = 'none';
+}
+function showRewards() {
+  const modal = document.querySelector('.modal-rewards');
+  const backdrop = document.getElementById('modal-backdrop');
+
+  if (!modal) return;
+
+  modal.style.display = 'block';
+  backdrop.style.display = 'block';
+
+  const btn = document.createElement('button');
+  btn.className = 'modal-close';
+  btn.innerHTML = '<i class="bi bi-x"></i>';
+  btn.addEventListener('click', hideModals);
+  modal.appendChild(btn);
 }
 </script>
 {% else %}
