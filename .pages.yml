@@ -1,15 +1,3 @@
   media:
     input: assets/img/avatars
     output: /assets/img/avatars
-  content:
-    - name: users
-      label: Employees
-      path: _user
-      type: collection
-      filename: "{primary}.html"
-      view:
-        primary: id
-        fields: [id, name, title, active, date]
-        default:
-          sort: name
-          order: asc
